@@ -1,0 +1,6343 @@
+{
+  "action": "sword-combo",
+  "durationSec": 3,
+  "fps": 60,
+  "totalFrames": 181,
+  "frames": [
+    {
+      "frame": 0,
+      "timeSec": 0,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.08,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.18,
+        "torsoYaw": 0,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.45,
+        "elbowL": 0.6,
+        "shoulderR": 0.25,
+        "elbowR": 0.4,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 1,
+      "timeSec": 0.0167,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.07680037924577472,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.18586597138274635,
+        "torsoYaw": 0.01999762971390804,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.4420009481144368,
+        "elbowL": 0.6,
+        "shoulderR": 0.2495200284437702,
+        "elbowR": 0.4133317531426054,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.013327013244603043,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 2,
+      "timeSec": 0.0333,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.07360303364259055,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.19172777165525068,
+        "torsoYaw": 0.03998103973380913,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.4340075841064764,
+        "elbowL": 0.6,
+        "shoulderR": 0.24808045506796206,
+        "elbowR": 0.4266540264892061,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.026616127525157372,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 3,
+      "timeSec": 0.05,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.07041023672369928,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.19758123267321798,
+        "torsoYaw": 0.05993602047687953,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.4260255918092482,
+        "elbowL": 0.6,
+        "shoulderR": 0.24568230350853604,
+        "elbowR": 0.4399573469845864,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.0398295516535615,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 4,
+      "timeSec": 0.0667,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.06722425878792446,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.20342219222213848,
+        "torsoYaw": 0.07984838257547211,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.41806064696981116,
+        "elbowL": 0.6,
+        "shoulderR": 0.24232727901665707,
+        "elbowR": 0.4532322550503148,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.0529297096871183,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 5,
+      "timeSec": 0.0833,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.06404736528532232,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.20924649697690909,
+        "torsoYaw": 0.09970396696673556,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.4101184132133058,
+        "elbowL": 0.6,
+        "shoulderR": 0.2380177672461421,
+        "elbowR": 0.46646931131115704,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.06587934778588377,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 6,
+      "timeSec": 0.1,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.06088181520629048,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.2150500054551341,
+        "torsoYaw": 0.1194886549606845,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.4022045380157262,
+        "elbowL": 0.6,
+        "shoulderR": 0.23275683255709634,
+        "elbowR": 0.479659103307123,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.07864164015402945,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 7,
+      "timeSec": 0.1167,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.05772985947527011,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.2208285909620048,
+        "torsoYaw": 0.13918837827956188,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.3943246486881753,
+        "elbowL": 0.6,
+        "shoulderR": 0.22654821583694207,
+        "elbowR": 0.49279225218637457,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.09118029376394576,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 8,
+      "timeSec": 0.1333,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.05459373935018322,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.2265781445246641,
+        "torsoYaw": 0.1587891290613549,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.3864843483754581,
+        "elbowL": 0.6,
+        "shoulderR": 0.2193963318403891,
+        "elbowR": 0.5058594193742366,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.10345965156527494,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 9,
+      "timeSec": 0.15,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.05147568482874385,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.23229457781396962,
+        "torsoYaw": 0.17827696982035093,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.3786892120718596,
+        "elbowL": 0.6,
+        "shoulderR": 0.21130626605024005,
+        "elbowR": 0.5188513132135673,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.11544479388537071,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 10,
+      "timeSec": 0.1667,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.04837791306277579,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.2379738260515777,
+        "torsoYaw": 0.19763804335765128,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.3709447826569395,
+        "elbowL": 0.6,
+        "shoulderR": 0.20228377106126127,
+        "elbowR": 0.5317586955717676,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.1271016377328253,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 11,
+      "timeSec": 0.1833,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.045302626781664766,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.24361185090028126,
+        "torsoYaw": 0.21685858261459523,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.3632565669541619,
+        "elbowL": 0.6,
+        "shoulderR": 0.19233526248969146,
+        "elbowR": 0.5445723884097302,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.13839703372166684,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 12,
+      "timeSec": 0.2,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.042252012726065866,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.24920464333554593,
+        "torsoYaw": 0.23592492046208835,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.35563003181516467,
+        "elbowL": 0.6,
+        "shoulderR": 0.18146781441129511,
+        "elbowR": 0.557283280308059,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.14929886034059803,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 13,
+      "timeSec": 0.2167,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.03922824009298018,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.254748226496203,
+        "torsoYaw": 0.25482349941887394,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.34807060023245046,
+        "elbowL": 0.6,
+        "shoulderR": 0.16968915433120801,
+        "elbowR": 0.569882332945916,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.1597761152991946,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 14,
+      "timeSec": 0.2333,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.03623345899330604,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.26023865851227224,
+        "torsoYaw": 0.2735408812918373,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.3405836474832651,
+        "elbowL": 0.6,
+        "shoulderR": 0.15700765768914682,
+        "elbowR": 0.5823605875278915,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.16979900369129747,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 15,
+      "timeSec": 0.25,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.03326979892296194,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.2656720353079031,
+        "torsoYaw": 0.2920637567314879,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.3331744973074049,
+        "elbowL": 0.6,
+        "shoulderR": 0.14343234190389498,
+        "elbowR": 0.5947091711543253,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.1793390227248807,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 16,
+      "timeSec": 0.2667,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.030339367248668037,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.27104449337744196,
+        "torsoYaw": 0.3103789546958248,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.3258484181216701,
+        "elbowL": 0.6,
+        "shoulderR": 0.1289728599612947,
+        "elbowR": 0.6069193031305499,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.1883690427774444,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 17,
+      "timeSec": 0.2833,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.027444247709463028,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.2763522125326511,
+        "torsoYaw": 0.3284734518158561,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.3186106192736576,
+        "elbowL": 0.6,
+        "shoulderR": 0.11363949355030956,
+        "elbowR": 0.6189823012105707,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.19686338454642843,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 18,
+      "timeSec": 0.3,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.024586498935022065,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.28159141861912623,
+        "torsoYaw": 0.34633438165611213,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.3114662473375551,
+        "elbowL": 0.6,
+        "shoulderR": 0.0974431457520335,
+        "elbowR": 0.6308895877707414,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.20479789207524957,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 19,
+      "timeSec": 0.3167,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.02176815298182893,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.2867583861999803,
+        "torsoYaw": 0.36394904386356924,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.3044203824545723,
+        "elbowL": 0.6,
+        "shoulderR": 0.08039533328684922,
+        "elbowR": 0.6426326959090461,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.2121500014472928,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 20,
+      "timeSec": 0.3333,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.018991213888243867,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.29184944120488626,
+        "torsoYaw": 0.38130491319847587,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.29747803472060963,
+        "elbowL": 0.6,
+        "shoulderR": 0.06250817832524391,
+        "elbowR": 0.6542032754656506,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.21889880495250638,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 21,
+      "timeSec": 0.35,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.01625765624949399,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.29686096354259434,
+        "torsoYaw": 0.39838964844066255,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.290644140623735,
+        "elbowL": 0.6,
+        "shoulderR": 0.04379439986811162,
+        "elbowR": 0.6655930989604417,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.22502511054412624,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 22,
+      "timeSec": 0.3667,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.01356942381359992,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.3017893896750668,
+        "torsoYaw": 0.4151911011650005,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.28392355953399984,
+        "elbowL": 0.6,
+        "shoulderR": 0.024267304702666026,
+        "elbowR": 0.6767940674433337,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.23051149641644797,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 23,
+      "timeSec": 0.3833,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.010928428099236831,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.30663121515139913,
+        "torsoYaw": 0.4316973243797698,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.2773210702480921,
+        "elbowL": 0.6,
+        "shoulderR": 0.003940777940396156,
+        "elbowR": 0.6877982162531799,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.2353423605484398,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 24,
+      "timeSec": 0.4,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.008336547036512945,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.3113829970997263,
+        "torsoYaw": 0.4478965810217941,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.2708413675912824,
+        "elbowL": 0.6,
+        "shoulderR": -0.017170726856205132,
+        "elbowR": 0.6985977206811961,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.23950396507230626,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 25,
+      "timeSec": 0.4167,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.005795623631631552,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.31604135667534217,
+        "torsoYaw": 0.4637773523023028,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.2644890590790789,
+        "elbowL": 0.6,
+        "shoulderR": -0.03905219795112025,
+        "elbowR": 0.7091849015348686,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.2429844753408282,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 26,
+      "timeSec": 0.4333,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.003307464656386594,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.32060298146329125,
+        "torsoYaw": 0.47932834589758383,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.2582686616409665,
+        "elbowL": 0.6,
+        "shoulderR": -0.06168807610918803,
+        "elbowR": 0.7195522305983892,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.24577399358238067,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 27,
+      "timeSec": 0.45,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.0008738393634232233,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.32506462783372414,
+        "torsoYaw": 0.4945385039786049,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.25218459840855806,
+        "elbowL": 0.6,
+        "shoulderR": -0.08506226565979191,
+        "elbowR": 0.7296923359857366,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.2478645870479216,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 28,
+      "timeSec": 0.4667,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.00150352177182278,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.3294231232483418,
+        "torsoYaw": 0.5093970110738923,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.24624119557044305,
+        "elbowL": 0.6,
+        "shoulderR": -0.10915814594199214,
+        "elbowR": 0.739598007382595,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.2492503105699077,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 29,
+      "timeSec": 0.4833,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.003822928281612431,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.33367536851628943,
+        "torsoYaw": 0.5238933017600778,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.24044267929596894,
+        "elbowL": 0.6,
+        "shoulderR": -0.1339585831229625,
+        "elbowR": 0.7492622011733852,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.24992722346898513,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 30,
+      "timeSec": 0.5,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.006082730907942729,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.337818339997895,
+        "torsoYaw": 0.5380170681746421,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.2347931727301432,
+        "elbowL": 0.6,
+        "shoulderR": -0.1594459423813267,
+        "elbowR": 0.7586780454497615,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.24989340076037628,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 31,
+      "timeSec": 0.5167,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.008281322775282832,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.3418490917546852,
+        "torsoYaw": 0.5517582673455177,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.22929669306179293,
+        "elbowL": 0.6,
+        "shoulderR": -0.1856021004467333,
+        "elbowR": 0.7678388448970118,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.2491489386280944,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 32,
+      "timeSec": 0.5333,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.010417140533173302,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.34576475764415104,
+        "torsoYaw": 0.5651071283323332,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.22395714866706673,
+        "elbowL": 0.6,
+        "shoulderR": -0.21240845848674983,
+        "elbowR": 0.7767380855548889,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.24769595415141815,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 33,
+      "timeSec": 0.55,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.012488665467876331,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.34956255335777325,
+        "torsoYaw": 0.5780541591742271,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.2187783363303092,
+        "elbowL": 0.6,
+        "shoulderR": -0.23984595533191688,
+        "elbowR": 0.7853694394494848,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.24553857928440462,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 34,
+      "timeSec": 0.5667,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.014494424582285642,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.353239778400857,
+        "torsoYaw": 0.5905901536392852,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.2137639385442859,
+        "elbowL": 0.6,
+        "shoulderR": -0.26789508102955295,
+        "elbowR": 0.7937267690928569,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.24268294910556118,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 35,
+      "timeSec": 0.5833,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.016432991643329356,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.3567938180127705,
+        "torsoYaw": 0.6027061977708085,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.20891752089167664,
+        "elbowL": 0.6,
+        "shoulderR": -0.29653589071667763,
+        "elbowR": 0.8018041318472057,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.23913718437109163,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 36,
+      "timeSec": 0.6,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.01830298819611978,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.36022214502621963,
+        "torsoYaw": 0.6143936762257487,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.20424252950970054,
+        "elbowL": 0.6,
+        "shoulderR": -0.3257480188021835,
+        "elbowR": 0.8095957841504992,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.23491136842133123,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 37,
+      "timeSec": 0.6167,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.020103084544130193,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.3635223216642387,
+        "torsoYaw": 0.6256442784008138,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.19974228863967453,
+        "elbowL": 0.6,
+        "shoulderR": -0.3555106934481779,
+        "elbowR": 0.8170961856005425,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.23001751850604296,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 38,
+      "timeSec": 0.6333,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.021832000694700537,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.3666920012736177,
+        "torsoYaw": 0.6364500043418784,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.19541999826324868,
+        "elbowL": 0.6,
+        "shoulderR": -0.38580275134019004,
+        "elbowR": 0.8243000028945856,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.22446955161012033,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 39,
+      "timeSec": 0.65,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.023488507269200612,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.36972892999353446,
+        "torsoYaw": 0.6468031704325038,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.1912787318269985,
+        "elbowL": 0.6,
+        "shoulderR": -0.41660265273574915,
+        "elbowR": 0.8312021136216692,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.2182832448768791,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 40,
+      "timeSec": 0.6667,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.025071426377203054,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.37263094835820565,
+        "torsoYaw": 0.6566964148575192,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.18732143405699236,
+        "elbowL": 0.6,
+        "shoulderR": -0.4478884967806266,
+        "elbowR": 0.8377976099050128,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.21147619074148646,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 41,
+      "timeSec": 0.6833,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.026579632454044697,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.3753959928324153,
+        "torsoYaw": 0.6661227028377794,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.18355091886488828,
+        "elbowL": 0.6,
+        "shoulderR": -0.47963803708185315,
+        "elbowR": 0.844081801891853,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.2040677469021167,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 42,
+      "timeSec": 0.7,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.028012053061180597,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.37802209727883107,
+        "torsoYaw": 0.6750753316323788,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.1799698673470485,
+        "elbowL": 0.6,
+        "shoulderR": -0.5118286975264384,
+        "elbowR": 0.8500502210882526,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.19607898127110504,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 43,
+      "timeSec": 0.7167,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.029367669648761904,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.3805073943560635,
+        "torsoYaw": 0.683547935304762,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.17658082587809526,
+        "elbowL": 0.6,
+        "shoulderR": -0.5444375883345474,
+        "elbowR": 0.855698623536508,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.18753261206264418,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 44,
+      "timeSec": 0.7333,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.03064551827989502,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.3828501168464742,
+        "torsoYaw": 0.6915344892493439,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.17338620430026247,
+        "elbowL": 0.6,
+        "shoulderR": -0.5774415223357074,
+        "elbowR": 0.861022992832896,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.1784529431874031,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 45,
+      "timeSec": 0.75,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.03184469031606717,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.3850485989127898,
+        "torsoYaw": 0.6990293144754198,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.1703882742098321,
+        "elbowL": 0.6,
+        "shoulderR": -0.6108170314564909,
+        "elbowR": 0.8660195429836133,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.16886579513778766,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 46,
+      "timeSec": 0.7667,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.0329643330632511,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.387101277282627,
+        "torsoYaw": 0.7060270816453194,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.1675891673418723,
+        "elbowL": 0.6,
+        "shoulderR": -0.6445403834079304,
+        "elbowR": 0.8706847210968796,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.1587984315603926,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 47,
+      "timeSec": 0.7833,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.03400365037822935,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.3890066923600871,
+        "torsoYaw": 0.7125228148639334,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.16499087405442664,
+        "elbowL": 0.6,
+        "shoulderR": -0.6785875985608151,
+        "elbowR": 0.8750152099092889,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.14827948172445335,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 48,
+      "timeSec": 0.8,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.03496190323470699,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.39076348926362947,
+        "torsoYaw": 0.7185118952169187,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.1625952419132325,
+        "elbowL": 0.6,
+        "shoulderR": -0.7129344669968605,
+        "elbowR": 0.8790079301446125,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.13733885910678156,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 49,
+      "timeSec": 0.8167,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.03583841024881025,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.3923704187894855,
+        "torsoYaw": 0.7239900640550642,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.16040397437797438,
+        "elbowL": 0.6,
+        "shoulderR": -0.7475565657236288,
+        "elbowR": 0.8826600427033762,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.12600767632470952,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 50,
+      "timeSec": 0.8333,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.036632548163597525,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.3938263382999288,
+        "torsoYaw": 0.7289534260224846,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.15841862959100617,
+        "elbowL": 0.6,
+        "shoulderR": -0.7824292760409646,
+        "elbowR": 0.8859689506816564,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.1143181566589529,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 51,
+      "timeSec": 0.85,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.03734375229223795,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.3951302125357696,
+        "torsoYaw": 0.7333984518264872,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.15664061926940515,
+        "elbowL": 0.6,
+        "shoulderR": -0.8175278010465841,
+        "elbowR": 0.8889323012176582,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.10230354241800432,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 52,
+      "timeSec": 0.8667,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.03797151691954272,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.396281114352495,
+        "torsoYaw": 0.7373219807471421,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.15507120770114324,
+        "elbowL": 0.6,
+        "shoulderR": -0.8528271832683861,
+        "elbowR": 0.8915479871647614,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.0899980004046439,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 53,
+      "timeSec": 0.8833,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.03851539566156356,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.39727822537953317,
+        "torsoYaw": 0.7407212228847723,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.15371151084609114,
+        "elbowL": 0.6,
+        "shoulderR": -0.8883023224109355,
+        "elbowR": 0.8938141485898482,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.07743652475340156,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 54,
+      "timeSec": 0.9,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.038975001783002367,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.398120836602171,
+        "torsoYaw": 0.7435937611437649,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.15256249554249407,
+        "elbowL": 0.6,
+        "shoulderR": -0.9239279932035038,
+        "elbowR": 0.8957291740958433,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.0646548374152776,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 55,
+      "timeSec": 0.9167,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.039350008472206766,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.39880834886571237,
+        "torsoYaw": 0.7459375529512923,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.1516249788194831,
+        "elbowL": 0.6,
+        "shoulderR": -0.9596788633369766,
+        "elbowR": 0.8972917019675282,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.0516892865727208,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 56,
+      "timeSec": 0.9333,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.03964014907355569,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.3993402733015188,
+        "torsoYaw": 0.7477509317097231,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.15089962731611078,
+        "elbowL": 0.6,
+        "shoulderR": -0.9955295114768731,
+        "elbowR": 0.8985006211398154,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.03857674327374722,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 57,
+      "timeSec": 0.95,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.03984521727706995,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.3997162316746282,
+        "torsoYaw": 0.7490326079816872,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.1503869568073251,
+        "elbowL": 0.6,
+        "shoulderR": -1.0314544453396681,
+        "elbowR": 0.8993550719877915,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.025354496579150468,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 58,
+      "timeSec": 0.9667,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.039965067265112855,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.39993595665270687,
+        "torsoYaw": 0.7497816704069554,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.15008733183721784,
+        "elbowL": 0.6,
+        "shoulderR": -1.0674281198195643,
+        "elbowR": 0.8998544469379703,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.012060147520978955,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 59,
+      "timeSec": 0.9833,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.03999961381607657,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.39999929199614037,
+        "torsoYaw": 0.7499975863504786,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.15000096545980857,
+        "elbowL": 0.6,
+        "shoulderR": -1.103424955152822,
+        "elbowR": 0.8999983909003191,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.0012684978261605208,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 60,
+      "timeSec": 1,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.039948832364980605,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.3999061926691311,
+        "torsoYaw": 0.7496802022811289,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.15012791908754847,
+        "elbowL": 0.6,
+        "shoulderR": -1.13941935510674,
+        "elbowR": 0.8997868015207526,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.014593535856895021,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 61,
+      "timeSec": 1.0167,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.03981275902093924,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.39965672487172194,
+        "torsoYaw": 0.7488297438808702,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.1504681024476519,
+        "elbowL": 0.6,
+        "shoulderR": -1.1753857251803375,
+        "elbowR": 0.8992198292539135,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.027877073224229977,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 62,
+      "timeSec": 1.0333,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.03959149054148531,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.3992510659927231,
+        "torsoYaw": 0.7474468158842832,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.15102127364628676,
+        "elbowL": 0.6,
+        "shoulderR": -1.2112984908038134,
+        "elbowR": 0.8982978772561888,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.04108133459952412,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 63,
+      "timeSec": 1.05,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.039285184263769105,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.3986895044835767,
+        "torsoYaw": 0.7455324016485569,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.15178703934057725,
+        "elbowL": 0.6,
+        "shoulderR": -1.2471321155238264,
+        "elbowR": 0.897021601099038,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.054168770096845016,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 64,
+      "timeSec": 1.0667,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.03889405799268071,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.39797243965324797,
+        "torsoYaw": 0.7430878624542545,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.15276485501829823,
+        "elbowL": 0.6,
+        "shoulderR": -1.2828611191616774,
+        "elbowR": 0.8953919083028363,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.06710216205621905,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 65,
+      "timeSec": 1.0833,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.03841838984597569,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.39710038138428877,
+        "torsoYaw": 0.7401149365373481,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.1539540253850608,
+        "elbowL": 0.6,
+        "shoulderR": -1.3184600959314723,
+        "elbowR": 0.8934099576915654,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.07984473088210596,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 66,
+      "timeSec": 1.1,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.037858518056514204,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.39607394977027605,
+        "torsoYaw": 0.7366157378532139,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.15535370485871447,
+        "elbowL": 0.6,
+        "shoulderR": -1.3539037325053886,
+        "elbowR": 0.8910771585688093,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.09236023963611938,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 67,
+      "timeSec": 1.1167,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.037214840731754184,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.3948938746748827,
+        "torsoYaw": 0.7325927545734636,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.15696289817061454,
+        "elbowL": 0.6,
+        "shoulderR": -1.389166826013196,
+        "elbowR": 0.8883951697156425,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.10461309708655443,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 68,
+      "timeSec": 1.1333,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.036487815570669366,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.39356099521289384,
+        "torsoYaw": 0.7280488473166835,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.1587804610733266,
+        "elbowL": 0.6,
+        "shoulderR": -1.4242243019632381,
+        "elbowR": 0.8853658982111223,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.11656845892167497,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 69,
+      "timeSec": 1.15,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.03567795953829378,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.3920762591535386,
+        "torsoYaw": 0.7229872471143362,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.16080510115426555,
+        "elbowL": 0.6,
+        "shoulderR": -1.4590512320721234,
+        "elbowR": 0.8819914980762241,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.12819232683893086,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 70,
+      "timeSec": 1.1667,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.03478584849812398,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.3904407222465606,
+        "torsoYaw": 0.7174115531132749,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.16303537875469004,
+        "elbowL": 0.6,
+        "shoulderR": -1.4936228519904553,
+        "elbowR": 0.8782743687421832,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.13945164522832063,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 71,
+      "timeSec": 1.1833,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.033812116802640416,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.38865554747150743,
+        "torsoYaw": 0.7113257300165027,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.16546970799339894,
+        "elbowL": 0.6,
+        "shoulderR": -1.5279145789119908,
+        "elbowR": 0.8742171533443351,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.15031439517495113,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 72,
+      "timeSec": 1.2,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.03275745684223898,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.38672200421077146,
+        "torsoYaw": 0.7047341052639937,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.16810635789440254,
+        "elbowL": 0.6,
+        "shoulderR": -1.5619020290537127,
+        "elbowR": 0.8698227368426625,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.1607496855134772,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 73,
+      "timeSec": 1.2167,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.03162261855289372,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.3846414673469718,
+        "torsoYaw": 0.6976413659555858,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.1709434536177657,
+        "elbowL": 0.6,
+        "shoulderR": -1.595561034994382,
+        "elbowR": 0.8650942439703906,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.17072784067547878,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 74,
+      "timeSec": 1.2333,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.03040840888290061,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.38241541628531783,
+        "torsoYaw": 0.6900525555181289,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.17397897779274846,
+        "elbowL": 0.6,
+        "shoulderR": -1.62886766285924,
+        "elbowR": 0.860035037012086,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.1802204850799599,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 75,
+      "timeSec": 1.25,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.029115691219081793,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.38004543390164996,
+        "torsoYaw": 0.6819730701192612,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.1772107719522955,
+        "elbowL": 0.6,
+        "shoulderR": -1.6617982293386424,
+        "elbowR": 0.8546487134128409,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.18920062382698205,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 76,
+      "timeSec": 1.2667,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.027745384772857748,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.3775332054169059,
+        "torsoYaw": 0.673408654830361,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.18063653806785562,
+        "elbowL": 0.6,
+        "shoulderR": -1.6943293185285297,
+        "elbowR": 0.8489391032202407,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.19764271946495915,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 77,
+      "timeSec": 1.2833,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.026298463926624813,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.37488051719881216,
+        "torsoYaw": 0.664365399541405,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.184253840183438,
+        "elbowL": 0.6,
+        "shoulderR": -1.7264377985807475,
+        "elbowR": 0.8429102663609367,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.20552276461330193,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 78,
+      "timeSec": 1.3,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.024775957540901963,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.3720892554916536,
+        "torsoYaw": 0.6548497346306373,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.1880601061477451,
+        "elbowL": 0.6,
+        "shoulderR": -1.7581008381513854,
+        "elbowR": 0.8365664897537582,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.21281835023389362,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 79,
+      "timeSec": 1.3167,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.023178948222740026,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.3691614050750234,
+        "torsoYaw": 0.6448684263921252,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.19205262944314994,
+        "elbowL": 0.6,
+        "shoulderR": -1.7892959226354406,
+        "elbowR": 0.8299122842614168,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.2195087293572467,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 80,
+      "timeSec": 1.3333,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.0215085715559135,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.3660990478525081,
+        "torsoYaw": 0.6344285722244594,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.19622857111021624,
+        "elbowL": 0.6,
+        "shoulderR": -1.8200008701762507,
+        "elbowR": 0.8229523814829729,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.225574876082117,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 81,
+      "timeSec": 1.35,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.019766015293441963,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.36290436137131027,
+        "torsoYaw": 0.6235375955840123,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.2005849617663951,
+        "elbowL": 0.6,
+        "shoulderR": -1.8501938474383273,
+        "elbowR": 0.8156917303893416,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.23099953968079698,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 82,
+      "timeSec": 1.3667,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.01795251851301602,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.3595796172738627,
+        "torsoYaw": 0.6122032407063501,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.20511870371745997,
+        "elbowL": 0.6,
+        "shoulderR": -1.879853385132361,
+        "elbowR": 0.8081354938042334,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.2357672936562216,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 83,
+      "timeSec": 1.3833,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.016069370735927388,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.35612717968253355,
+        "torsoYaw": 0.6004335670995462,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.20982657316018155,
+        "elbowL": 0.6,
+        "shoulderR": -1.9089583932813676,
+        "elbowR": 0.8002890447330309,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.23986457961138227,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 84,
+      "timeSec": 1.4,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.014117911010130421,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.3525495035185724,
+        "torsoYaw": 0.5882369438133151,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.21470522247467397,
+        "elbowL": 0.6,
+        "shoulderR": -1.9374881762171174,
+        "elbowR": 0.7921579625422102,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.2432797458062934,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 85,
+      "timeSec": 1.4167,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.012099526958086512,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.34884913275649193,
+        "torsoYaw": 0.5756220434880407,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.21975118260478374,
+        "elbowL": 0.6,
+        "shoulderR": -1.965422447296182,
+        "elbowR": 0.7837480289920271,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.24600308029286397,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 86,
+      "timeSec": 1.4333,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.010015653790069204,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.34502869861512686,
+        "torsoYaw": 0.5625978361879326,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.224960865524827,
+        "elbowL": 0.6,
+        "shoulderR": -1.9927413433251349,
+        "elbowR": 0.7750652241252884,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.24802683853344643,
+        "weaponGlow": 1,
+        "eyeBlink": 1,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 87,
+      "timeSec": 1.45,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.00786777328363017,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.34109091768665534,
+        "torsoYaw": 0.5491735830226886,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.2303305667909246,
+        "elbowL": 0.6,
+        "shoulderR": -2.0194254386846557,
+        "elbowR": 0.7661157220151258,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.24934526542452332,
+        "weaponGlow": 1,
+        "eyeBlink": 1,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 88,
+      "timeSec": 1.4667,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.005657412729953487,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.3370385900049147,
+        "torsoYaw": 0.5353588295622093,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.2358564681751163,
+        "elbowL": 0.6,
+        "shoulderR": -2.0454557591424845,
+        "elbowR": 0.7569058863748062,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.24995461166289903,
+        "weaponGlow": 1,
+        "eyeBlink": 1,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 89,
+      "timeSec": 1.4833,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.0033861438478462597,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.3328745970543848,
+        "torsoYaw": 0.5211633990490392,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.24153464038038433,
+        "elbowL": 0.6,
+        "shoulderR": -2.070813795345406,
+        "elbowR": 0.7474422660326928,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.2498531444078569,
+        "weaponGlow": 1,
+        "eyeBlink": 1,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 90,
+      "timeSec": 1.5,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.0010555816661380751,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.32860189972125314,
+        "torsoYaw": 0.506597385413363,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.24736104583465482,
+        "elbowL": 0.6,
+        "shoulderR": -2.095481515980682,
+        "elbowR": 0.7377315902755753,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.24904115220896014,
+        "weaponGlow": 1,
+        "eyeBlink": 1,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 91,
+      "timeSec": 1.5167,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.0013326166247158572,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.3242235361880209,
+        "torsoYaw": 0.4916711460955259,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.2533315415617896,
+        "elbowL": 0.6,
+        "shoulderR": -2.1194413805975523,
+        "elbowR": 0.727780764063684,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.2475209441854833,
+        "weaponGlow": 1,
+        "eyeBlink": 1,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 92,
+      "timeSec": 1.5333,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.0037767528510115472,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.3197426197731455,
+        "torsoYaw": 0.4763952946811778,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.2594418821275289,
+        "elbowL": 0.6,
+        "shoulderR": -2.142676352079711,
+        "elbowR": 0.7175968631207852,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.24529684345980712,
+        "weaponGlow": 1,
+        "eyeBlink": 1,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 93,
+      "timeSec": 1.55,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.006275089063314629,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.3151623367172565,
+        "torsoYaw": 0.46078069335428357,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.26568772265828655,
+        "elbowL": 0.6,
+        "shoulderR": -2.1651699087598675,
+        "elbowR": 0.7071871289028557,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.24237517486345214,
+        "weaponGlow": 1,
+        "eyeBlink": 1,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 94,
+      "timeSec": 1.5667,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.00882584877226239,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.31048594391751894,
+        "torsoYaw": 0.44483844517336,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.272064621930656,
+        "elbowL": 0.6,
+        "shoulderR": -2.1869060561677918,
+        "elbowR": 0.6965589634489067,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.23876424695071063,
+        "weaponGlow": 1,
+        "eyeBlink": 1,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 95,
+      "timeSec": 1.5833,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.011427218211770312,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.3057167666117544,
+        "torsoYaw": 0.42857988617643555,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.2785680455294258,
+        "elbowL": 0.6,
+        "shoulderR": -2.207869338403487,
+        "elbowR": 0.6857199241176237,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.23447432837102677,
+        "weaponGlow": 1,
+        "eyeBlink": 1,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 96,
+      "timeSec": 1.6,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.014077347628744852,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.3008581960139678,
+        "torsoYaw": 0.4120165773203447,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.2851933690718621,
+        "elbowL": 0.6,
+        "shoulderR": -2.228044849127401,
+        "elbowR": 0.6746777182135631,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.22951761866731665,
+        "weaponGlow": 1,
+        "eyeBlink": 1,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 97,
+      "timeSec": 1.6167,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.01677435259838511,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.2959136869029606,
+        "torsoYaw": 0.3951602962600931,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.29193588149596283,
+        "elbowL": 0.6,
+        "shoulderR": -2.247418242159858,
+        "elbowR": 0.6634401975067288,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.22390821358327148,
+        "weaponGlow": 1,
+        "eyeBlink": 1,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 98,
+      "timeSec": 1.6333,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.019516315364139433,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.29088675516574436,
+        "torsoYaw": 0.37802302897412854,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.29879078841034856,
+        "elbowL": 0.6,
+        "shoulderR": -2.2659757416821886,
+        "elbowR": 0.652015352649419,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.21766206497829976,
+        "weaponGlow": 1,
+        "eyeBlink": 1,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 99,
+      "timeSec": 1.65,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.022301286201362215,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.2857809752975026,
+        "torsoYaw": 0.3606169612414862,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.3057532155034055,
+        "elbowL": 0.6,
+        "shoulderR": -2.2837041520322803,
+        "elbowR": 0.6404113074943242,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.21079693546410416,
+        "weaponGlow": 1,
+        "eyeBlink": 1,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 100,
+      "timeSec": 1.6667,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.02512728480370261,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.28059997785987856,
+        "torsoYaw": 0.3429544699768587,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.3128182120092565,
+        "elbowL": 0.6,
+        "shoulderR": -2.3005908670876063,
+        "elbowR": 0.6286363133179058,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.2033323478918949,
+        "weaponGlow": 1,
+        "eyeBlink": 1,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 101,
+      "timeSec": 1.6833,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.027992301691239,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.27534744689939517,
+        "torsoYaw": 0.3250481144297563,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.3199807542280975,
+        "elbowL": 0.6,
+        "shoulderR": -2.3166238792290486,
+        "elbowR": 0.6166987429531708,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.1952895298338853,
+        "weaponGlow": 1,
+        "eyeBlink": 1,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 102,
+      "timeSec": 1.7,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.030894299639357928,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.2700271173278438,
+        "torsoYaw": 0.30691062725401297,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.3272357490983948,
+        "elbowL": 0.6,
+        "shoulderR": -2.331791787879143,
+        "elbowR": 0.6046070848360087,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.18669135321695307,
+        "weaponGlow": 1,
+        "eyeBlink": 1,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 103,
+      "timeSec": 1.7167,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.03383121512736103,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.2646427722665048,
+        "torsoYaw": 0.2885549054539936,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.33457803781840256,
+        "elbowL": 0.6,
+        "shoulderR": -2.346083807608676,
+        "elbowR": 0.592369936969329,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.1775622692801352,
+        "weaponGlow": 1,
+        "eyeBlink": 1,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 104,
+      "timeSec": 1.7333,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.03680095980577093,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.25919824035608663,
+        "torsoYaw": 0.2699940012139317,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.34200239951442735,
+        "elbowL": 0.6,
+        "shoulderR": -2.3594897758058666,
+        "elbowR": 0.5799960008092878,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.16792823904092036,
+        "weaponGlow": 1,
+        "eyeBlink": 1,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 105,
+      "timeSec": 1.75,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.03980142198129144,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.253697393034299,
+        "torsoYaw": 0.2512411126169285,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.3495035549532286,
+        "elbowL": 0.6,
+        "shoulderR": -2.3720001599026888,
+        "elbowR": 0.5674940750779524,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.1578166594680802,
+        "weaponGlow": 1,
+        "eyeBlink": 1,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 106,
+      "timeSec": 1.7667,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.04283046811836726,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.24814414178299338,
+        "torsoYaw": 0.23230957426020465,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.35707617029591815,
+        "elbowL": 0.6,
+        "shoulderR": -2.38360606415318,
+        "elbowR": 0.5548730495068032,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.1472562855709838,
+        "weaponGlow": 1,
+        "eyeBlink": 1,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 107,
+      "timeSec": 1.7833,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.04588594435627506,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.24254243534682907,
+        "torsoYaw": 0.21321284777328087,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.36471486089068766,
+        "elbowL": 0.6,
+        "shoulderR": -2.3942992359589343,
+        "elbowR": 0.5421418985155206,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.13627714862695606,
+        "weaponGlow": 1,
+        "eyeBlink": 1,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 108,
+      "timeSec": 1.8,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.04896567804066676,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.23689625692544428,
+        "torsoYaw": 0.19396451224583278,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.3724141951016669,
+        "elbowL": 0.6,
+        "shoulderR": -2.404072071737266,
+        "elbowR": 0.5293096748305552,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.12491047077922542,
+        "weaponGlow": 1,
+        "eyeBlink": 1,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 109,
+      "timeSec": 1.8167,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.05206747926847671,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.23120962134112602,
+        "torsoYaw": 0.17457825457202059,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.3801686981711918,
+        "elbowL": 0.6,
+        "shoulderR": -2.4129176223278828,
+        "elbowR": 0.5163855030480138,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.11318857624832054,
+        "weaponGlow": 1,
+        "eyeBlink": 1,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 110,
+      "timeSec": 1.8333,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.055189142445094014,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.22548657218399432,
+        "torsoYaw": 0.1550678597181624,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.387972856112735,
+        "elbowL": 0.6,
+        "shoulderR": -2.420829597934218,
+        "elbowR": 0.5033785731454417,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.10114479940941241,
+        "weaponGlow": 1,
+        "eyeBlink": 1,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 111,
+      "timeSec": 1.85,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.0583284478526921,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.21973117893673114,
+        "torsoYaw": 0.13544720092067436,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.3958211196317303,
+        "elbowL": 0.6,
+        "shoulderR": -2.427802372595909,
+        "elbowR": 0.4902981339471163,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.08881338999701045,
+        "weaponGlow": 1,
+        "eyeBlink": 1,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 112,
+      "timeSec": 1.8667,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.06148316322860134,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.21394753408089756,
+        "torsoYaw": 0.11573022982124168,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.40370790807150336,
+        "elbowL": 0.6,
+        "shoulderR": -2.4338309881892437,
+        "elbowR": 0.47715348654749445,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.07622941570658519,
+        "weaponGlow": 1,
+        "eyeBlink": 1,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 113,
+      "timeSec": 1.8833,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.06465104535260191,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.2081397501868965,
+        "torsoYaw": 0.09593096654623809,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.4116276133815048,
+        "elbowL": 0.6,
+        "shoulderR": -2.4389111579527283,
+        "elbowR": 0.4639539776974921,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.0634286624700978,
+        "weaponGlow": 1,
+        "eyeBlink": 1,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 114,
+      "timeSec": 1.9,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.06782984164200778,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.2023119569896524,
+        "torsoYaw": 0.0760634897374514,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.41957460410501946,
+        "elbowL": 0.6,
+        "shoulderR": -2.4430392695352703,
+        "elbowR": 0.45070899315830093,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.05044753268903222,
+        "weaponGlow": 1,
+        "eyeBlink": 1,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 115,
+      "timeSec": 1.9167,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.07101729175340873,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.19646829845208397,
+        "torsoYaw": 0.0561419265411954,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.42754322938352185,
+        "elbowL": 0.6,
+        "shoulderR": -2.4462123875648105,
+        "elbowR": 0.4374279510274636,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.03732294171432635,
+        "weaponGlow": 1,
+        "eyeBlink": 1,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 116,
+      "timeSec": 1.9333,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.0742111291899301,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.19061292981846148,
+        "torsoYaw": 0.036180442562936864,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.4355278229748253,
+        "elbowL": 0.6,
+        "shoulderR": -2.4484282557355725,
+        "elbowR": 0.4241202950419579,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.02409221286759606,
+        "weaponGlow": 1,
+        "eyeBlink": 1,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 117,
+      "timeSec": 1.95,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.0774090829128685,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.1847500146597411,
+        "torsoYaw": 0.01619323179457197,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.44352270728217125,
+        "elbowL": 0.6,
+        "shoulderR": -2.4496852984124535,
+        "elbowR": 0.410795487863048,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.01079297130218217,
+        "weaponGlow": 1,
+        "eyeBlink": 1,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 118,
+      "timeSec": 1.9667,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.07939112104344295,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.17888372191297874,
+        "torsoYaw": -0.0038054934784815626,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.45152219739139265,
+        "elbowL": 0.6,
+        "shoulderR": -2.4499826217514094,
+        "elbowR": 0.397463004347679,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.002536962994142434,
+        "weaponGlow": 1,
+        "eyeBlink": 1,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 119,
+      "timeSec": 1.9833,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.0761917579546881,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.1730182229169282,
+        "torsoYaw": -0.02380151278319933,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.45952060511327975,
+        "elbowL": 0.6,
+        "shoulderR": -2.449320014335039,
+        "elbowR": 0.38413232481120047,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.015859682750529448,
+        "weaponGlow": 1,
+        "eyeBlink": 1,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 120,
+      "timeSec": 2,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.0729951027886904,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.16715768844593237,
+        "torsoYaw": -0.04378060757068507,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.46751224302827404,
+        "elbowL": 0.6,
+        "shoulderR": -2.447697947322917,
+        "elbowR": 0.37081292828621,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.02913730121262341,
+        "weaponGlow": 1,
+        "eyeBlink": 1,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 121,
+      "timeSec": 2.0167,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.06980342858775303,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.16130628574421388,
+        "torsoYaw": -0.06372857132654355,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.47549142853061743,
+        "elbowL": 0.6,
+        "shoulderR": -2.4451175741165665,
+        "elbowR": 0.3575142857823043,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.04233205988379003,
+        "weaponGlow": 1,
+        "eyeBlink": 1,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 122,
+      "timeSec": 2.0333,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.06661900485236961,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.1554681755626776,
+        "torsoYaw": -0.08363121967268994,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.48345248786907596,
+        "elbowL": 0.6,
+        "shoulderR": -2.441580729539311,
+        "elbowR": 0.3442458535515401,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.055406435901604795,
+        "weaponGlow": 1,
+        "eyeBlink": 1,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 123,
+      "timeSec": 2.05,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.06344409592745279,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.1496475092003301,
+        "torsoYaw": -0.10347440045342013,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.49138976018136804,
+        "elbowL": 0.6,
+        "shoulderR": -2.437089928531589,
+        "elbowR": 0.3310170663643866,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.06832324874425309,
+        "weaponGlow": 1,
+        "eyeBlink": 1,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 124,
+      "timeSec": 2.0667,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.060280959392228425,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.14384842555241878,
+        "torsoYaw": -0.12324400379857237,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.499297601519429,
+        "elbowL": 0.6,
+        "shoulderR": -2.4316483643626574,
+        "elbowR": 0.3178373308009518,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.08104576596339456,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 125,
+      "timeSec": 2.0833,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.0571318444549417,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.1380750481673931,
+        "torsoYaw": -0.14292597215661437,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.5071703888626458,
+        "elbowL": 0.6,
+        "shoulderR": -2.4252599063599565,
+        "elbowR": 0.3047160185622571,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.09353780764280518,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 126,
+      "timeSec": 2.1,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.053998990353514395,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.13233148231477637,
+        "torsoYaw": -0.16250631029053506,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.515002524116214,
+        "elbowL": 0.6,
+        "shoulderR": -2.4179290971577534,
+        "elbowR": 0.29166245980631,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.1057638492857494,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 127,
+      "timeSec": 2.1167,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.05088462476329238,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.126621812066036,
+        "torsoYaw": -0.18197109522942267,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.5227884380917691,
+        "elbowL": 0.6,
+        "shoulderR": -2.409661149467012,
+        "elbowR": 0.27868593651371826,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.11768912283848727,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 128,
+      "timeSec": 2.1333,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.04779096221301486,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.12095009739052723,
+        "torsoYaw": -0.20130648616865715,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.5305225944674629,
+        "elbowL": 0.6,
+        "shoulderR": -2.4004619423687985,
+        "elbowR": 0.2657956758875619,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.12927971556263185,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 129,
+      "timeSec": 2.15,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.04472020251013189,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.11532037126857511,
+        "torsoYaw": -0.22049873431167571,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.5381994937246704,
+        "elbowL": 0.6,
+        "shoulderR": -2.3903380171338497,
+        "elbowR": 0.2530008437922162,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.14050266647518575,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 130,
+      "timeSec": 2.1667,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.04167452917658914,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.10973663682374675,
+        "torsoYaw": -0.23953419264631787,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.5458136770585271,
+        "elbowL": 0.6,
+        "shoulderR": -2.379296572571277,
+        "elbowR": 0.2403105382357881,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.15132606008200614,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 131,
+      "timeSec": 2.1833,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.038656107896193635,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.10420286447635498,
+        "torsoYaw": -0.2583993256487898,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.5533597302595159,
+        "elbowL": 0.6,
+        "shoulderR": -2.3673454599097172,
+        "elbowR": 0.2277337829008068,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.16171911713813644,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 132,
+      "timeSec": 2.2,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.0356670849746627,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.09872298912021495,
+        "torsoYaw": -0.2770807189083581,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.5608322875633432,
+        "elbowL": 0.6,
+        "shoulderR": -2.3544931772145663,
+        "elbowR": 0.21527952072776127,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.17165228217690978,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 133,
+      "timeSec": 2.2167,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.03270958581345323,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.09330090732466424,
+        "torsoYaw": -0.29556508866591735,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.568226035466367,
+        "elbowL": 0.6,
+        "shoulderR": -2.3407488633452713,
+        "elbowR": 0.20295660755605513,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.18109730755890438,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 134,
+      "timeSec": 2.2333,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.02978571339845388,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.0879404745638321,
+        "torsoYaw": -0.3138392912596633,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.5755357165038653,
+        "elbowL": 0.6,
+        "shoulderR": -2.3261222914569695,
+        "elbowR": 0.19077380582689116,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.19002733380174294,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 135,
+      "timeSec": 2.25,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.026897546804617707,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.08264550247513246,
+        "torsoYaw": -0.33189033247113936,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.5827561329884557,
+        "elbowL": 0.6,
+        "shoulderR": -2.3106238620510986,
+        "elbowR": 0.1787397783525738,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.1984169659622883,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 136,
+      "timeSec": 2.2667,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.02404713971759602,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.07741975614892602,
+        "torsoYaw": -0.3497053767650249,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.5898821507060099,
+        "elbowL": 0.6,
+        "shoulderR": -2.2942645955799277,
+        "elbowR": 0.16686308215665008,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.20624234585402895,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 137,
+      "timeSec": 2.2833,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.0212365189734266,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.07226695145128209,
+        "torsoYaw": -0.3672717564160838,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.5969087025664335,
+        "elbowL": 0.6,
+        "shoulderR": -2.2770561246102523,
+        "elbowR": 0.1551521623892775,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.2134812198942795,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 138,
+      "timeSec": 2.3,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.018467683117313186,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.06719075238174083,
+        "torsoYaw": -0.38457698051679257,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.603830792206717,
+        "elbowL": 0.6,
+        "shoulderR": -2.2590106855518375,
+        "elbowR": 0.1436153463221383,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.22011300238825848,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 139,
+      "timeSec": 2.3167,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.015742600982522073,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.062194768467957115,
+        "torsoYaw": -0.40160874385923706,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.6106434975436948,
+        "elbowL": 0.6,
+        "shoulderR": -2.240141109956487,
+        "elbowR": 0.13226083742717532,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.22611883407007463,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 140,
+      "timeSec": 2.3333,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.013063210290406108,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.05728255219907784,
+        "torsoYaw": -0.41835493568496185,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.6173419742739847,
+        "elbowL": 0.6,
+        "shoulderR": -2.2204608153939263,
+        "elbowR": 0.12109670954335877,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.23148163573414612,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 141,
+      "timeSec": 2.35,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.010431416272550828,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.05245759649967649,
+        "torsoYaw": -0.4348036482965574,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.623921459318623,
+        "elbowL": 0.6,
+        "shoulderR": -2.199983795910982,
+        "elbowR": 0.11013090113562846,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.23618615680453853,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 142,
+      "timeSec": 2.3667,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.00784909031602346,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.047723332246043,
+        "torsoYaw": -0.45094318552485335,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.6303772742099414,
+        "elbowL": 0.6,
+        "shoulderR": -2.17872461208085,
+        "elbowR": 0.09937120965009777,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.2402190187040989,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 143,
+      "timeSec": 2.3833,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.005318068632687856,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.043083125826594404,
+        "torsoYaw": -0.4667620710457009,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.6367048284182804,
+        "elbowL": 0.6,
+        "shoulderR": -2.1566983806495283,
+        "elbowR": 0.08882528596953276,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.24356875290005536,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 144,
+      "timeSec": 2.4,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.0028401509535309483,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.03854027674814006,
+        "torsoYaw": -0.4822490565404316,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.6428996226161726,
+        "elbowL": 0.6,
+        "shoulderR": -2.1339207637867608,
+        "elbowR": 0.0785006289730456,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.2462258335178902,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 145,
+      "timeSec": 2.4167,
+      "pose": {
+        "hipOffset": [
+          0,
+          -0.00041709924892997796,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.034098015289704936,
+        "torsoYaw": -0.4973931296941877,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.6489572518776751,
+        "elbowL": 0.6,
+        "shoulderR": -2.1104079579491586,
+        "elbowR": 0.06840458020387491,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.24818270443073828,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 146,
+      "timeSec": 2.4333,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.001949363524229808,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.02975950020557866,
+        "torsoYaw": -0.5121835220264364,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.6548734088105745,
+        "elbowL": 0.6,
+        "shoulderR": -2.086176682363403,
+        "elbowR": 0.05854431864904247,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.24943380074727595,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 147,
+      "timeSec": 2.45,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.004257554647696685,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.025527816479222726,
+        "torsoYaw": -0.5266097165481043,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.6606438866192417,
+        "elbowL": 0.6,
+        "shoulderR": -2.0612441671377186,
+        "elbowR": 0.048926855634597144,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.2499755646369938,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 148,
+      "timeSec": 2.4667,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.006505832838380757,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.02140597312963527,
+        "torsoYaw": -0.5406614552398797,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.6662645820959519,
+        "elbowL": 0.6,
+        "shoulderR": -2.035628141010082,
+        "elbowR": 0.039559029840080195,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.249806455447849,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 149,
+      "timeSec": 2.4833,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.008692599415419763,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.01739690107173042,
+        "torsoYaw": -0.5543287463463735,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.6717314985385494,
+        "elbowL": 0.6,
+        "shoulderR": -2.0093468187418635,
+        "elbowR": 0.030447502435751006,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.248926954087526,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 150,
+      "timeSec": 2.5,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.01081629943695138,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.013503451032255781,
+        "torsoYaw": -0.5676018714809461,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.6770407485923784,
+        "elbowL": 0.6,
+        "shoulderR": -1.9824188881658764,
+        "elbowR": 0.02159875234603592,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.24733956165584545,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 151,
+      "timeSec": 2.5167,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.012875422805784062,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.009728391522729196,
+        "torsoYaw": -0.5804713925361504,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.6821885570144601,
+        "elbowL": 0.6,
+        "shoulderR": -1.9548634968980378,
+        "elbowR": 0.013019071642566382,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.24504879233221089,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 152,
+      "timeSec": 2.5333,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.014868505343180391,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.0060744068708359356,
+        "torsoYaw": -0.5929281583948774,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.687171263357951,
+        "elbowL": 0.6,
+        "shoulderR": -1.9267002387220942,
+        "elbowR": 0.004714561070081724,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.24206116053831944,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 153,
+      "timeSec": 2.55,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.01679412982998886,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": 0.0025440953116870613,
+        "torsoYaw": -0.6049633114374304,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.6919853245749722,
+        "elbowL": 0.6,
+        "shoulderR": -1.8979491396570924,
+        "elbowR": -0.003308874291620245,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.23838516241264357,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 154,
+      "timeSec": 2.5667,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.01865092701438492,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": -0.0008600328597057061,
+        "torsoYaw": -0.6165682938399057,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.6966273175359623,
+        "elbowL": 0.6,
+        "shoulderR": -1.8686306437174922,
+        "elbowR": -0.011045529226603845,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.23403125164936422,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 155,
+      "timeSec": 2.5833,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.020437576585502992,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": -0.004135557073422169,
+        "torsoYaw": -0.6277348536593937,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.7010939414637575,
+        "elbowL": 0.6,
+        "shoulderR": -1.8387655983760691,
+        "elbowR": -0.018489902439595807,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.2290118097704672,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 156,
+      "timeSec": 2.6,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.022152808112268926,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": -0.007280148205826398,
+        "torsoYaw": -0.6384550507016808,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.7053820202806723,
+        "elbowL": 0.6,
+        "shoulderR": -1.8083752397399178,
+        "elbowR": -0.02563670046778721,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.223341110915538,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 157,
+      "timeSec": 2.6167,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.023795401946763925,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": -0.010291570235733877,
+        "torsoYaw": -0.6487212621672745,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.7094885048669098,
+        "elbowL": 0.6,
+        "shoulderR": -1.777481177450118,
+        "elbowR": -0.032480841444849695,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.21703528124938853,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 158,
+      "timeSec": 2.6333,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.025364190091478403,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": -0.013167681834377082,
+        "torsoYaw": -0.6585261880717401,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.713410475228696,
+        "elbowL": 0.6,
+        "shoulderR": -1.7461053793157881,
+        "elbowR": -0.03901745871449336,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.21011225310294895,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 159,
+      "timeSec": 2.65,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.02685805702983861,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": -0.015906437888037472,
+        "torsoYaw": -0.6678628564364913,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.7171451425745965,
+        "elbowL": 0.6,
+        "shoulderR": -1.7142701556934614,
+        "elbowR": -0.04524190429099423,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.2025917139778387,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 160,
+      "timeSec": 2.6667,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.02827594051941615,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": -0.01850589095226296,
+        "torsoYaw": -0.6767246282463509,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.7206898512985405,
+        "elbowL": 0.6,
+        "shoulderR": -1.6819981436228773,
+        "elbowR": -0.05114975216423395,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.1944950505596336,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 161,
+      "timeSec": 2.6833,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.029616832347255387,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": -0.020964192636634904,
+        "torsoYaw": -0.6851052021703462,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.7240420808681385,
+        "elbowL": 0.6,
+        "shoulderR": -1.6493122907304896,
+        "elbowR": -0.05673680144689747,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.18584528789904597,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 162,
+      "timeSec": 2.7,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.030879779046782546,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": -0.023279594919101337,
+        "torsoYaw": -0.6929986190423909,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.7271994476169563,
+        "elbowL": 0.6,
+        "shoulderR": -1.6162358389121185,
+        "elbowR": -0.061999079361593934,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.1766670239339695,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 163,
+      "timeSec": 2.7167,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.03206388257578596,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": -0.025450451388940948,
+        "torsoYaw": -0.7003992660986622,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.7301597064394649,
+        "elbowL": 0.6,
+        "shoulderR": -1.5827923078063644,
+        "elbowR": -0.06693284406577482,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.16698635953859603,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 164,
+      "timeSec": 2.7333,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.033168300954986366,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": -0.027475218417475022,
+        "torsoYaw": -0.7073018809686648,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.7329207523874659,
+        "elbowL": 0.6,
+        "shoulderR": -1.549005478070515,
+        "elbowR": -0.07153458731244317,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.1568308242985233,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 165,
+      "timeSec": 2.75,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.03419224886674192,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": -0.02935245625569355,
+        "torsoYaw": -0.7137015554171371,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.7354806221668548,
+        "elbowL": 0.6,
+        "shoulderR": -1.5148993744708663,
+        "elbowR": -0.07580103694475804,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.14622929822294042,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 166,
+      "timeSec": 2.7667,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.035134998213463484,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": -0.0310808300580164,
+        "torsoYaw": -0.7195937388341468,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.7378374955336587,
+        "elbowL": 0.6,
+        "shoulderR": -1.4804982487994494,
+        "elbowR": -0.07972915922276452,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.13521192961651413,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 167,
+      "timeSec": 2.7833,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.03599587863534205,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": -0.03265911083146045,
+        "torsoYaw": -0.7249742414708878,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.7399896965883551,
+        "elbowL": 0.6,
+        "shoulderR": -1.4458265626293376,
+        "elbowR": -0.08331616098059186,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.12381004934453754,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 168,
+      "timeSec": 2.8,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.036774277987020834,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": -0.034086176309538224,
+        "torsoYaw": -0.7298392374188802,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.7419356949675521,
+        "elbowL": 0.6,
+        "shoulderR": -1.4109089699207804,
+        "elbowR": -0.0865594916125868,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.11205608173514663,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 169,
+      "timeSec": 2.8167,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.037469642772872916,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": -0.03536101175026704,
+        "torsoYaw": -0.7341852673304557,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.7436741069321823,
+        "elbowL": 0.6,
+        "shoulderR": -1.3757702994905352,
+        "elbowR": -0.08945684488697048,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.0999834523719794,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 170,
+      "timeSec": 2.8333,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.0380814785405747,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": -0.036482710657720296,
+        "torsoYaw": -0.7380092408785919,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.7452036963514368,
+        "elbowL": 0.6,
+        "shoulderR": -1.34043553735687,
+        "elbowR": -0.09200616058572791,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.08762649303949618,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 171,
+      "timeSec": 2.85,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.03860935023269567,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": -0.03745047542660873,
+        "torsoYaw": -0.741308438954348,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.7465233755817392,
+        "elbowL": 0.6,
+        "shoulderR": -1.304929808972779,
+        "elbowR": -0.09420562596956528,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.07502034409127081,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 172,
+      "timeSec": 2.8667,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.03905288249605428,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": -0.03826361790943286,
+        "torsoYaw": -0.7440805156003393,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.7476322062401357,
+        "elbowL": 0.6,
+        "shoulderR": -1.2692783613600502,
+        "elbowR": -0.09605367706689283,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.06220085451889709,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 173,
+      "timeSec": 2.8833,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.039411759948619896,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": -0.03892155990580318,
+        "torsoYaw": -0.7463234996788743,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.7485293998715498,
+        "elbowL": 0.6,
+        "shoulderR": -1.2335065451568947,
+        "elbowR": -0.09754899978591625,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.049204480005693475,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 174,
+      "timeSec": 2.9,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.03968572740377119,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": -0.039423833573580536,
+        "torsoYaw": -0.74803579627357,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.749214318509428,
+        "elbowL": 0.6,
+        "shoulderR": -1.1976397965918937,
+        "elbowR": -0.09869053084904661,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.03606817925511432,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 175,
+      "timeSec": 2.9167,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.03987459005175138,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": -0.03977008176154423,
+        "torsoYaw": -0.7492161878234462,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.7496864751293785,
+        "elbowL": 0.6,
+        "shoulderR": -1.1617036193970838,
+        "elbowR": -0.09947745854896411,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.022829308888687325,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 176,
+      "timeSec": 2.9333,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.039978213598191537,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": -0.03996005826335117,
+        "torsoYaw": -0.7498638349886971,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.7499455339954788,
+        "elbowL": 0.6,
+        "shoulderR": -1.1257235666730496,
+        "elbowR": -0.09990922332579805,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": 0.009525517212365648,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 177,
+      "timeSec": 2.95,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.039996524359602936,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": -0.03999362799260539,
+        "torsoYaw": -0.7499782772475183,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.7499913108990073,
+        "elbowL": 0.6,
+        "shoulderR": -1.0897252227188992,
+        "elbowR": -0.09998551816501222,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.00380536284660838,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 178,
+      "timeSec": 2.9667,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.0399295093157713,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": -0.03987076707891407,
+        "torsoYaw": -0.7495594332235707,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.7498237732894283,
+        "elbowL": 0.6,
+        "shoulderR": -1.0537341848400708,
+        "elbowR": -0.09970628881571375,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.017125421327853413,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 179,
+      "timeSec": 2.9833,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.03977721611901498,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": -0.03959156288486082,
+        "torsoYaw": -0.7486076007438437,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.7494430402975375,
+        "elbowL": 0.6,
+        "shoulderR": -1.0177760451468756,
+        "elbowR": -0.09907173382922912,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.03039677904507045,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    },
+    {
+      "frame": 180,
+      "timeSec": 3,
+      "pose": {
+        "hipOffset": [
+          0,
+          0.03953975306030086,
+          0
+        ],
+        "squashScale": [
+          1,
+          1,
+          1
+        ],
+        "torsoPitch": -0.03915621394388494,
+        "torsoYaw": -0.7471234566268804,
+        "torsoRoll": 0,
+        "headPitch": 0,
+        "headYaw": 0,
+        "shoulderL": 0.7488493826507522,
+        "elbowL": 0.6,
+        "shoulderR": -0.9818763723567463,
+        "elbowR": -0.09808230441792026,
+        "hipL": 0.35,
+        "kneeL": 0.4,
+        "ankleL": 0,
+        "hipR": -0.35,
+        "kneeR": 0.25,
+        "ankleR": 0,
+        "capeWave": -0.04358169530574535,
+        "weaponGlow": 1,
+        "eyeBlink": 0,
+        "mouthOpen": 0
+      }
+    }
+  ]
+}

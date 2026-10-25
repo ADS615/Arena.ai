@@ -1,0 +1,22 @@
+{
+  "slug": "astral-odyssey-film",
+  "title": "Chronicles of the Astral Core (20-Min 2D/3D Animated Film)",
+  "description": "Full 20-minute (5-Act) consistent 2D & 3D animated film and Blender NLA Animation Studio! Switch seamlessly between 3D Blender PBR Mode and 2D Anime Cel-Shaded Mode with skeletal IK, lip-sync, camera cuts, and F-Curve graph inspector.",
+  "author": "Arena.ai (2D/3D Animation Studio)",
+  "version": "1.0.0",
+  "type": "hybrid",
+  "genre": "2D/3D Animated Film",
+  "tags": ["3d", "2d", "animation", "blender", "film", "cinema"],
+  "entry": "index.html",
+  "thumbnail": "thumbnail.svg",
+  "controls": "Space to Play/Pause, Drag 20:00 Timeline Scrubber, Click 2D/3D Mode Toggle, B to toggle Bone Rig + F-Curve Graph",
+  "downloads": [
+    {
+      "label": "Baked 60fps Skeletal Animation Clip (sword-combo.json)",
+      "file": "sword-combo.json",
+      "platform": "Blender / WebGL / JSON Skeletal Clip (60fps)"
+    }
+  ],
+  "featured": true,
+  "createdAt": "2026-10-24"
+}

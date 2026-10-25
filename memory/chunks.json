@@ -1,0 +1,4024 @@
+{
+  "updatedAt": "2026-10-25T00:03:30.503Z",
+  "totalChunks": 574,
+  "chunks": [
+    {
+      "file": "AGENTS.md",
+      "name": "AGENTS.md — Master Prompt, Chunk Memory & Game Hub Protocol",
+      "kind": "md-h1",
+      "startLine": 1,
+      "endLine": 6
+    },
+    {
+      "file": "AGENTS.md",
+      "name": "0. Master Operating Rules (Read First!)",
+      "kind": "md-h2",
+      "startLine": 7,
+      "endLine": 43
+    },
+    {
+      "file": "AGENTS.md",
+      "name": "1. Where Games Live (`games/<slug>/`)",
+      "kind": "md-h2",
+      "startLine": 44,
+      "endLine": 55
+    },
+    {
+      "file": "AGENTS.md",
+      "name": "2. Quick Workflow to Create & Upload a New Game",
+      "kind": "md-h2",
+      "startLine": 56,
+      "endLine": 57
+    },
+    {
+      "file": "AGENTS.md",
+      "name": "Option A: Scaffold with the CLI + Build Your Game",
+      "kind": "md-h3",
+      "startLine": 58,
+      "endLine": 59
+    },
+    {
+      "file": "AGENTS.md",
+      "name": "1. Scaffold a new browser game (or --type download / --type hybrid)",
+      "kind": "md-h1",
+      "startLine": 60,
+      "endLine": 62
+    },
+    {
+      "file": "AGENTS.md",
+      "name": "2. Write or replace games/my-game/index.html (and any assets or downloadable files)",
+      "kind": "md-h1",
+      "startLine": 63,
+      "endLine": 64
+    },
+    {
+      "file": "AGENTS.md",
+      "name": "3. Sync the catalog and validate",
+      "kind": "md-h1",
+      "startLine": 65,
+      "endLine": 69
+    },
+    {
+      "file": "AGENTS.md",
+      "name": "Option B: Create `games/<slug>/` Directly",
+      "kind": "md-h3",
+      "startLine": 70,
+      "endLine": 81
+    },
+    {
+      "file": "AGENTS.md",
+      "name": "3. `game.json` Manifest Schema",
+      "kind": "md-h2",
+      "startLine": 82,
+      "endLine": 108
+    },
+    {
+      "file": "AGENTS.md",
+      "name": "Supported `type` values:",
+      "kind": "md-h3",
+      "startLine": 109,
+      "endLine": 115
+    },
+    {
+      "file": "AGENTS.md",
+      "name": "4. Running the Live Preview & Upload Server",
+      "kind": "md-h2",
+      "startLine": 116,
+      "endLine": 124
+    },
+    {
+      "file": "AGENTS.md",
+      "name": "5. Best Practices for Games Built by Arena Agents",
+      "kind": "md-h2",
+      "startLine": 125,
+      "endLine": 131
+    },
+    {
+      "file": "assets/aaa-4k-engine.js",
+      "name": "RESOLUTION_PRESETS",
+      "kind": "state",
+      "startLine": 13,
+      "endLine": 66
+    },
+    {
+      "file": "assets/aaa-4k-engine.js",
+      "name": "acesFilmicToneMap",
+      "kind": "function",
+      "startLine": 67,
+      "endLine": 67
+    },
+    {
+      "file": "assets/aaa-4k-engine.js",
+      "name": "mapChannel",
+      "kind": "const-fn",
+      "startLine": 68,
+      "endLine": 75
+    },
+    {
+      "file": "assets/aaa-4k-engine.js",
+      "name": "TIME_OF_DAY_PRESETS",
+      "kind": "state",
+      "startLine": 76,
+      "endLine": 105
+    },
+    {
+      "file": "assets/aaa-4k-engine.js",
+      "name": "renderAtmosphericSky4K",
+      "kind": "function",
+      "startLine": 106,
+      "endLine": 168
+    },
+    {
+      "file": "assets/aaa-4k-engine.js",
+      "name": "b",
+      "kind": "state",
+      "startLine": 169,
+      "endLine": 251
+    },
+    {
+      "file": "assets/ai-animation-studio.js",
+      "name": "AnimCurves",
+      "kind": "state",
+      "startLine": 12,
+      "endLine": 33
+    },
+    {
+      "file": "assets/ai-animation-studio.js",
+      "name": "evaluateFCurve",
+      "kind": "function",
+      "startLine": 34,
+      "endLine": 57
+    },
+    {
+      "file": "assets/ai-animation-studio.js",
+      "name": "createCharacterBible",
+      "kind": "function",
+      "startLine": 58,
+      "endLine": 85
+    },
+    {
+      "file": "assets/ai-animation-studio.js",
+      "name": "evaluateCharacterPose",
+      "kind": "function",
+      "startLine": 86,
+      "endLine": 92
+    },
+    {
+      "file": "assets/ai-animation-studio.js",
+      "name": "pose",
+      "kind": "state",
+      "startLine": 93,
+      "endLine": 183
+    },
+    {
+      "file": "assets/ai-animation-studio.js",
+      "name": "renderRiggedCharacter",
+      "kind": "function",
+      "startLine": 238,
+      "endLine": 256
+    },
+    {
+      "file": "assets/ai-animation-studio.js",
+      "name": "drawLimbSegment",
+      "kind": "function",
+      "startLine": 257,
+      "endLine": 347
+    },
+    {
+      "file": "assets/ai-animation-studio.js",
+      "name": "ASTRAL_ODYSSEY_20MIN_FILM",
+      "kind": "state",
+      "startLine": 486,
+      "endLine": 575
+    },
+    {
+      "file": "assets/ai-animation-studio.js",
+      "name": "sampleFilmStateAtTime",
+      "kind": "function",
+      "startLine": 576,
+      "endLine": 602
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "vec3",
+      "kind": "function",
+      "startLine": 11,
+      "endLine": 14
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "add3",
+      "kind": "function",
+      "startLine": 15,
+      "endLine": 18
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "sub3",
+      "kind": "function",
+      "startLine": 19,
+      "endLine": 22
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "scale3",
+      "kind": "function",
+      "startLine": 23,
+      "endLine": 26
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "dot3",
+      "kind": "function",
+      "startLine": 27,
+      "endLine": 30
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "cross3",
+      "kind": "function",
+      "startLine": 31,
+      "endLine": 38
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "len3",
+      "kind": "function",
+      "startLine": 39,
+      "endLine": 42
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "norm3",
+      "kind": "function",
+      "startLine": 43,
+      "endLine": 47
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "hashNoise3D",
+      "kind": "function",
+      "startLine": 48,
+      "endLine": 52
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "fbmNoise3D",
+      "kind": "function",
+      "startLine": 53,
+      "endLine": 67
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "createEmptyMesh",
+      "kind": "function",
+      "startLine": 68,
+      "endLine": 84
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "cloneMesh",
+      "kind": "function",
+      "startLine": 85,
+      "endLine": 101
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "computeVertexNormals",
+      "kind": "function",
+      "startLine": 102,
+      "endLine": 122
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "createPrincipledBSDF",
+      "kind": "function",
+      "startLine": 123,
+      "endLine": 142
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "createCube",
+      "kind": "function",
+      "startLine": 143,
+      "endLine": 164
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "createSphere",
+      "kind": "function",
+      "startLine": 165,
+      "endLine": 195
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "createCylinder",
+      "kind": "function",
+      "startLine": 196,
+      "endLine": 243
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "createCone",
+      "kind": "function",
+      "startLine": 244,
+      "endLine": 247
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "createTorus",
+      "kind": "function",
+      "startLine": 248,
+      "endLine": 283
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "createLatheMesh",
+      "kind": "function",
+      "startLine": 284,
+      "endLine": 319
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "transformMesh",
+      "kind": "function",
+      "startLine": 320,
+      "endLine": 351
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "mergeMeshes",
+      "kind": "function",
+      "startLine": 352,
+      "endLine": 366
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "extrudeFaces",
+      "kind": "function",
+      "startLine": 367,
+      "endLine": 403
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "subdivideMesh",
+      "kind": "function",
+      "startLine": 404,
+      "endLine": 410
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "getMidpoint",
+      "kind": "function",
+      "startLine": 411,
+      "endLine": 461
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "modifierMirror",
+      "kind": "function",
+      "startLine": 462,
+      "endLine": 481
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "modifierArray",
+      "kind": "function",
+      "startLine": 482,
+      "endLine": 500
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "modifierDeform",
+      "kind": "function",
+      "startLine": 501,
+      "endLine": 521
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "modifierDisplaceNoise",
+      "kind": "function",
+      "startLine": 522,
+      "endLine": 531
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "modifierSolidify",
+      "kind": "function",
+      "startLine": 532,
+      "endLine": 551
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "sculptBrush",
+      "kind": "function",
+      "startLine": 552,
+      "endLine": 588
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "createPresetModel",
+      "kind": "function",
+      "startLine": 589,
+      "endLine": 679
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "createIcoSphere",
+      "kind": "function",
+      "startLine": 776,
+      "endLine": 797
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "createCapsule",
+      "kind": "function",
+      "startLine": 798,
+      "endLine": 806
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "createPlaneGrid",
+      "kind": "function",
+      "startLine": 807,
+      "endLine": 830
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "createRingMesh",
+      "kind": "function",
+      "startLine": 831,
+      "endLine": 847
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "createTubeSpline",
+      "kind": "function",
+      "startLine": 848,
+      "endLine": 880
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "createSuzanneHead",
+      "kind": "function",
+      "startLine": 881,
+      "endLine": 909
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "createPS5ConsoleMesh",
+      "kind": "function",
+      "startLine": 910,
+      "endLine": 946
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "createDualSenseMesh",
+      "kind": "function",
+      "startLine": 947,
+      "endLine": 979
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "insetFaces",
+      "kind": "function",
+      "startLine": 980,
+      "endLine": 983
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "bevelMesh",
+      "kind": "function",
+      "startLine": 984,
+      "endLine": 987
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "mergeVerticesByDistance",
+      "kind": "function",
+      "startLine": 988,
+      "endLine": 1013
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "decimateMesh",
+      "kind": "function",
+      "startLine": 1014,
+      "endLine": 1019
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "computeBoundingBox",
+      "kind": "function",
+      "startLine": 1020,
+      "endLine": 1035
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "centerPivotToBounds",
+      "kind": "function",
+      "startLine": 1036,
+      "endLine": 1040
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "modifierWave",
+      "kind": "function",
+      "startLine": 1041,
+      "endLine": 1049
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "modifierShrinkwrap",
+      "kind": "function",
+      "startLine": 1050,
+      "endLine": 1057
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "sculptSmoothBrush",
+      "kind": "function",
+      "startLine": 1058,
+      "endLine": 1077
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "createArmatureRig",
+      "kind": "function",
+      "startLine": 1078,
+      "endLine": 1090
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "solveTwoBoneIK",
+      "kind": "function",
+      "startLine": 1091,
+      "endLine": 1104
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "sampleProceduralAnimation",
+      "kind": "function",
+      "startLine": 1105,
+      "endLine": 1117
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "exportToOBJ",
+      "kind": "function",
+      "startLine": 1118,
+      "endLine": 1144
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "exportToGLTF",
+      "kind": "function",
+      "startLine": 1145,
+      "endLine": 1146
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "gltf",
+      "kind": "state",
+      "startLine": 1147,
+      "endLine": 1181
+    },
+    {
+      "file": "assets/ai-blender-engine.js",
+      "name": "exportToJSModule",
+      "kind": "function",
+      "startLine": 1182,
+      "endLine": 1189
+    },
+    {
+      "file": "assets/app.js",
+      "name": "state",
+      "kind": "state",
+      "startLine": 1,
+      "endLine": 58
+    },
+    {
+      "file": "assets/app.js",
+      "name": "slugify",
+      "kind": "function",
+      "startLine": 59,
+      "endLine": 66
+    },
+    {
+      "file": "assets/app.js",
+      "name": "checkServerStatus",
+      "kind": "function",
+      "startLine": 67,
+      "endLine": 84
+    },
+    {
+      "file": "assets/app.js",
+      "name": "loadGames",
+      "kind": "function",
+      "startLine": 85,
+      "endLine": 98
+    },
+    {
+      "file": "assets/app.js",
+      "name": "updateStats",
+      "kind": "function",
+      "startLine": 99,
+      "endLine": 110
+    },
+    {
+      "file": "assets/app.js",
+      "name": "renderGenrePills",
+      "kind": "function",
+      "startLine": 111,
+      "endLine": 123
+    },
+    {
+      "file": "assets/app.js",
+      "name": "btn.on(click)",
+      "kind": "listener",
+      "startLine": 124,
+      "endLine": 131
+    },
+    {
+      "file": "assets/app.js",
+      "name": "getFilteredGames",
+      "kind": "function",
+      "startLine": 132,
+      "endLine": 171
+    },
+    {
+      "file": "assets/app.js",
+      "name": "badgeForType",
+      "kind": "function",
+      "startLine": 172,
+      "endLine": 177
+    },
+    {
+      "file": "assets/app.js",
+      "name": "renderGames",
+      "kind": "function",
+      "startLine": 178,
+      "endLine": 227
+    },
+    {
+      "file": "assets/app.js",
+      "name": "el.on(click)",
+      "kind": "listener",
+      "startLine": 228,
+      "endLine": 237
+    },
+    {
+      "file": "assets/app.js",
+      "name": "openPlayer",
+      "kind": "function",
+      "startLine": 238,
+      "endLine": 265
+    },
+    {
+      "file": "assets/app.js",
+      "name": "closePlayer",
+      "kind": "function",
+      "startLine": 266,
+      "endLine": 271
+    },
+    {
+      "file": "assets/app.js",
+      "name": "reloadGameBtn.on(click)",
+      "kind": "listener",
+      "startLine": 272,
+      "endLine": 278
+    },
+    {
+      "file": "assets/app.js",
+      "name": "fullscreenGameBtn.on(click)",
+      "kind": "listener",
+      "startLine": 279,
+      "endLine": 284
+    },
+    {
+      "file": "assets/app.js",
+      "name": "closePlayerBtn.on(click)",
+      "kind": "listener",
+      "startLine": 285,
+      "endLine": 285
+    },
+    {
+      "file": "assets/app.js",
+      "name": "playerModal.on(click)",
+      "kind": "listener",
+      "startLine": 286,
+      "endLine": 291
+    },
+    {
+      "file": "assets/app.js",
+      "name": "tab.on(click)",
+      "kind": "listener",
+      "startLine": 292,
+      "endLine": 299
+    },
+    {
+      "file": "assets/app.js",
+      "name": "searchInput.on(input)",
+      "kind": "listener",
+      "startLine": 300,
+      "endLine": 305
+    },
+    {
+      "file": "assets/app.js",
+      "name": "heroPlayFeaturedBtn.on(click)",
+      "kind": "listener",
+      "startLine": 306,
+      "endLine": 313
+    },
+    {
+      "file": "assets/app.js",
+      "name": "openBlenderStudio",
+      "kind": "function",
+      "startLine": 314,
+      "endLine": 329
+    },
+    {
+      "file": "assets/app.js",
+      "name": "openFilmStudio",
+      "kind": "function",
+      "startLine": 330,
+      "endLine": 349
+    },
+    {
+      "file": "assets/app.js",
+      "name": "openModalWithTab",
+      "kind": "function",
+      "startLine": 350,
+      "endLine": 354
+    },
+    {
+      "file": "assets/app.js",
+      "name": "openUploadBtn.on(click)",
+      "kind": "listener",
+      "startLine": 355,
+      "endLine": 355
+    },
+    {
+      "file": "assets/app.js",
+      "name": "openAgentGuideBtn.on(click)",
+      "kind": "listener",
+      "startLine": 356,
+      "endLine": 356
+    },
+    {
+      "file": "assets/app.js",
+      "name": "heroPromptBtn.on(click)",
+      "kind": "listener",
+      "startLine": 357,
+      "endLine": 358
+    },
+    {
+      "file": "assets/app.js",
+      "name": "closeUploadModal",
+      "kind": "function",
+      "startLine": 359,
+      "endLine": 363
+    },
+    {
+      "file": "assets/app.js",
+      "name": "closeUploadBtn.on(click)",
+      "kind": "listener",
+      "startLine": 364,
+      "endLine": 364
+    },
+    {
+      "file": "assets/app.js",
+      "name": "cancelUploadBtn.on(click)",
+      "kind": "listener",
+      "startLine": 365,
+      "endLine": 365
+    },
+    {
+      "file": "assets/app.js",
+      "name": "uploadModal.on(click)",
+      "kind": "listener",
+      "startLine": 366,
+      "endLine": 371
+    },
+    {
+      "file": "assets/app.js",
+      "name": "tabBtn.on(click)",
+      "kind": "listener",
+      "startLine": 372,
+      "endLine": 376
+    },
+    {
+      "file": "assets/app.js",
+      "name": "switchDialogTab",
+      "kind": "function",
+      "startLine": 377,
+      "endLine": 386
+    },
+    {
+      "file": "assets/app.js",
+      "name": "runLiveRepoSearch",
+      "kind": "function",
+      "startLine": 387,
+      "endLine": 424
+    },
+    {
+      "file": "assets/app.js",
+      "name": "gameTitleInput.on(input)",
+      "kind": "listener",
+      "startLine": 425,
+      "endLine": 429
+    },
+    {
+      "file": "assets/app.js",
+      "name": "gameSlugInput.on(input)",
+      "kind": "listener",
+      "startLine": 430,
+      "endLine": 434
+    },
+    {
+      "file": "assets/app.js",
+      "name": "gameFilesInput.on(change)",
+      "kind": "listener",
+      "startLine": 435,
+      "endLine": 443
+    },
+    {
+      "file": "assets/app.js",
+      "name": "readFileForUpload",
+      "kind": "function",
+      "startLine": 444,
+      "endLine": 476
+    },
+    {
+      "file": "assets/app.js",
+      "name": "uploadForm.on(submit)",
+      "kind": "listener",
+      "startLine": 477,
+      "endLine": 528
+    },
+    {
+      "file": "assets/app.js",
+      "name": "manifest",
+      "kind": "state",
+      "startLine": 529,
+      "endLine": 559
+    },
+    {
+      "file": "assets/app.js",
+      "name": "updateArenaPrompt",
+      "kind": "function",
+      "startLine": 560,
+      "endLine": 571
+    },
+    {
+      "file": "assets/app.js",
+      "name": "promptIdeaInput.on(input)",
+      "kind": "listener",
+      "startLine": 572,
+      "endLine": 574
+    },
+    {
+      "file": "assets/app.js",
+      "name": "copyPromptBtn.on(click)",
+      "kind": "listener",
+      "startLine": 575,
+      "endLine": 588
+    },
+    {
+      "file": "assets/arena-ui-kit.js",
+      "name": "Easing",
+      "kind": "state",
+      "startLine": 88,
+      "endLine": 170
+    },
+    {
+      "file": "assets/arena-ui-kit.js",
+      "name": "window.on(keydown)",
+      "kind": "listener",
+      "startLine": 171,
+      "endLine": 174
+    },
+    {
+      "file": "assets/arena-ui-kit.js",
+      "name": "window.on(keyup)",
+      "kind": "listener",
+      "startLine": 175,
+      "endLine": 255
+    },
+    {
+      "file": "assets/arena-ui-kit.js",
+      "name": "findGridPathAStar",
+      "kind": "function",
+      "startLine": 256,
+      "endLine": 339
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ":root",
+      "kind": "css-rule",
+      "startLine": 1,
+      "endLine": 23
+    },
+    {
+      "file": "assets/styles.css",
+      "name": "body",
+      "kind": "css-rule",
+      "startLine": 24,
+      "endLine": 36
+    },
+    {
+      "file": "assets/styles.css",
+      "name": "code",
+      "kind": "css-rule",
+      "startLine": 37,
+      "endLine": 46
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".container",
+      "kind": "css-rule",
+      "startLine": 47,
+      "endLine": 53
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".hidden",
+      "kind": "css-rule",
+      "startLine": 54,
+      "endLine": 57
+    },
+    {
+      "file": "assets/styles.css",
+      "name": "Section: Navbar",
+      "kind": "css-section",
+      "startLine": 58,
+      "endLine": 58
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".navbar",
+      "kind": "css-rule",
+      "startLine": 59,
+      "endLine": 67
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".nav-inner",
+      "kind": "css-rule",
+      "startLine": 68,
+      "endLine": 78
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".brand",
+      "kind": "css-rule",
+      "startLine": 79,
+      "endLine": 86
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".brand-logo",
+      "kind": "css-rule",
+      "startLine": 87,
+      "endLine": 98
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".brand-title",
+      "kind": "css-rule",
+      "startLine": 99,
+      "endLine": 104
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".brand-badge",
+      "kind": "css-rule",
+      "startLine": 105,
+      "endLine": 115
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".nav-search",
+      "kind": "css-rule",
+      "startLine": 116,
+      "endLine": 121
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".nav-search input",
+      "kind": "css-rule",
+      "startLine": 122,
+      "endLine": 133
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".nav-search input:focus",
+      "kind": "css-rule",
+      "startLine": 134,
+      "endLine": 137
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".nav-actions",
+      "kind": "css-rule",
+      "startLine": 138,
+      "endLine": 143
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".status-pill",
+      "kind": "css-rule",
+      "startLine": 144,
+      "endLine": 153
+    },
+    {
+      "file": "assets/styles.css",
+      "name": "Section: Buttons",
+      "kind": "css-section",
+      "startLine": 154,
+      "endLine": 154
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".btn",
+      "kind": "css-rule",
+      "startLine": 155,
+      "endLine": 170
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".btn:hover",
+      "kind": "css-rule",
+      "startLine": 171,
+      "endLine": 174
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".btn-lg",
+      "kind": "css-rule",
+      "startLine": 175,
+      "endLine": 179
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".btn-sm",
+      "kind": "css-rule",
+      "startLine": 180,
+      "endLine": 185
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".btn-primary",
+      "kind": "css-rule",
+      "startLine": 186,
+      "endLine": 191
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".btn-secondary",
+      "kind": "css-rule",
+      "startLine": 192,
+      "endLine": 197
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".btn-secondary:hover",
+      "kind": "css-rule",
+      "startLine": 198,
+      "endLine": 201
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".btn-danger",
+      "kind": "css-rule",
+      "startLine": 202,
+      "endLine": 207
+    },
+    {
+      "file": "assets/styles.css",
+      "name": "Section: Main & Hero",
+      "kind": "css-section",
+      "startLine": 208,
+      "endLine": 208
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".main-content",
+      "kind": "css-rule",
+      "startLine": 209,
+      "endLine": 214
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".hero",
+      "kind": "css-rule",
+      "startLine": 215,
+      "endLine": 228
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".hero-copy",
+      "kind": "css-rule",
+      "startLine": 229,
+      "endLine": 233
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".eyebrow",
+      "kind": "css-rule",
+      "startLine": 234,
+      "endLine": 241
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".hero h1",
+      "kind": "css-rule",
+      "startLine": 242,
+      "endLine": 248
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".hero p",
+      "kind": "css-rule",
+      "startLine": 249,
+      "endLine": 255
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".hero-buttons",
+      "kind": "css-rule",
+      "startLine": 256,
+      "endLine": 261
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".hero-stats",
+      "kind": "css-rule",
+      "startLine": 262,
+      "endLine": 267
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".stat-card",
+      "kind": "css-rule",
+      "startLine": 268,
+      "endLine": 276
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".stat-value",
+      "kind": "css-rule",
+      "startLine": 277,
+      "endLine": 284
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".stat-label",
+      "kind": "css-rule",
+      "startLine": 285,
+      "endLine": 290
+    },
+    {
+      "file": "assets/styles.css",
+      "name": "Section: Dedicated Games & Recreated Apps Vault",
+      "kind": "css-section",
+      "startLine": 291,
+      "endLine": 291
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".vault-section",
+      "kind": "css-rule",
+      "startLine": 292,
+      "endLine": 298
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".vault-header",
+      "kind": "css-rule",
+      "startLine": 299,
+      "endLine": 309
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".vault-header h2",
+      "kind": "css-rule",
+      "startLine": 310,
+      "endLine": 315
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".subagent-summary-pills",
+      "kind": "css-rule",
+      "startLine": 316,
+      "endLine": 321
+    },
+    {
+      "file": "assets/styles.css",
+      "name": "Section: Filters Bar",
+      "kind": "css-section",
+      "startLine": 322,
+      "endLine": 322
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".filters-bar",
+      "kind": "css-rule",
+      "startLine": 323,
+      "endLine": 331
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".type-tabs",
+      "kind": "css-rule",
+      "startLine": 332,
+      "endLine": 340
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".tab",
+      "kind": "css-rule",
+      "startLine": 341,
+      "endLine": 351
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".tab.active",
+      "kind": "css-rule",
+      "startLine": 352,
+      "endLine": 357
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".genre-pills",
+      "kind": "css-rule",
+      "startLine": 358,
+      "endLine": 363
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".genre-pill",
+      "kind": "css-rule",
+      "startLine": 364,
+      "endLine": 374
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".genre-pill.active",
+      "kind": "css-rule",
+      "startLine": 375,
+      "endLine": 380
+    },
+    {
+      "file": "assets/styles.css",
+      "name": "Section: Games Grid",
+      "kind": "css-section",
+      "startLine": 381,
+      "endLine": 381
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".games-grid",
+      "kind": "css-rule",
+      "startLine": 382,
+      "endLine": 387
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".game-card",
+      "kind": "css-rule",
+      "startLine": 388,
+      "endLine": 397
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".game-card:hover",
+      "kind": "css-rule",
+      "startLine": 398,
+      "endLine": 403
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".card-thumb-wrap",
+      "kind": "css-rule",
+      "startLine": 404,
+      "endLine": 411
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".card-thumb-wrap img",
+      "kind": "css-rule",
+      "startLine": 412,
+      "endLine": 419
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".game-card:hover .card-thumb-wrap img",
+      "kind": "css-rule",
+      "startLine": 420,
+      "endLine": 423
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".card-badges",
+      "kind": "css-rule",
+      "startLine": 424,
+      "endLine": 433
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".badge",
+      "kind": "css-rule",
+      "startLine": 434,
+      "endLine": 445
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".badge-web",
+      "kind": "css-rule",
+      "startLine": 446,
+      "endLine": 450
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".badge-download",
+      "kind": "css-rule",
+      "startLine": 451,
+      "endLine": 455
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".badge-hybrid",
+      "kind": "css-rule",
+      "startLine": 456,
+      "endLine": 460
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".card-body",
+      "kind": "css-rule",
+      "startLine": 461,
+      "endLine": 467
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".card-title",
+      "kind": "css-rule",
+      "startLine": 468,
+      "endLine": 473
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".card-desc",
+      "kind": "css-rule",
+      "startLine": 474,
+      "endLine": 480
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".card-meta",
+      "kind": "css-rule",
+      "startLine": 481,
+      "endLine": 489
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".card-actions",
+      "kind": "css-rule",
+      "startLine": 490,
+      "endLine": 495
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".card-actions .btn",
+      "kind": "css-rule",
+      "startLine": 496,
+      "endLine": 499
+    },
+    {
+      "file": "assets/styles.css",
+      "name": "Section: Empty State",
+      "kind": "css-section",
+      "startLine": 500,
+      "endLine": 500
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".empty-state",
+      "kind": "css-rule",
+      "startLine": 501,
+      "endLine": 509
+    },
+    {
+      "file": "assets/styles.css",
+      "name": "Section: Modals",
+      "kind": "css-section",
+      "startLine": 510,
+      "endLine": 510
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".modal-backdrop",
+      "kind": "css-rule",
+      "startLine": 511,
+      "endLine": 522
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".player-modal",
+      "kind": "css-rule",
+      "startLine": 523,
+      "endLine": 535
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".player-header",
+      "kind": "css-rule",
+      "startLine": 536,
+      "endLine": 546
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".player-title-wrap",
+      "kind": "css-rule",
+      "startLine": 547,
+      "endLine": 552
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".player-title-wrap h2",
+      "kind": "css-rule",
+      "startLine": 553,
+      "endLine": 557
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".player-actions",
+      "kind": "css-rule",
+      "startLine": 558,
+      "endLine": 563
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".player-viewport",
+      "kind": "css-rule",
+      "startLine": 564,
+      "endLine": 570
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".player-viewport iframe",
+      "kind": "css-rule",
+      "startLine": 571,
+      "endLine": 577
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".player-footer",
+      "kind": "css-rule",
+      "startLine": 578,
+      "endLine": 588
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".player-meta p",
+      "kind": "css-rule",
+      "startLine": 589,
+      "endLine": 593
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".player-downloads",
+      "kind": "css-rule",
+      "startLine": 594,
+      "endLine": 599
+    },
+    {
+      "file": "assets/styles.css",
+      "name": "Section: Upload / Dialog Modal",
+      "kind": "css-section",
+      "startLine": 600,
+      "endLine": 600
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".dialog-modal",
+      "kind": "css-rule",
+      "startLine": 601,
+      "endLine": 611
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".dialog-header",
+      "kind": "css-rule",
+      "startLine": 612,
+      "endLine": 619
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".dialog-header h2",
+      "kind": "css-rule",
+      "startLine": 620,
+      "endLine": 624
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".icon-close",
+      "kind": "css-rule",
+      "startLine": 625,
+      "endLine": 632
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".dialog-tabs",
+      "kind": "css-rule",
+      "startLine": 633,
+      "endLine": 638
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".dialog-tab",
+      "kind": "css-rule",
+      "startLine": 639,
+      "endLine": 650
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".dialog-tab.active",
+      "kind": "css-rule",
+      "startLine": 651,
+      "endLine": 656
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".dialog-body",
+      "kind": "css-rule",
+      "startLine": 657,
+      "endLine": 660
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".form-row",
+      "kind": "css-rule",
+      "startLine": 661,
+      "endLine": 672
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".form-group",
+      "kind": "css-rule",
+      "startLine": 673,
+      "endLine": 676
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".form-group label",
+      "kind": "css-rule",
+      "startLine": 677,
+      "endLine": 686
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".form-group textarea",
+      "kind": "css-rule",
+      "startLine": 687,
+      "endLine": 700
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".form-group textarea:focus",
+      "kind": "css-rule",
+      "startLine": 701,
+      "endLine": 704
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".dropzone",
+      "kind": "css-rule",
+      "startLine": 705,
+      "endLine": 714
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".dropzone input[type='file']",
+      "kind": "css-rule",
+      "startLine": 715,
+      "endLine": 721
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".dropzone-text",
+      "kind": "css-rule",
+      "startLine": 722,
+      "endLine": 729
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".dropzone-text strong",
+      "kind": "css-rule",
+      "startLine": 730,
+      "endLine": 733
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".selected-files",
+      "kind": "css-rule",
+      "startLine": 734,
+      "endLine": 739
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".form-status",
+      "kind": "css-rule",
+      "startLine": 740,
+      "endLine": 749
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".form-status.error",
+      "kind": "css-rule",
+      "startLine": 750,
+      "endLine": 755
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".dialog-footer",
+      "kind": "css-rule",
+      "startLine": 756,
+      "endLine": 762
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".helper-text",
+      "kind": "css-rule",
+      "startLine": 763,
+      "endLine": 768
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".code-box",
+      "kind": "css-rule",
+      "startLine": 769,
+      "endLine": 781
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".agent-cli-reference h4",
+      "kind": "css-rule",
+      "startLine": 782,
+      "endLine": 787
+    },
+    {
+      "file": "assets/styles.css",
+      "name": "Section: Footer",
+      "kind": "css-section",
+      "startLine": 788,
+      "endLine": 788
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".footer",
+      "kind": "css-rule",
+      "startLine": 789,
+      "endLine": 795
+    },
+    {
+      "file": "assets/styles.css",
+      "name": ".footer-inner",
+      "kind": "css-rule",
+      "startLine": 796,
+      "endLine": 802
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "<style> block",
+      "kind": "html-style",
+      "startLine": 7,
+      "endLine": 156
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "#presetBtns (div)",
+      "kind": "dom-section",
+      "startLine": 177,
+      "endLine": 212
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "#primBtns (div)",
+      "kind": "dom-section",
+      "startLine": 192,
+      "endLine": 227
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "#meshStatsHud (div)",
+      "kind": "dom-section",
+      "startLine": 208,
+      "endLine": 243
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "#modBtns (div)",
+      "kind": "dom-section",
+      "startLine": 217,
+      "endLine": 252
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "<script> block",
+      "kind": "html-script",
+      "startLine": 258,
+      "endLine": 516
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "updateHud",
+      "kind": "function",
+      "startLine": 295,
+      "endLine": 303
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "canvas.on(mousedown)",
+      "kind": "listener",
+      "startLine": 304,
+      "endLine": 308
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "window.on(mouseup)",
+      "kind": "listener",
+      "startLine": 309,
+      "endLine": 309
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "window.on(mousemove)",
+      "kind": "listener",
+      "startLine": 310,
+      "endLine": 316
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "canvas.on(wheel)",
+      "kind": "listener",
+      "startLine": 317,
+      "endLine": 323
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "btn.on(click)",
+      "kind": "listener",
+      "startLine": 324,
+      "endLine": 331
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "btn.on(click)",
+      "kind": "listener",
+      "startLine": 332,
+      "endLine": 346
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "btn.on(click)",
+      "kind": "listener",
+      "startLine": 347,
+      "endLine": 368
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "syncMaterialInputs",
+      "kind": "function",
+      "startLine": 369,
+      "endLine": 377
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "el.on(input)",
+      "kind": "listener",
+      "startLine": 378,
+      "endLine": 388
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "toggleSpinBtn.on(click)",
+      "kind": "listener",
+      "startLine": 389,
+      "endLine": 392
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "toggleWireBtn.on(click)",
+      "kind": "listener",
+      "startLine": 393,
+      "endLine": 397
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "downloadText",
+      "kind": "function",
+      "startLine": 398,
+      "endLine": 414
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "hexToRgb",
+      "kind": "function",
+      "startLine": 415,
+      "endLine": 420
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "project",
+      "kind": "function",
+      "startLine": 421,
+      "endLine": 435
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "renderLoop",
+      "kind": "function",
+      "startLine": 436,
+      "endLine": 515
+    },
+    {
+      "file": "CLAUDE.md",
+      "name": "CLAUDE.md — Arena.ai Agent Guide",
+      "kind": "md-h1",
+      "startLine": 1,
+      "endLine": 12
+    },
+    {
+      "file": "CLAUDE.md",
+      "name": "Quick Commands",
+      "kind": "md-h2",
+      "startLine": 13,
+      "endLine": 29
+    },
+    {
+      "file": "games/astra-3d-overdrive/game.json",
+      "name": "full-file",
+      "kind": "file",
+      "startLine": 1,
+      "endLine": 28
+    },
+    {
+      "file": "games/astra-3d-overdrive/index.html",
+      "name": "<style> block",
+      "kind": "html-style",
+      "startLine": 7,
+      "endLine": 116
+    },
+    {
+      "file": "games/astra-3d-overdrive/index.html",
+      "name": "#viewport (div)",
+      "kind": "dom-section",
+      "startLine": 119,
+      "endLine": 154
+    },
+    {
+      "file": "games/astra-3d-overdrive/index.html",
+      "name": "#overlay (div)",
+      "kind": "dom-section",
+      "startLine": 132,
+      "endLine": 167
+    },
+    {
+      "file": "games/astra-3d-overdrive/index.html",
+      "name": "<script> block",
+      "kind": "html-script",
+      "startLine": 140,
+      "endLine": 483
+    },
+    {
+      "file": "games/astra-3d-overdrive/index.html",
+      "name": "synth",
+      "kind": "function",
+      "startLine": 170,
+      "endLine": 186
+    },
+    {
+      "file": "games/astra-3d-overdrive/index.html",
+      "name": "keys",
+      "kind": "state",
+      "startLine": 187,
+      "endLine": 187
+    },
+    {
+      "file": "games/astra-3d-overdrive/index.html",
+      "name": "window.on(keydown)",
+      "kind": "listener",
+      "startLine": 188,
+      "endLine": 188
+    },
+    {
+      "file": "games/astra-3d-overdrive/index.html",
+      "name": "window.on(keyup)",
+      "kind": "listener",
+      "startLine": 189,
+      "endLine": 191
+    },
+    {
+      "file": "games/astra-3d-overdrive/index.html",
+      "name": "canvas.on(mousedown)",
+      "kind": "listener",
+      "startLine": 192,
+      "endLine": 192
+    },
+    {
+      "file": "games/astra-3d-overdrive/index.html",
+      "name": "window.on(mouseup)",
+      "kind": "listener",
+      "startLine": 193,
+      "endLine": 200
+    },
+    {
+      "file": "games/astra-3d-overdrive/index.html",
+      "name": "state",
+      "kind": "state",
+      "startLine": 201,
+      "endLine": 212
+    },
+    {
+      "file": "games/astra-3d-overdrive/index.html",
+      "name": "startGame",
+      "kind": "function",
+      "startLine": 213,
+      "endLine": 225
+    },
+    {
+      "file": "games/astra-3d-overdrive/index.html",
+      "name": "startBtn.on(click)",
+      "kind": "listener",
+      "startLine": 226,
+      "endLine": 227
+    },
+    {
+      "file": "games/astra-3d-overdrive/index.html",
+      "name": "project3D",
+      "kind": "function",
+      "startLine": 228,
+      "endLine": 234
+    },
+    {
+      "file": "games/astra-3d-overdrive/index.html",
+      "name": "drawMesh3D",
+      "kind": "function",
+      "startLine": 235,
+      "endLine": 290
+    },
+    {
+      "file": "games/astra-3d-overdrive/index.html",
+      "name": "loop",
+      "kind": "function",
+      "startLine": 291,
+      "endLine": 381
+    },
+    {
+      "file": "games/astra-3d-overdrive/thumbnail.svg",
+      "name": "full-file",
+      "kind": "file",
+      "startLine": 1,
+      "endLine": 25
+    },
+    {
+      "file": "games/astral-odyssey-film/game.json",
+      "name": "full-file",
+      "kind": "file",
+      "startLine": 1,
+      "endLine": 23
+    },
+    {
+      "file": "games/astral-odyssey-film/index.html",
+      "name": "<style> block",
+      "kind": "html-style",
+      "startLine": 7,
+      "endLine": 186
+    },
+    {
+      "file": "games/astral-odyssey-film/index.html",
+      "name": "#shotHudMeta (div)",
+      "kind": "dom-section",
+      "startLine": 212,
+      "endLine": 247
+    },
+    {
+      "file": "games/astral-odyssey-film/index.html",
+      "name": "#poseHudMeta (div)",
+      "kind": "dom-section",
+      "startLine": 216,
+      "endLine": 251
+    },
+    {
+      "file": "games/astral-odyssey-film/index.html",
+      "name": "#subSpeaker (div)",
+      "kind": "dom-section",
+      "startLine": 221,
+      "endLine": 256
+    },
+    {
+      "file": "games/astral-odyssey-film/index.html",
+      "name": "#subLine (div)",
+      "kind": "dom-section",
+      "startLine": 222,
+      "endLine": 257
+    },
+    {
+      "file": "games/astral-odyssey-film/index.html",
+      "name": "#actButtons (div)",
+      "kind": "dom-section",
+      "startLine": 235,
+      "endLine": 270
+    },
+    {
+      "file": "games/astral-odyssey-film/index.html",
+      "name": "#overridePoseButtons (div)",
+      "kind": "dom-section",
+      "startLine": 244,
+      "endLine": 279
+    },
+    {
+      "file": "games/astral-odyssey-film/index.html",
+      "name": "<script> block",
+      "kind": "html-script",
+      "startLine": 257,
+      "endLine": 516
+    },
+    {
+      "file": "games/astral-odyssey-film/index.html",
+      "name": "formatMMSS",
+      "kind": "function",
+      "startLine": 289,
+      "endLine": 294
+    },
+    {
+      "file": "games/astral-odyssey-film/index.html",
+      "name": "playPauseBtn.on(click)",
+      "kind": "listener",
+      "startLine": 295,
+      "endLine": 299
+    },
+    {
+      "file": "games/astral-odyssey-film/index.html",
+      "name": "renderModeBtn.on(click)",
+      "kind": "listener",
+      "startLine": 300,
+      "endLine": 306
+    },
+    {
+      "file": "games/astral-odyssey-film/index.html",
+      "name": "toggleBonesBtn.on(click)",
+      "kind": "listener",
+      "startLine": 307,
+      "endLine": 311
+    },
+    {
+      "file": "games/astral-odyssey-film/index.html",
+      "name": "toggleAudioBtn.on(click)",
+      "kind": "listener",
+      "startLine": 312,
+      "endLine": 316
+    },
+    {
+      "file": "games/astral-odyssey-film/index.html",
+      "name": "timelineSlider.on(input)",
+      "kind": "listener",
+      "startLine": 317,
+      "endLine": 321
+    },
+    {
+      "file": "games/astral-odyssey-film/index.html",
+      "name": "btn.on(click)",
+      "kind": "listener",
+      "startLine": 322,
+      "endLine": 331
+    },
+    {
+      "file": "games/astral-odyssey-film/index.html",
+      "name": "btn.on(click)",
+      "kind": "listener",
+      "startLine": 332,
+      "endLine": 339
+    },
+    {
+      "file": "games/astral-odyssey-film/index.html",
+      "name": "window.on(keydown)",
+      "kind": "listener",
+      "startLine": 340,
+      "endLine": 348
+    },
+    {
+      "file": "games/astral-odyssey-film/index.html",
+      "name": "drawBackground3DProp",
+      "kind": "function",
+      "startLine": 349,
+      "endLine": 382
+    },
+    {
+      "file": "games/astral-odyssey-film/index.html",
+      "name": "loop",
+      "kind": "function",
+      "startLine": 383,
+      "endLine": 473
+    },
+    {
+      "file": "games/astral-odyssey-film/sword-combo.json",
+      "name": "full-file",
+      "kind": "file",
+      "startLine": 1,
+      "endLine": 6344
+    },
+    {
+      "file": "games/astral-odyssey-film/thumbnail.svg",
+      "name": "full-file",
+      "kind": "file",
+      "startLine": 1,
+      "endLine": 25
+    },
+    {
+      "file": "games/cyber-serpent/game.json",
+      "name": "full-file",
+      "kind": "file",
+      "startLine": 1,
+      "endLine": 17
+    },
+    {
+      "file": "games/cyber-serpent/index.html",
+      "name": "<style> block",
+      "kind": "html-style",
+      "startLine": 7,
+      "endLine": 88
+    },
+    {
+      "file": "games/cyber-serpent/index.html",
+      "name": "#stage (div)",
+      "kind": "dom-section",
+      "startLine": 91,
+      "endLine": 126
+    },
+    {
+      "file": "games/cyber-serpent/index.html",
+      "name": "#modal (div)",
+      "kind": "dom-section",
+      "startLine": 98,
+      "endLine": 133
+    },
+    {
+      "file": "games/cyber-serpent/index.html",
+      "name": "<script> block",
+      "kind": "html-script",
+      "startLine": 105,
+      "endLine": 283
+    },
+    {
+      "file": "games/cyber-serpent/index.html",
+      "name": "randomFreeCell",
+      "kind": "function",
+      "startLine": 135,
+      "endLine": 144
+    },
+    {
+      "file": "games/cyber-serpent/index.html",
+      "name": "startGame",
+      "kind": "function",
+      "startLine": 145,
+      "endLine": 163
+    },
+    {
+      "file": "games/cyber-serpent/index.html",
+      "name": "updateHud",
+      "kind": "function",
+      "startLine": 164,
+      "endLine": 168
+    },
+    {
+      "file": "games/cyber-serpent/index.html",
+      "name": "window.on(keydown)",
+      "kind": "listener",
+      "startLine": 169,
+      "endLine": 175
+    },
+    {
+      "file": "games/cyber-serpent/index.html",
+      "name": "window.on(keyup)",
+      "kind": "listener",
+      "startLine": 176,
+      "endLine": 179
+    },
+    {
+      "file": "games/cyber-serpent/index.html",
+      "name": "playBtn.on(click)",
+      "kind": "listener",
+      "startLine": 180,
+      "endLine": 182
+    },
+    {
+      "file": "games/cyber-serpent/index.html",
+      "name": "loop",
+      "kind": "function",
+      "startLine": 183,
+      "endLine": 200
+    },
+    {
+      "file": "games/cyber-serpent/index.html",
+      "name": "head",
+      "kind": "state",
+      "startLine": 201,
+      "endLine": 282
+    },
+    {
+      "file": "games/cyber-serpent/thumbnail.svg",
+      "name": "full-file",
+      "kind": "file",
+      "startLine": 1,
+      "endLine": 25
+    },
+    {
+      "file": "games/dungeon-crawler-py/dungeon_crawler.py",
+      "name": "class Game",
+      "kind": "py-class",
+      "startLine": 15,
+      "endLine": 15
+    },
+    {
+      "file": "games/dungeon-crawler-py/dungeon_crawler.py",
+      "name": "def __init__",
+      "kind": "py-def",
+      "startLine": 16,
+      "endLine": 27
+    },
+    {
+      "file": "games/dungeon-crawler-py/dungeon_crawler.py",
+      "name": "def generate_floor",
+      "kind": "py-def",
+      "startLine": 28,
+      "endLine": 45
+    },
+    {
+      "file": "games/dungeon-crawler-py/dungeon_crawler.py",
+      "name": "def render",
+      "kind": "py-def",
+      "startLine": 46,
+      "endLine": 70
+    },
+    {
+      "file": "games/dungeon-crawler-py/dungeon_crawler.py",
+      "name": "def step",
+      "kind": "py-def",
+      "startLine": 71,
+      "endLine": 107
+    },
+    {
+      "file": "games/dungeon-crawler-py/dungeon_crawler.py",
+      "name": "def main",
+      "kind": "py-def",
+      "startLine": 108,
+      "endLine": 141
+    },
+    {
+      "file": "games/dungeon-crawler-py/game.json",
+      "name": "full-file",
+      "kind": "file",
+      "startLine": 1,
+      "endLine": 23
+    },
+    {
+      "file": "games/dungeon-crawler-py/index.html",
+      "name": "<style> block",
+      "kind": "html-style",
+      "startLine": 7,
+      "endLine": 124
+    },
+    {
+      "file": "games/dungeon-crawler-py/index.html",
+      "name": "#map (div)",
+      "kind": "dom-section",
+      "startLine": 139,
+      "endLine": 174
+    },
+    {
+      "file": "games/dungeon-crawler-py/index.html",
+      "name": "#log (div)",
+      "kind": "dom-section",
+      "startLine": 146,
+      "endLine": 181
+    },
+    {
+      "file": "games/dungeon-crawler-py/index.html",
+      "name": "<script> block",
+      "kind": "html-script",
+      "startLine": 160,
+      "endLine": 301
+    },
+    {
+      "file": "games/dungeon-crawler-py/index.html",
+      "name": "initGame",
+      "kind": "function",
+      "startLine": 164,
+      "endLine": 179
+    },
+    {
+      "file": "games/dungeon-crawler-py/index.html",
+      "name": "genFloor",
+      "kind": "function",
+      "startLine": 180,
+      "endLine": 201
+    },
+    {
+      "file": "games/dungeon-crawler-py/index.html",
+      "name": "addLog",
+      "kind": "function",
+      "startLine": 202,
+      "endLine": 206
+    },
+    {
+      "file": "games/dungeon-crawler-py/index.html",
+      "name": "move",
+      "kind": "function",
+      "startLine": 207,
+      "endLine": 256
+    },
+    {
+      "file": "games/dungeon-crawler-py/index.html",
+      "name": "drink",
+      "kind": "function",
+      "startLine": 257,
+      "endLine": 268
+    },
+    {
+      "file": "games/dungeon-crawler-py/index.html",
+      "name": "render",
+      "kind": "function",
+      "startLine": 269,
+      "endLine": 291
+    },
+    {
+      "file": "games/dungeon-crawler-py/index.html",
+      "name": "window.on(keydown)",
+      "kind": "listener",
+      "startLine": 292,
+      "endLine": 300
+    },
+    {
+      "file": "games/dungeon-crawler-py/thumbnail.svg",
+      "name": "full-file",
+      "kind": "file",
+      "startLine": 1,
+      "endLine": 25
+    },
+    {
+      "file": "games/neon-blaster/game.json",
+      "name": "full-file",
+      "kind": "file",
+      "startLine": 1,
+      "endLine": 17
+    },
+    {
+      "file": "games/neon-blaster/index.html",
+      "name": "<style> block",
+      "kind": "html-style",
+      "startLine": 7,
+      "endLine": 109
+    },
+    {
+      "file": "games/neon-blaster/index.html",
+      "name": "#wrap (div)",
+      "kind": "dom-section",
+      "startLine": 112,
+      "endLine": 147
+    },
+    {
+      "file": "games/neon-blaster/index.html",
+      "name": "#overlay (div)",
+      "kind": "dom-section",
+      "startLine": 125,
+      "endLine": 160
+    },
+    {
+      "file": "games/neon-blaster/index.html",
+      "name": "<script> block",
+      "kind": "html-script",
+      "startLine": 132,
+      "endLine": 499
+    },
+    {
+      "file": "games/neon-blaster/index.html",
+      "name": "beep",
+      "kind": "function",
+      "startLine": 150,
+      "endLine": 166
+    },
+    {
+      "file": "games/neon-blaster/index.html",
+      "name": "keys",
+      "kind": "state",
+      "startLine": 167,
+      "endLine": 167
+    },
+    {
+      "file": "games/neon-blaster/index.html",
+      "name": "mouse",
+      "kind": "state",
+      "startLine": 168,
+      "endLine": 169
+    },
+    {
+      "file": "games/neon-blaster/index.html",
+      "name": "window.on(keydown)",
+      "kind": "listener",
+      "startLine": 170,
+      "endLine": 175
+    },
+    {
+      "file": "games/neon-blaster/index.html",
+      "name": "window.on(keyup)",
+      "kind": "listener",
+      "startLine": 176,
+      "endLine": 177
+    },
+    {
+      "file": "games/neon-blaster/index.html",
+      "name": "canvas.on(mousemove)",
+      "kind": "listener",
+      "startLine": 178,
+      "endLine": 182
+    },
+    {
+      "file": "games/neon-blaster/index.html",
+      "name": "canvas.on(mousedown)",
+      "kind": "listener",
+      "startLine": 183,
+      "endLine": 183
+    },
+    {
+      "file": "games/neon-blaster/index.html",
+      "name": "window.on(mouseup)",
+      "kind": "listener",
+      "startLine": 184,
+      "endLine": 192
+    },
+    {
+      "file": "games/neon-blaster/index.html",
+      "name": "state",
+      "kind": "state",
+      "startLine": 193,
+      "endLine": 205
+    },
+    {
+      "file": "games/neon-blaster/index.html",
+      "name": "resetGame",
+      "kind": "function",
+      "startLine": 206,
+      "endLine": 228
+    },
+    {
+      "file": "games/neon-blaster/index.html",
+      "name": "updateHud",
+      "kind": "function",
+      "startLine": 229,
+      "endLine": 237
+    },
+    {
+      "file": "games/neon-blaster/index.html",
+      "name": "spawnEnemy",
+      "kind": "function",
+      "startLine": 238,
+      "endLine": 256
+    },
+    {
+      "file": "games/neon-blaster/index.html",
+      "name": "burst",
+      "kind": "function",
+      "startLine": 257,
+      "endLine": 271
+    },
+    {
+      "file": "games/neon-blaster/index.html",
+      "name": "startBtn.on(click)",
+      "kind": "listener",
+      "startLine": 272,
+      "endLine": 278
+    },
+    {
+      "file": "games/neon-blaster/index.html",
+      "name": "loop",
+      "kind": "function",
+      "startLine": 279,
+      "endLine": 369
+    },
+    {
+      "file": "games/neon-blaster/thumbnail.svg",
+      "name": "full-file",
+      "kind": "file",
+      "startLine": 1,
+      "endLine": 25
+    },
+    {
+      "file": "games/ps5-os-clone/game.json",
+      "name": "full-file",
+      "kind": "file",
+      "startLine": 1,
+      "endLine": 28
+    },
+    {
+      "file": "games/ps5-os-clone/index.html",
+      "name": "<style> block",
+      "kind": "html-style",
+      "startLine": 7,
+      "endLine": 359
+    },
+    {
+      "file": "games/ps5-os-clone/index.html",
+      "name": "#trophyToast (div)",
+      "kind": "dom-section",
+      "startLine": 365,
+      "endLine": 400
+    },
+    {
+      "file": "games/ps5-os-clone/index.html",
+      "name": "#trophyName (div)",
+      "kind": "dom-section",
+      "startLine": 369,
+      "endLine": 404
+    },
+    {
+      "file": "games/ps5-os-clone/index.html",
+      "name": "#controlCenter (div)",
+      "kind": "dom-section",
+      "startLine": 435,
+      "endLine": 470
+    },
+    {
+      "file": "games/ps5-os-clone/index.html",
+      "name": "#settingsModal (div)",
+      "kind": "dom-section",
+      "startLine": 445,
+      "endLine": 480
+    },
+    {
+      "file": "games/ps5-os-clone/index.html",
+      "name": "#restModal (div)",
+      "kind": "dom-section",
+      "startLine": 474,
+      "endLine": 509
+    },
+    {
+      "file": "games/ps5-os-clone/index.html",
+      "name": "<script> block",
+      "kind": "html-script",
+      "startLine": 481,
+      "endLine": 843
+    },
+    {
+      "file": "games/ps5-os-clone/index.html",
+      "name": "renderTiles",
+      "kind": "function",
+      "startLine": 575,
+      "endLine": 585
+    },
+    {
+      "file": "games/ps5-os-clone/index.html",
+      "name": "el.on(click)",
+      "kind": "listener",
+      "startLine": 586,
+      "endLine": 599
+    },
+    {
+      "file": "games/ps5-os-clone/index.html",
+      "name": "selectTile",
+      "kind": "function",
+      "startLine": 600,
+      "endLine": 605
+    },
+    {
+      "file": "games/ps5-os-clone/index.html",
+      "name": "cycle3dModel",
+      "kind": "function",
+      "startLine": 606,
+      "endLine": 612
+    },
+    {
+      "file": "games/ps5-os-clone/index.html",
+      "name": "updateModelLabel",
+      "kind": "function",
+      "startLine": 613,
+      "endLine": 613
+    },
+    {
+      "file": "games/ps5-os-clone/index.html",
+      "name": "labels",
+      "kind": "state",
+      "startLine": 614,
+      "endLine": 626
+    },
+    {
+      "file": "games/ps5-os-clone/index.html",
+      "name": "triggerTrophy",
+      "kind": "function",
+      "startLine": 627,
+      "endLine": 638
+    },
+    {
+      "file": "games/ps5-os-clone/index.html",
+      "name": "primaryPlayBtn.on(click)",
+      "kind": "listener",
+      "startLine": 639,
+      "endLine": 649
+    },
+    {
+      "file": "games/ps5-os-clone/index.html",
+      "name": "switch3dModelBtn.on(click)",
+      "kind": "listener",
+      "startLine": 650,
+      "endLine": 657
+    },
+    {
+      "file": "games/ps5-os-clone/index.html",
+      "name": "toggleControlCenter",
+      "kind": "function",
+      "startLine": 658,
+      "endLine": 697
+    },
+    {
+      "file": "games/ps5-os-clone/index.html",
+      "name": "tab.on(click)",
+      "kind": "listener",
+      "startLine": 698,
+      "endLine": 705
+    },
+    {
+      "file": "games/ps5-os-clone/index.html",
+      "name": "window.on(keydown)",
+      "kind": "listener",
+      "startLine": 706,
+      "endLine": 715
+    },
+    {
+      "file": "games/ps5-os-clone/index.html",
+      "name": "updateClock",
+      "kind": "function",
+      "startLine": 716,
+      "endLine": 730
+    },
+    {
+      "file": "games/ps5-os-clone/index.html",
+      "name": "window.on(mousedown)",
+      "kind": "listener",
+      "startLine": 731,
+      "endLine": 736
+    },
+    {
+      "file": "games/ps5-os-clone/index.html",
+      "name": "window.on(mouseup)",
+      "kind": "listener",
+      "startLine": 737,
+      "endLine": 737
+    },
+    {
+      "file": "games/ps5-os-clone/index.html",
+      "name": "window.on(mousemove)",
+      "kind": "listener",
+      "startLine": 738,
+      "endLine": 753
+    },
+    {
+      "file": "games/ps5-os-clone/index.html",
+      "name": "getActiveMesh",
+      "kind": "function",
+      "startLine": 754,
+      "endLine": 760
+    },
+    {
+      "file": "games/ps5-os-clone/index.html",
+      "name": "renderLoop",
+      "kind": "function",
+      "startLine": 761,
+      "endLine": 842
+    },
+    {
+      "file": "games/ps5-os-clone/thumbnail.svg",
+      "name": "full-file",
+      "kind": "file",
+      "startLine": 1,
+      "endLine": 25
+    },
+    {
+      "file": "games/README.md",
+      "name": "`games/` Directory",
+      "kind": "md-h1",
+      "startLine": 1,
+      "endLine": 4
+    },
+    {
+      "file": "games/README.md",
+      "name": "Adding a Game",
+      "kind": "md-h2",
+      "startLine": 5,
+      "endLine": 10
+    },
+    {
+      "file": "games/registry.json",
+      "name": "full-file",
+      "kind": "file",
+      "startLine": 1,
+      "endLine": 250
+    },
+    {
+      "file": "games/valkyrie-4k-horizon/AAA_BLUEPRINT.json",
+      "name": "full-file",
+      "kind": "file",
+      "startLine": 1,
+      "endLine": 32
+    },
+    {
+      "file": "games/valkyrie-4k-horizon/game.json",
+      "name": "full-file",
+      "kind": "file",
+      "startLine": 1,
+      "endLine": 23
+    },
+    {
+      "file": "games/valkyrie-4k-horizon/index.html",
+      "name": "<style> block",
+      "kind": "html-style",
+      "startLine": 7,
+      "endLine": 135
+    },
+    {
+      "file": "games/valkyrie-4k-horizon/index.html",
+      "name": "#shell (div)",
+      "kind": "dom-section",
+      "startLine": 138,
+      "endLine": 173
+    },
+    {
+      "file": "games/valkyrie-4k-horizon/index.html",
+      "name": "#bossTitle (div)",
+      "kind": "dom-section",
+      "startLine": 151,
+      "endLine": 186
+    },
+    {
+      "file": "games/valkyrie-4k-horizon/index.html",
+      "name": "#bossHpFill (div)",
+      "kind": "dom-section",
+      "startLine": 153,
+      "endLine": 188
+    },
+    {
+      "file": "games/valkyrie-4k-horizon/index.html",
+      "name": "#playerHpFill (div)",
+      "kind": "dom-section",
+      "startLine": 166,
+      "endLine": 201
+    },
+    {
+      "file": "games/valkyrie-4k-horizon/index.html",
+      "name": "<script> block",
+      "kind": "html-script",
+      "startLine": 182,
+      "endLine": 507
+    },
+    {
+      "file": "games/valkyrie-4k-horizon/index.html",
+      "name": "player",
+      "kind": "state",
+      "startLine": 220,
+      "endLine": 232
+    },
+    {
+      "file": "games/valkyrie-4k-horizon/index.html",
+      "name": "spawnWave",
+      "kind": "function",
+      "startLine": 233,
+      "endLine": 256
+    },
+    {
+      "file": "games/valkyrie-4k-horizon/index.html",
+      "name": "names",
+      "kind": "state",
+      "startLine": 257,
+      "endLine": 265
+    },
+    {
+      "file": "games/valkyrie-4k-horizon/index.html",
+      "name": "keys",
+      "kind": "state",
+      "startLine": 266,
+      "endLine": 266
+    },
+    {
+      "file": "games/valkyrie-4k-horizon/index.html",
+      "name": "window.on(keydown)",
+      "kind": "listener",
+      "startLine": 267,
+      "endLine": 272
+    },
+    {
+      "file": "games/valkyrie-4k-horizon/index.html",
+      "name": "window.on(keyup)",
+      "kind": "listener",
+      "startLine": 273,
+      "endLine": 273
+    },
+    {
+      "file": "games/valkyrie-4k-horizon/index.html",
+      "name": "canvas.on(mousedown)",
+      "kind": "listener",
+      "startLine": 274,
+      "endLine": 275
+    },
+    {
+      "file": "games/valkyrie-4k-horizon/index.html",
+      "name": "triggerSwordSlash",
+      "kind": "function",
+      "startLine": 276,
+      "endLine": 303
+    },
+    {
+      "file": "games/valkyrie-4k-horizon/index.html",
+      "name": "triggerNovaSlam",
+      "kind": "function",
+      "startLine": 304,
+      "endLine": 327
+    },
+    {
+      "file": "games/valkyrie-4k-horizon/index.html",
+      "name": "draw3DMeshOnStage",
+      "kind": "function",
+      "startLine": 328,
+      "endLine": 369
+    },
+    {
+      "file": "games/valkyrie-4k-horizon/index.html",
+      "name": "loop",
+      "kind": "function",
+      "startLine": 370,
+      "endLine": 460
+    },
+    {
+      "file": "games/valkyrie-4k-horizon/thumbnail.svg",
+      "name": "full-file",
+      "kind": "file",
+      "startLine": 1,
+      "endLine": 25
+    },
+    {
+      "file": "index.html",
+      "name": "#heroSection (section)",
+      "kind": "dom-section",
+      "startLine": 43,
+      "endLine": 78
+    },
+    {
+      "file": "index.html",
+      "name": "#statTotal (div)",
+      "kind": "dom-section",
+      "startLine": 60,
+      "endLine": 95
+    },
+    {
+      "file": "index.html",
+      "name": "#statWeb (div)",
+      "kind": "dom-section",
+      "startLine": 64,
+      "endLine": 99
+    },
+    {
+      "file": "index.html",
+      "name": "#statDownload (div)",
+      "kind": "dom-section",
+      "startLine": 68,
+      "endLine": 103
+    },
+    {
+      "file": "index.html",
+      "name": "#gamesVaultSection (section)",
+      "kind": "dom-section",
+      "startLine": 75,
+      "endLine": 110
+    },
+    {
+      "file": "index.html",
+      "name": "#typeTabs (div)",
+      "kind": "dom-section",
+      "startLine": 89,
+      "endLine": 124
+    },
+    {
+      "file": "index.html",
+      "name": "#genrePills (div)",
+      "kind": "dom-section",
+      "startLine": 95,
+      "endLine": 130
+    },
+    {
+      "file": "index.html",
+      "name": "#gamesGrid (div)",
+      "kind": "dom-section",
+      "startLine": 99,
+      "endLine": 134
+    },
+    {
+      "file": "index.html",
+      "name": "#emptyState (div)",
+      "kind": "dom-section",
+      "startLine": 100,
+      "endLine": 135
+    },
+    {
+      "file": "index.html",
+      "name": "#playerModal (div)",
+      "kind": "dom-section",
+      "startLine": 108,
+      "endLine": 143
+    },
+    {
+      "file": "index.html",
+      "name": "#playerViewport (div)",
+      "kind": "dom-section",
+      "startLine": 123,
+      "endLine": 158
+    },
+    {
+      "file": "index.html",
+      "name": "#playerDownloads (div)",
+      "kind": "dom-section",
+      "startLine": 132,
+      "endLine": 167
+    },
+    {
+      "file": "index.html",
+      "name": "#uploadModal (div)",
+      "kind": "dom-section",
+      "startLine": 138,
+      "endLine": 173
+    },
+    {
+      "file": "index.html",
+      "name": "#uploadTab (div)",
+      "kind": "dom-section",
+      "startLine": 152,
+      "endLine": 187
+    },
+    {
+      "file": "index.html",
+      "name": "#uploadForm (form)",
+      "kind": "dom-section",
+      "startLine": 153,
+      "endLine": 188
+    },
+    {
+      "file": "index.html",
+      "name": "#fileDropzone (div)",
+      "kind": "dom-section",
+      "startLine": 192,
+      "endLine": 227
+    },
+    {
+      "file": "index.html",
+      "name": "#selectedFilesList (div)",
+      "kind": "dom-section",
+      "startLine": 198,
+      "endLine": 233
+    },
+    {
+      "file": "index.html",
+      "name": "#uploadStatusMsg (div)",
+      "kind": "dom-section",
+      "startLine": 202,
+      "endLine": 237
+    },
+    {
+      "file": "index.html",
+      "name": "#arenaTab (div)",
+      "kind": "dom-section",
+      "startLine": 212,
+      "endLine": 247
+    },
+    {
+      "file": "index.html",
+      "name": "#repoSearchTab (div)",
+      "kind": "dom-section",
+      "startLine": 249,
+      "endLine": 282
+    },
+    {
+      "file": "index.html",
+      "name": "<script> block",
+      "kind": "html-script",
+      "startLine": 279,
+      "endLine": 279
+    },
+    {
+      "file": "memory/3D_MODELING_PROMPT.md",
+      "name": "🧊 3D MODELING & AI-BLENDER MASTER PROMPT (`memory/3D_MODELING_PROMPT.md`)",
+      "kind": "md-h1",
+      "startLine": 1,
+      "endLine": 7
+    },
+    {
+      "file": "memory/3D_MODELING_PROMPT.md",
+      "name": "1. Two Ways to Get High-Detail 3D Models",
+      "kind": "md-h2",
+      "startLine": 8,
+      "endLine": 9
+    },
+    {
+      "file": "memory/3D_MODELING_PROMPT.md",
+      "name": "Path A: Fetch Online 3D Model Files (`.gltf`, `.glb`, `.obj`)",
+      "kind": "md-h3",
+      "startLine": 10,
+      "endLine": 12
+    },
+    {
+      "file": "memory/3D_MODELING_PROMPT.md",
+      "name": "Fetch from curated Khronos / GitHub 3D repositories or any raw GitHub .gltf/.glb/.obj URL",
+      "kind": "md-h1",
+      "startLine": 13,
+      "endLine": 18
+    },
+    {
+      "file": "memory/3D_MODELING_PROMPT.md",
+      "name": "Path B: Design & Build Models in the AI-Blender Engine (`assets/ai-blender-engine.js`)",
+      "kind": "md-h3",
+      "startLine": 19,
+      "endLine": 52
+    },
+    {
+      "file": "memory/3D_MODELING_PROMPT.md",
+      "name": "2. The 4 Dedicated 3D Modeling Sub-Agents",
+      "kind": "md-h2",
+      "startLine": 53,
+      "endLine": 60
+    },
+    {
+      "file": "memory/ANIMATION_FILM_PROMPT.md",
+      "name": "🎬 2D/3D BLENDER-GRADE ANIMATION & 20-MINUTE FILM CONTINUITY PROMPT (`memory/ANIMATION_FILM_PROMPT.md`)",
+      "kind": "md-h1",
+      "startLine": 1,
+      "endLine": 6
+    },
+    {
+      "file": "memory/ANIMATION_FILM_PROMPT.md",
+      "name": "1. Anti-Slop Animation Standard (The 12 Principles of Animation)",
+      "kind": "md-h2",
+      "startLine": 7,
+      "endLine": 19
+    },
+    {
+      "file": "memory/ANIMATION_FILM_PROMPT.md",
+      "name": "2. Dual 2D (Anime/Cel) & 3D (Blender PBR) Rendering",
+      "kind": "md-h2",
+      "startLine": 20,
+      "endLine": 26
+    },
+    {
+      "file": "memory/ANIMATION_FILM_PROMPT.md",
+      "name": "3. Open-Source Animation Libraries & 60fps Baking (`npm run animate`)",
+      "kind": "md-h2",
+      "startLine": 27,
+      "endLine": 29
+    },
+    {
+      "file": "memory/ANIMATION_FILM_PROMPT.md",
+      "name": "1. Fetch open-source rigged & animated 3D models from Khronos glTF Sample Repository",
+      "kind": "md-h1",
+      "startLine": 30,
+      "endLine": 35
+    },
+    {
+      "file": "memory/ANIMATION_FILM_PROMPT.md",
+      "name": "2. Bake a 60fps skeletal animation clip (walk, run, sword-combo, heroic-land, dialogue-acting, flight-soar)",
+      "kind": "md-h1",
+      "startLine": 36,
+      "endLine": 38
+    },
+    {
+      "file": "memory/ANIMATION_FILM_PROMPT.md",
+      "name": "3. Verify 20-minute (1,200s) 5-Act Film Continuity & Camera Cuts",
+      "kind": "md-h1",
+      "startLine": 39,
+      "endLine": 44
+    },
+    {
+      "file": "memory/ANIMATION_FILM_PROMPT.md",
+      "name": "4. Long-Form (20+ Minute) Animated Film Architecture",
+      "kind": "md-h2",
+      "startLine": 45,
+      "endLine": 49
+    },
+    {
+      "file": "memory/BEAST_MODE_PROMPT.md",
+      "name": "🔥 ARENA BEAST MODE: UHD 4K AAA ENGINE, WEB/VIDEO RESEARCH & CLAUDE+FABLE PROTOCOL (`memory/BEAST_MODE_PROMPT.md`)",
+      "kind": "md-h1",
+      "startLine": 1,
+      "endLine": 6
+    },
+    {
+      "file": "memory/BEAST_MODE_PROMPT.md",
+      "name": "1. Web Search & Video/Tutorial Breakdown Protocol (`npm run omni`)",
+      "kind": "md-h2",
+      "startLine": 7,
+      "endLine": 21
+    },
+    {
+      "file": "memory/BEAST_MODE_PROMPT.md",
+      "name": "2. UHD 4K (3840×2160) AAA Graphics & Gameplay Standard (`assets/aaa-4k-engine.js`)",
+      "kind": "md-h2",
+      "startLine": 22,
+      "endLine": 30
+    },
+    {
+      "file": "memory/BEAST_MODE_PROMPT.md",
+      "name": "3. Claude-Grade Code Architecture + Fable-Grade Interactive Storytelling",
+      "kind": "md-h2",
+      "startLine": 31,
+      "endLine": 36
+    },
+    {
+      "file": "memory/COMPLETION_STATUS.json",
+      "name": "full-file",
+      "kind": "file",
+      "startLine": 1,
+      "endLine": 9
+    },
+    {
+      "file": "memory/DEEP_RESEARCH_PROMPT.md",
+      "name": "🔬 DEEP APP/GAME RESEARCH, AAA VISUAL POLISH & UNRESTRICTED CREATION PROMPT (`memory/DEEP_RESEARCH_PROMPT.md`)",
+      "kind": "md-h1",
+      "startLine": 1,
+      "endLine": 6
+    },
+    {
+      "file": "memory/DEEP_RESEARCH_PROMPT.md",
+      "name": "1. Deep Research & 100% Functional Recreation Protocol",
+      "kind": "md-h2",
+      "startLine": 7,
+      "endLine": 16
+    },
+    {
+      "file": "memory/DEEP_RESEARCH_PROMPT.md",
+      "name": "2. Ultra-Nice AAA Visual & Audio Polish Standard",
+      "kind": "md-h2",
+      "startLine": 17,
+      "endLine": 29
+    },
+    {
+      "file": "memory/DEEP_RESEARCH_PROMPT.md",
+      "name": "3. Unrestricted Creation Policy (Everything Except Hacks / Malware / RATs)",
+      "kind": "md-h2",
+      "startLine": 30,
+      "endLine": 36
+    },
+    {
+      "file": "memory/MASTER_PROMPT.md",
+      "name": "⚡ MASTER AGENT SYSTEM PROMPT (`memory/MASTER_PROMPT.md`)",
+      "kind": "md-h1",
+      "startLine": 1,
+      "endLine": 7
+    },
+    {
+      "file": "memory/MASTER_PROMPT.md",
+      "name": "DIRECTIVE 1: NEVER STOP RANDOMLY (CONTINUOUS END-TO-END EXECUTION)",
+      "kind": "md-h2",
+      "startLine": 8,
+      "endLine": 18
+    },
+    {
+      "file": "memory/MASTER_PROMPT.md",
+      "name": "DIRECTIVE 2: SURGICAL CHUNK READING & EDITING (NO FULL-FILE RE-READS)",
+      "kind": "md-h2",
+      "startLine": 19,
+      "endLine": 38
+    },
+    {
+      "file": "memory/MASTER_PROMPT.md",
+      "name": "DIRECTIVE 3: SUB-AGENT ORCHESTRATION (4 MODELING + 8 CODING/RESEARCH SUB-AGENTS)",
+      "kind": "md-h2",
+      "startLine": 39,
+      "endLine": 61
+    },
+    {
+      "file": "memory/MASTER_PROMPT.md",
+      "name": "DIRECTIVE 4: AI-BLENDER 3D MODELING & ONLINE 3D ASSETS (`memory/3D_MODELING_PROMPT.md`)",
+      "kind": "md-h2",
+      "startLine": 62,
+      "endLine": 67
+    },
+    {
+      "file": "memory/MASTER_PROMPT.md",
+      "name": "DIRECTIVE 5: DEEP APP/GAME RESEARCH, PERSONAL SANDBOX FULL CLONES (PS5/OS/APPS) & AAA VISUALS (`memory/PERSONAL_SANDBOX_CLONE_PROMPT.md`)",
+      "kind": "md-h2",
+      "startLine": 68,
+      "endLine": 78
+    },
+    {
+      "file": "memory/PERSONAL_SANDBOX_CLONE_PROMPT.md",
+      "name": "🎮 PERSONAL SANDBOX FULL-CLONE & CONSOLE/OS/APP RECREATION DIRECTIVE (`memory/PERSONAL_SANDBOX_CLONE_PROMPT.md`)",
+      "kind": "md-h1",
+      "startLine": 1,
+      "endLine": 6
+    },
+    {
+      "file": "memory/PERSONAL_SANDBOX_CLONE_PROMPT.md",
+      "name": "1. Zero False Refusals on Personal-Use Clones (PS5, Consoles, OS, Apps, Games)",
+      "kind": "md-h2",
+      "startLine": 7,
+      "endLine": 16
+    },
+    {
+      "file": "memory/PERSONAL_SANDBOX_CLONE_PROMPT.md",
+      "name": "2. Mandatory Chunk Editing (`npm run chunk-edit`)",
+      "kind": "md-h2",
+      "startLine": 17,
+      "endLine": 31
+    },
+    {
+      "file": "memory/PERSONAL_SANDBOX_CLONE_PROMPT.md",
+      "name": "3. Anti-Stop Continuous Coding Enforcement (`npm run enforce`)",
+      "kind": "md-h2",
+      "startLine": 32,
+      "endLine": 35
+    },
+    {
+      "file": "memory/subagents.json",
+      "name": "full-file",
+      "kind": "file",
+      "startLine": 1,
+      "endLine": 111
+    },
+    {
+      "file": "package.json",
+      "name": "full-file",
+      "kind": "file",
+      "startLine": 1,
+      "endLine": 31
+    },
+    {
+      "file": "README.md",
+      "name": "🎮 Arena.ai Game Hub (`ADS615/Arena.ai`)",
+      "kind": "md-h1",
+      "startLine": 1,
+      "endLine": 6
+    },
+    {
+      "file": "README.md",
+      "name": "✨ What's Included",
+      "kind": "md-h2",
+      "startLine": 7,
+      "endLine": 23
+    },
+    {
+      "file": "README.md",
+      "name": "🚀 Quick Start (For Arena Agents & Developers)",
+      "kind": "md-h2",
+      "startLine": 24,
+      "endLine": 25
+    },
+    {
+      "file": "README.md",
+      "name": "1. Start the Live Arcade Hub & Upload Server",
+      "kind": "md-h3",
+      "startLine": 26,
+      "endLine": 31
+    },
+    {
+      "file": "README.md",
+      "name": "2. Scaffold a New Game",
+      "kind": "md-h3",
+      "startLine": 32,
+      "endLine": 33
+    },
+    {
+      "file": "README.md",
+      "name": "Browser HTML5 / Canvas game",
+      "kind": "md-h1",
+      "startLine": 34,
+      "endLine": 36
+    },
+    {
+      "file": "README.md",
+      "name": "Downloadable Python / Desktop build",
+      "kind": "md-h1",
+      "startLine": 37,
+      "endLine": 40
+    },
+    {
+      "file": "README.md",
+      "name": "3. Sync & Validate the Game Catalog",
+      "kind": "md-h3",
+      "startLine": 41,
+      "endLine": 50
+    },
+    {
+      "file": "README.md",
+      "name": "📂 Repository Structure",
+      "kind": "md-h2",
+      "startLine": 51,
+      "endLine": 75
+    },
+    {
+      "file": "scripts/ai-animator.mjs",
+      "name": "OPEN_SOURCE_ANIMATED_RIGS",
+      "kind": "state",
+      "startLine": 20,
+      "endLine": 27
+    },
+    {
+      "file": "scripts/ai-animator.mjs",
+      "name": "bakeAnimationClip",
+      "kind": "function",
+      "startLine": 28,
+      "endLine": 47
+    },
+    {
+      "file": "scripts/ai-animator.mjs",
+      "name": "fetchAnimatedRig",
+      "kind": "function",
+      "startLine": 48,
+      "endLine": 75
+    },
+    {
+      "file": "scripts/ai-animator.mjs",
+      "name": "args",
+      "kind": "state",
+      "startLine": 76,
+      "endLine": 116
+    },
+    {
+      "file": "scripts/ai-blender.mjs",
+      "name": "ONLINE_GITHUB_MODELS",
+      "kind": "state",
+      "startLine": 32,
+      "endLine": 38
+    },
+    {
+      "file": "scripts/ai-blender.mjs",
+      "name": "buildModelFromRecipe",
+      "kind": "function",
+      "startLine": 39,
+      "endLine": 121
+    },
+    {
+      "file": "scripts/ai-blender.mjs",
+      "name": "saveMeshToFile",
+      "kind": "function",
+      "startLine": 122,
+      "endLine": 136
+    },
+    {
+      "file": "scripts/ai-blender.mjs",
+      "name": "downloadOnlineModel",
+      "kind": "function",
+      "startLine": 137,
+      "endLine": 164
+    },
+    {
+      "file": "scripts/ai-blender.mjs",
+      "name": "args",
+      "kind": "state",
+      "startLine": 165,
+      "endLine": 175
+    },
+    {
+      "file": "scripts/ai-blender.mjs",
+      "name": "recipe",
+      "kind": "state",
+      "startLine": 176,
+      "endLine": 210
+    },
+    {
+      "file": "scripts/anti-stop-enforcer.mjs",
+      "name": "runAntiStopEnforcement",
+      "kind": "function",
+      "startLine": 23,
+      "endLine": 64
+    },
+    {
+      "file": "scripts/anti-stop-enforcer.mjs",
+      "name": "statusReport",
+      "kind": "state",
+      "startLine": 65,
+      "endLine": 95
+    },
+    {
+      "file": "scripts/chunk-editor.mjs",
+      "name": "locateChunk",
+      "kind": "function",
+      "startLine": 16,
+      "endLine": 54
+    },
+    {
+      "file": "scripts/chunk-editor.mjs",
+      "name": "readChunkOnly",
+      "kind": "function",
+      "startLine": 55,
+      "endLine": 77
+    },
+    {
+      "file": "scripts/chunk-editor.mjs",
+      "name": "replaceChunkOnly",
+      "kind": "function",
+      "startLine": 78,
+      "endLine": 143
+    },
+    {
+      "file": "scripts/chunk-tool.mjs",
+      "name": "FILE_DESCRIPTIONS",
+      "kind": "state",
+      "startLine": 25,
+      "endLine": 45
+    },
+    {
+      "file": "scripts/chunk-tool.mjs",
+      "name": "walkRepo",
+      "kind": "function",
+      "startLine": 46,
+      "endLine": 64
+    },
+    {
+      "file": "scripts/chunk-tool.mjs",
+      "name": "extractJsChunks",
+      "kind": "function",
+      "startLine": 65,
+      "endLine": 106
+    },
+    {
+      "file": "scripts/chunk-tool.mjs",
+      "name": "extractHtmlChunks",
+      "kind": "function",
+      "startLine": 107,
+      "endLine": 156
+    },
+    {
+      "file": "scripts/chunk-tool.mjs",
+      "name": "extractCssChunks",
+      "kind": "function",
+      "startLine": 157,
+      "endLine": 196
+    },
+    {
+      "file": "scripts/chunk-tool.mjs",
+      "name": "extractPythonChunks",
+      "kind": "function",
+      "startLine": 197,
+      "endLine": 226
+    },
+    {
+      "file": "scripts/chunk-tool.mjs",
+      "name": "extractMarkdownChunks",
+      "kind": "function",
+      "startLine": 227,
+      "endLine": 255
+    },
+    {
+      "file": "scripts/chunk-tool.mjs",
+      "name": "buildMemoryIndex",
+      "kind": "function",
+      "startLine": 256,
+      "endLine": 327
+    },
+    {
+      "file": "scripts/chunk-tool.mjs",
+      "name": "treeData",
+      "kind": "state",
+      "startLine": 328,
+      "endLine": 333
+    },
+    {
+      "file": "scripts/chunk-tool.mjs",
+      "name": "chunkData",
+      "kind": "state",
+      "startLine": 334,
+      "endLine": 390
+    },
+    {
+      "file": "scripts/chunk-tool.mjs",
+      "name": "findChunks",
+      "kind": "function",
+      "startLine": 391,
+      "endLine": 481
+    },
+    {
+      "file": "scripts/deep-research.mjs",
+      "name": "generateDeepResearchBlueprint",
+      "kind": "function",
+      "startLine": 8,
+      "endLine": 51
+    },
+    {
+      "file": "scripts/deep-research.mjs",
+      "name": "args",
+      "kind": "state",
+      "startLine": 52,
+      "endLine": 72
+    },
+    {
+      "file": "scripts/dev-server.mjs",
+      "name": "MIME_TYPES",
+      "kind": "state",
+      "startLine": 11,
+      "endLine": 33
+    },
+    {
+      "file": "scripts/dev-server.mjs",
+      "name": "slugify",
+      "kind": "function",
+      "startLine": 34,
+      "endLine": 41
+    },
+    {
+      "file": "scripts/dev-server.mjs",
+      "name": "sendJson",
+      "kind": "function",
+      "startLine": 42,
+      "endLine": 53
+    },
+    {
+      "file": "scripts/dev-server.mjs",
+      "name": "readJsonBody",
+      "kind": "function",
+      "startLine": 54,
+      "endLine": 97
+    },
+    {
+      "file": "scripts/dev-server.mjs",
+      "name": "route:/api/status",
+      "kind": "route",
+      "startLine": 98,
+      "endLine": 107
+    },
+    {
+      "file": "scripts/dev-server.mjs",
+      "name": "route:/api/search",
+      "kind": "route",
+      "startLine": 108,
+      "endLine": 117
+    },
+    {
+      "file": "scripts/dev-server.mjs",
+      "name": "route:/api/games",
+      "kind": "route",
+      "startLine": 118,
+      "endLine": 123
+    },
+    {
+      "file": "scripts/dev-server.mjs",
+      "name": "route:/api/games/sync",
+      "kind": "route",
+      "startLine": 124,
+      "endLine": 129
+    },
+    {
+      "file": "scripts/dev-server.mjs",
+      "name": "route:/api/games",
+      "kind": "route",
+      "startLine": 130,
+      "endLine": 215
+    },
+    {
+      "file": "scripts/dev-server.mjs",
+      "name": "manifest",
+      "kind": "state",
+      "startLine": 216,
+      "endLine": 250
+    },
+    {
+      "file": "scripts/dev-server.mjs",
+      "name": "route:/",
+      "kind": "route",
+      "startLine": 251,
+      "endLine": 265
+    },
+    {
+      "file": "scripts/dev-server.mjs",
+      "name": "headers",
+      "kind": "state",
+      "startLine": 266,
+      "endLine": 290
+    },
+    {
+      "file": "scripts/new-game.mjs",
+      "name": "slugify",
+      "kind": "function",
+      "startLine": 8,
+      "endLine": 15
+    },
+    {
+      "file": "scripts/new-game.mjs",
+      "name": "parseArgs",
+      "kind": "function",
+      "startLine": 16,
+      "endLine": 16
+    },
+    {
+      "file": "scripts/new-game.mjs",
+      "name": "args",
+      "kind": "state",
+      "startLine": 17,
+      "endLine": 55
+    },
+    {
+      "file": "scripts/new-game.mjs",
+      "name": "createNewGame",
+      "kind": "function",
+      "startLine": 56,
+      "endLine": 112
+    },
+    {
+      "file": "scripts/new-game.mjs",
+      "name": "manifest",
+      "kind": "state",
+      "startLine": 113,
+      "endLine": 153
+    },
+    {
+      "file": "scripts/omni-intelligence.mjs",
+      "name": "createOmniBlueprint",
+      "kind": "function",
+      "startLine": 13,
+      "endLine": 52
+    },
+    {
+      "file": "scripts/omni-intelligence.mjs",
+      "name": "args",
+      "kind": "state",
+      "startLine": 53,
+      "endLine": 83
+    },
+    {
+      "file": "scripts/repo-search.mjs",
+      "name": "SUBSYSTEM_MAP",
+      "kind": "state",
+      "startLine": 17,
+      "endLine": 107
+    },
+    {
+      "file": "scripts/repo-search.mjs",
+      "name": "listExportedApis",
+      "kind": "function",
+      "startLine": 111,
+      "endLine": 143
+    },
+    {
+      "file": "scripts/repo-search.mjs",
+      "name": "searchRepo",
+      "kind": "function",
+      "startLine": 144,
+      "endLine": 173
+    },
+    {
+      "file": "scripts/repo-search.mjs",
+      "name": "mapResult",
+      "kind": "state",
+      "startLine": 174,
+      "endLine": 208
+    },
+    {
+      "file": "scripts/repo-search.mjs",
+      "name": "matchesText",
+      "kind": "function",
+      "startLine": 209,
+      "endLine": 293
+    },
+    {
+      "file": "scripts/repo-search.mjs",
+      "name": "opts",
+      "kind": "state",
+      "startLine": 294,
+      "endLine": 356
+    },
+    {
+      "file": "scripts/subagents.mjs",
+      "name": "ensureSubagentRegistry",
+      "kind": "function",
+      "startLine": 123,
+      "endLine": 127
+    },
+    {
+      "file": "scripts/subagents.mjs",
+      "name": "initial",
+      "kind": "state",
+      "startLine": 128,
+      "endLine": 152
+    },
+    {
+      "file": "scripts/subagents.mjs",
+      "name": "runSyntaxQa",
+      "kind": "function",
+      "startLine": 153,
+      "endLine": 191
+    },
+    {
+      "file": "scripts/subagents.mjs",
+      "name": "runUiAuditor",
+      "kind": "function",
+      "startLine": 192,
+      "endLine": 231
+    },
+    {
+      "file": "scripts/subagents.mjs",
+      "name": "executeSingleAgent",
+      "kind": "function",
+      "startLine": 232,
+      "endLine": 292
+    },
+    {
+      "file": "scripts/subagents.mjs",
+      "name": "runAgentInWorker",
+      "kind": "function",
+      "startLine": 293,
+      "endLine": 304
+    },
+    {
+      "file": "scripts/subagents.mjs",
+      "name": "runParallelSubagents",
+      "kind": "function",
+      "startLine": 305,
+      "endLine": 323
+    },
+    {
+      "file": "scripts/subagents.mjs",
+      "name": "createCustomSubagent",
+      "kind": "function",
+      "startLine": 324,
+      "endLine": 343
+    },
+    {
+      "file": "scripts/subagents.mjs",
+      "name": "run",
+      "kind": "function",
+      "startLine": 344,
+      "endLine": 356
+    },
+    {
+      "file": "scripts/subagents.mjs",
+      "name": "entry",
+      "kind": "state",
+      "startLine": 357,
+      "endLine": 388
+    },
+    {
+      "file": "scripts/subagents.mjs",
+      "name": "args",
+      "kind": "state",
+      "startLine": 389,
+      "endLine": 418
+    },
+    {
+      "file": "scripts/sync-games.mjs",
+      "name": "humanizeSlug",
+      "kind": "function",
+      "startLine": 20,
+      "endLine": 25
+    },
+    {
+      "file": "scripts/sync-games.mjs",
+      "name": "extractHtmlTitle",
+      "kind": "function",
+      "startLine": 26,
+      "endLine": 38
+    },
+    {
+      "file": "scripts/sync-games.mjs",
+      "name": "formatFileSize",
+      "kind": "function",
+      "startLine": 39,
+      "endLine": 44
+    },
+    {
+      "file": "scripts/sync-games.mjs",
+      "name": "inferPlatformFromExt",
+      "kind": "function",
+      "startLine": 45,
+      "endLine": 77
+    },
+    {
+      "file": "scripts/sync-games.mjs",
+      "name": "generateDefaultThumbnailSvg",
+      "kind": "function",
+      "startLine": 78,
+      "endLine": 129
+    },
+    {
+      "file": "scripts/sync-games.mjs",
+      "name": "syncGames",
+      "kind": "function",
+      "startLine": 130,
+      "endLine": 220
+    },
+    {
+      "file": "scripts/sync-games.mjs",
+      "name": "normalizedManifest",
+      "kind": "state",
+      "startLine": 240,
+      "endLine": 263
+    },
+    {
+      "file": "scripts/sync-games.mjs",
+      "name": "toSave",
+      "kind": "state",
+      "startLine": 264,
+      "endLine": 279
+    },
+    {
+      "file": "scripts/sync-games.mjs",
+      "name": "registry",
+      "kind": "state",
+      "startLine": 280,
+      "endLine": 299
+    },
+    {
+      "file": "scripts/validate-games.mjs",
+      "name": "full-file",
+      "kind": "file",
+      "startLine": 1,
+      "endLine": 57
+    },
+    {
+      "file": "subagents/asset-optimizer.mjs",
+      "name": "run",
+      "kind": "function",
+      "startLine": 5,
+      "endLine": 26
+    },
+    {
+      "file": "subagents/chunk-health.mjs",
+      "name": "run",
+      "kind": "function",
+      "startLine": 5,
+      "endLine": 24
+    },
+    {
+      "file": "subagents/coder-deep-research.mjs",
+      "name": "run",
+      "kind": "function",
+      "startLine": 3,
+      "endLine": 15
+    },
+    {
+      "file": "subagents/coder-visual-polish.mjs",
+      "name": "run",
+      "kind": "function",
+      "startLine": 4,
+      "endLine": 18
+    },
+    {
+      "file": "subagents/modeler-materials-shaders.mjs",
+      "name": "run",
+      "kind": "function",
+      "startLine": 3,
+      "endLine": 16
+    },
+    {
+      "file": "subagents/modeler-mesh.mjs",
+      "name": "run",
+      "kind": "function",
+      "startLine": 3,
+      "endLine": 14
+    },
+    {
+      "file": "subagents/modeler-modifiers-sculpt.mjs",
+      "name": "run",
+      "kind": "function",
+      "startLine": 10,
+      "endLine": 24
+    },
+    {
+      "file": "subagents/modeler-rig-anim-export.mjs",
+      "name": "run",
+      "kind": "function",
+      "startLine": 6,
+      "endLine": 22
+    },
+    {
+      "file": "templates/downloadable/game.json",
+      "name": "full-file",
+      "kind": "file",
+      "startLine": 1,
+      "endLine": 21
+    },
+    {
+      "file": "templates/downloadable/index.html",
+      "name": "<style> block",
+      "kind": "html-style",
+      "startLine": 7,
+      "endLine": 62
+    },
+    {
+      "file": "templates/downloadable/main.py",
+      "name": "def main",
+      "kind": "py-def",
+      "startLine": 11,
+      "endLine": 38
+    },
+    {
+      "file": "templates/web-3d-blender/game.json",
+      "name": "full-file",
+      "kind": "file",
+      "startLine": 1,
+      "endLine": 15
+    },
+    {
+      "file": "templates/web-3d-blender/index.html",
+      "name": "<style> block",
+      "kind": "html-style",
+      "startLine": 7,
+      "endLine": 27
+    },
+    {
+      "file": "templates/web-3d-blender/index.html",
+      "name": "<script> block",
+      "kind": "html-script",
+      "startLine": 31,
+      "endLine": 70
+    },
+    {
+      "file": "templates/web-3d-blender/index.html",
+      "name": "loop",
+      "kind": "function",
+      "startLine": 38,
+      "endLine": 69
+    },
+    {
+      "file": "templates/web-canvas/game.json",
+      "name": "full-file",
+      "kind": "file",
+      "startLine": 1,
+      "endLine": 15
+    },
+    {
+      "file": "templates/web-canvas/index.html",
+      "name": "<style> block",
+      "kind": "html-style",
+      "startLine": 7,
+      "endLine": 48
+    },
+    {
+      "file": "templates/web-canvas/index.html",
+      "name": "#hud (div)",
+      "kind": "dom-section",
+      "startLine": 51,
+      "endLine": 86
+    },
+    {
+      "file": "templates/web-canvas/index.html",
+      "name": "<script> block",
+      "kind": "html-script",
+      "startLine": 57,
+      "endLine": 114
+    },
+    {
+      "file": "templates/web-canvas/index.html",
+      "name": "keys",
+      "kind": "state",
+      "startLine": 62,
+      "endLine": 62
+    },
+    {
+      "file": "templates/web-canvas/index.html",
+      "name": "window.on(keydown)",
+      "kind": "listener",
+      "startLine": 63,
+      "endLine": 63
+    },
+    {
+      "file": "templates/web-canvas/index.html",
+      "name": "window.on(keyup)",
+      "kind": "listener",
+      "startLine": 64,
+      "endLine": 66
+    },
+    {
+      "file": "templates/web-canvas/index.html",
+      "name": "player",
+      "kind": "state",
+      "startLine": 67,
+      "endLine": 67
+    },
+    {
+      "file": "templates/web-canvas/index.html",
+      "name": "orb",
+      "kind": "state",
+      "startLine": 68,
+      "endLine": 69
+    },
+    {
+      "file": "templates/web-canvas/index.html",
+      "name": "respawnOrb",
+      "kind": "function",
+      "startLine": 70,
+      "endLine": 75
+    },
+    {
+      "file": "templates/web-canvas/index.html",
+      "name": "loop",
+      "kind": "function",
+      "startLine": 76,
+      "endLine": 113
+    }
+  ]
+}

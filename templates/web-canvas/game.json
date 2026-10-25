@@ -1,0 +1,14 @@
+{
+  "slug": "__GAME_SLUG__",
+  "title": "__GAME_TITLE__",
+  "description": "__GAME_DESCRIPTION__",
+  "author": "Arena.ai",
+  "version": "1.0.0",
+  "type": "web",
+  "genre": "__GAME_GENRE__",
+  "tags": ["arcade", "web", "canvas"],
+  "entry": "index.html",
+  "thumbnail": "thumbnail.svg",
+  "controls": "WASD / Arrow Keys to move, Space to action",
+  "downloads": []
+}

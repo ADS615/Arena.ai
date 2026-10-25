@@ -1,0 +1,27 @@
+{
+  "slug": "astra-3d-overdrive",
+  "title": "Astra 3D: Overdrive Starfighter",
+  "description": "Full 3D space combat game powered by the Arena AI-Blender 3D Engine! Pilot a 3D Interceptor Starfighter through displaced asteroid fields, crystal warp gates, and Cyber-Mech squadrons.",
+  "author": "Arena.ai (AI-Blender 3D)",
+  "version": "1.0.0",
+  "type": "hybrid",
+  "genre": "3D Action / Space",
+  "tags": ["3d", "blender", "space", "shooter", "webgl", "pbr"],
+  "entry": "index.html",
+  "thumbnail": "thumbnail.svg",
+  "controls": "WASD / Arrows or Mouse to pilot 3D ship, Space / Click to fire plasma cannons, Shift for Hyper-Boost",
+  "downloads": [
+    {
+      "label": "3D Interceptor Starfighter Mesh (.obj)",
+      "file": "interceptor-ship.obj",
+      "platform": "Blender / Unity / Godot / Three.js (.OBJ)"
+    },
+    {
+      "label": "3D Cyber-Mech Boss Model (.gltf)",
+      "file": "cyber-mech.gltf",
+      "platform": "glTF 2.0 Standard 3D Asset"
+    }
+  ],
+  "featured": true,
+  "createdAt": "2026-10-24"
+}

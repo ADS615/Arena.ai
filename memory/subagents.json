@@ -1,0 +1,110 @@
+{
+  "updatedAt": "2026-10-24T22:56:31.059Z",
+  "subagents": [
+    {
+      "id": "chunk-indexer",
+      "name": "Memory & Chunk Map Sub-Agent",
+      "role": "Indexes all repository files into exact line-range semantic chunks for surgical chunk editing",
+      "builtIn": true,
+      "enabled": true
+    },
+    {
+      "id": "catalog-syncer",
+      "name": "Game Catalog & Thumbnail Sub-Agent",
+      "role": "Scans games/*, generates missing manifests/thumbnails, and syncs games/registry.json",
+      "builtIn": true,
+      "enabled": true
+    },
+    {
+      "id": "syntax-qa",
+      "name": "JS/HTML/Python Syntax QA Sub-Agent",
+      "role": "Extracts inline <script> blocks and .js/.mjs files and compiles them with vm.Script to catch syntax errors",
+      "builtIn": true,
+      "enabled": true
+    },
+    {
+      "id": "ui-auditor",
+      "name": "Arcade Viewport & Controls Auditor Sub-Agent",
+      "role": "Audits every game in games/* for responsive canvas/viewport scaling, controls metadata, and asset links",
+      "builtIn": true,
+      "enabled": true
+    },
+    {
+      "id": "game-architect",
+      "name": "Modular Game Blueprint Sub-Agent",
+      "role": "Designs chunk-friendly game architecture with clearly marked section boundaries ([STATE], [INPUT], [UPDATE], [RENDER])",
+      "builtIn": true,
+      "enabled": true
+    },
+    {
+      "id": "asset-optimizer",
+      "name": "Asset & Build Package Sub-Agent",
+      "role": "Verifies SVG/PNG thumbnails and downloadable build packages across games/*",
+      "script": "subagents/asset-optimizer.mjs",
+      "builtIn": false,
+      "enabled": true
+    },
+    {
+      "id": "chunk-health",
+      "name": "Chunk Granularity & Size Auditor Sub-Agent",
+      "role": "Monitors semantic chunk line lengths so files stay modular for surgical chunk editing",
+      "script": "subagents/chunk-health.mjs",
+      "builtIn": false,
+      "enabled": true
+    },
+    {
+      "id": "modeler-mesh",
+      "name": "3D Mesh & Topology Sub-Agent (1/4 Modeling)",
+      "division": "modeling",
+      "role": "Builds 3D primitives, lathe/spline geometry, kitbashed assemblies, and face extrusions in AI-Blender",
+      "script": "subagents/modeler-mesh.mjs",
+      "builtIn": false,
+      "enabled": true
+    },
+    {
+      "id": "modeler-modifiers-sculpt",
+      "name": "Modifiers, Deform & Sculpt Sub-Agent (2/4 Modeling)",
+      "division": "modeling",
+      "role": "Applies Subdivision Surface, Mirror, Radial Array, Twist/Taper/Bend, Noise Displace, and Sculpt brushes",
+      "script": "subagents/modeler-modifiers-sculpt.mjs",
+      "builtIn": false,
+      "enabled": true
+    },
+    {
+      "id": "modeler-materials-shaders",
+      "name": "Principled BSDF & Lighting Sub-Agent (3/4 Modeling)",
+      "division": "modeling",
+      "role": "Configures metallic/roughness PBR materials, emissive neon glow, clearcoat, and 3-point studio lighting",
+      "script": "subagents/modeler-materials-shaders.mjs",
+      "builtIn": false,
+      "enabled": true
+    },
+    {
+      "id": "modeler-rig-anim-export",
+      "name": "Rigging, Online Fetch & OBJ/glTF Export Sub-Agent (4/4 Modeling)",
+      "division": "modeling",
+      "role": "Fetches online .gltf/.glb/.obj models or exports AI-Blender meshes to Wavefront OBJ, glTF 2.0, and JS modules",
+      "script": "subagents/modeler-rig-anim-export.mjs",
+      "builtIn": false,
+      "enabled": true
+    },
+    {
+      "id": "coder-deep-research",
+      "name": "Deep App/Game Research & Full-Clone Sub-Agent (Coding)",
+      "division": "coding",
+      "role": "Performs 5-layer deep research teardowns of any app or game to recreate 100% of its functions",
+      "script": "subagents/coder-deep-research.mjs",
+      "builtIn": false,
+      "enabled": true
+    },
+    {
+      "id": "coder-visual-polish",
+      "name": "AAA Visual Polish, Shaders & Synth Audio Sub-Agent (Coding)",
+      "division": "coding",
+      "role": "Ensures all games and recreated apps have 60fps animations, glassmorphism HUDs, particles, and synth audio",
+      "script": "subagents/coder-visual-polish.mjs",
+      "builtIn": false,
+      "enabled": true
+    }
+  ]
+}

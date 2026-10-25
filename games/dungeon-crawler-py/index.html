@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crypt of the Astral King</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #070a12;
+      color: #e2e8f0;
+      font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 16px;
+      user-select: none;
+    }
+    .shell {
+      background: #0f1629;
+      border: 1px solid rgba(168, 85, 247, 0.45);
+      border-radius: 16px;
+      width: 780px;
+      max-width: 96vw;
+      padding: 20px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      border-bottom: 1px solid #1e293b;
+      padding-bottom: 12px;
+    }
+    .title {
+      font-size: 18px;
+      font-weight: 800;
+      color: #c084fc;
+    }
+    .dl-btn {
+      background: linear-gradient(135deg, #9333ea, #4f46e5);
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .stats {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      font-size: 13px;
+    }
+    .stat {
+      background: #090d18;
+      border: 1px solid #1e293b;
+      padding: 6px 12px;
+      border-radius: 8px;
+    }
+    .stat span { color: #facc15; font-weight: 700; }
+    #map {
+      background: #060911;
+      border: 1px solid #1e293b;
+      border-radius: 10px;
+      padding: 16px;
+      font-size: 18px;
+      line-height: 1.45;
+      letter-spacing: 6px;
+      text-align: center;
+      white-space: pre;
+      overflow-x: auto;
+    }
+    .legend {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      font-size: 12px;
+      color: #94a3b8;
+    }
+    #log {
+      background: #090d18;
+      border: 1px solid #1e293b;
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-size: 13px;
+      min-height: 68px;
+      color: #cbd5e1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 4px;
+    }
+    .controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .btns {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    button {
+      background: #1e293b;
+      color: #f8fafc;
+      border: 1px solid #334155;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    button:hover { background: #334155; }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <div class="header">
+      <div class="title">⚔ CRYPT OF THE ASTRAL KING (Browser &amp; Python 3)</div>
+      <a class="dl-btn" href="dungeon_crawler.py?download=1" download="dungeon_crawler.py">⬇ Download dungeon_crawler.py</a>
+    </div>
+    <div class="stats">
+      <div class="stat">FLOOR <span id="fl">1</span></div>
+      <div class="stat">HP <span id="hp">30/30</span></div>
+      <div class="stat">ATK <span id="atk">6</span></div>
+      <div class="stat">POTIONS <span id="pot">2</span></div>
+      <div class="stat">GOLD <span id="gold">0</span></div>
+    </div>
+    <div id="map"></div>
+    <div class="legend">
+      <span><strong style="color:#38bdf8">@</strong> Hero</span>
+      <span><strong style="color:#f43f5e">E</strong> Astral Enemy</span>
+      <span><strong style="color:#facc15">$</strong> Treasure Chest</span>
+      <span><strong style="color:#4ade80">&gt;</strong> Stairs Down</span>
+    </div>
+    <div id="log"></div>
+    <div class="controls">
+      <div class="btns">
+        <button onclick="move(0,-1)">↑ W</button>
+        <button onclick="move(-1,0)">← A</button>
+        <button onclick="move(0,1)">↓ S</button>
+        <button onclick="move(1,0)">→ D</button>
+        <button onclick="drink()">🧪 Drink Potion (R)</button>
+        <button onclick="initGame()">↻ New Run</button>
+      </div>
+      <div style="font-size:12px;color:#64748b">Run locally: <code>python3 dungeon_crawler.py</code></div>
+    </div>
+  </div>
+
+  <script>
+    const W = 15, H = 8;
+    let state = {};
+
+    function initGame() {
+      state = {
+        floor: 1,
+        hp: 30,
+        maxHp: 30,
+        atk: 6,
+        potions: 2,
+        gold: 0,
+        px: 1,
+        py: 1,
+        log: ['You enter the Crypt of the Astral King. Use WASD or Arrow keys.']
+      };
+      genFloor();
+      render();
+    }
+
+    function genFloor() {
+      state.px = 1;
+      state.py = 1;
+      state.stairs = { x: W - 2, y: H - 2 };
+      state.enemies = [];
+      state.chests = [];
+      for (let i = 0; i < 3 + state.floor; i++) {
+        const x = 2 + Math.floor(Math.random() * (W - 4));
+        const y = 1 + Math.floor(Math.random() * (H - 2));
+        if ((x !== 1 || y !== 1) && (x !== state.stairs.x || y !== state.stairs.y)) {
+          state.enemies.push({ x, y, hp: 8 + state.floor * 4, atk: 3 + state.floor * 2 });
+        }
+      }
+      for (let i = 0; i < 2; i++) {
+        const x = 2 + Math.floor(Math.random() * (W - 4));
+        const y = 1 + Math.floor(Math.random() * (H - 2));
+        if (x !== state.stairs.x || y !== state.stairs.y) {
+          state.chests.push({ x, y });
+        }
+      }
+    }
+
+    function addLog(msg) {
+      state.log.push(msg);
+      if (state.log.length > 3) state.log.shift();
+    }
+
+    function move(dx, dy) {
+      if (state.hp <= 0) return;
+      const nx = state.px + dx;
+      const ny = state.py + dy;
+      if (nx <= 0 || nx >= W - 1 || ny <= 0 || ny >= H - 1) return;
+
+      const enemyIdx = state.enemies.findIndex((e) => e.x === nx && e.y === ny);
+      if (enemyIdx !== -1) {
+        const e = state.enemies[enemyIdx];
+        e.hp -= state.atk;
+        addLog(`You slash the Astral Wraith for ${state.atk} dmg!`);
+        if (e.hp <= 0) {
+          state.enemies.splice(enemyIdx, 1);
+          state.gold += 15;
+          addLog('Wraith vanquished! (+15 Gold)');
+        } else {
+          state.hp -= e.atk;
+          addLog(`Wraith counter-attacks for ${e.atk} dmg!`);
+          if (state.hp <= 0) {
+            state.hp = 0;
+            addLog('YOU HAVE FALLEN! Click New Run to play again.');
+          }
+        }
+        render();
+        return;
+      }
+
+      state.px = nx;
+      state.py = ny;
+
+      const chestIdx = state.chests.findIndex((c) => c.x === nx && c.y === ny);
+      if (chestIdx !== -1) {
+        state.chests.splice(chestIdx, 1);
+        if (Math.random() < 0.5) {
+          state.potions++;
+          addLog('Found Chest: +1 Astral Potion!');
+        } else {
+          state.atk += 2;
+          addLog('Found Chest: Runed Blade (+2 ATK)!');
+        }
+      } else if (nx === state.stairs.x && ny === state.stairs.y) {
+        state.floor++;
+        state.maxHp += 5;
+        state.hp = Math.min(state.maxHp, state.hp + 8);
+        addLog(`Descended to Floor ${state.floor}!`);
+        genFloor();
+      }
+      render();
+    }
+
+    function drink() {
+      if (state.hp <= 0) return;
+      if (state.potions > 0) {
+        state.potions--;
+        state.hp = Math.min(state.maxHp, state.hp + 15);
+        addLog('Drank Astral Potion (+15 HP).');
+      } else {
+        addLog('Out of potions!');
+      }
+      render();
+    }
+
+    function render() {
+      document.getElementById('fl').textContent = state.floor;
+      document.getElementById('hp').textContent = `${state.hp}/${state.maxHp}`;
+      document.getElementById('atk').textContent = state.atk;
+      document.getElementById('pot').textContent = state.potions;
+      document.getElementById('gold').textContent = state.gold;
+
+      let html = '';
+      for (let y = 0; y < H; y++) {
+        for (let x = 0; x < W; x++) {
+          if (x === 0 || x === W - 1 || y === 0 || y === H - 1) html += '<span style="color:#334155">#</span>';
+          else if (x === state.px && y === state.py) html += '<span style="color:#38bdf8;font-weight:900">@</span>';
+          else if (state.enemies.some((e) => e.x === x && e.y === y)) html += '<span style="color:#f43f5e;font-weight:900">E</span>';
+          else if (state.chests.some((c) => c.x === x && c.y === y)) html += '<span style="color:#facc15;font-weight:900">$</span>';
+          else if (x === state.stairs.x && y === state.stairs.y) html += '<span style="color:#4ade80;font-weight:900">&gt;</span>';
+          else html += '<span style="color:#1e293b">·</span>';
+        }
+        html += '\n';
+      }
+      document.getElementById('map').innerHTML = html;
+      document.getElementById('log').innerHTML = state.log.map((l) => `<div>&gt; ${l}</div>`).join('');
+    }
+
+    window.addEventListener('keydown', (e) => {
+      if (e.code === 'KeyW' || e.code === 'ArrowUp') move(0, -1);
+      if (e.code === 'KeyS' || e.code === 'ArrowDown') move(0, 1);
+      if (e.code === 'KeyA' || e.code === 'ArrowLeft') move(-1, 0);
+      if (e.code === 'KeyD' || e.code === 'ArrowRight') move(1, 0);
+      if (e.code === 'KeyR') drink();
+    });
+
+    initGame();
+  </script>
+</body>
+</html>

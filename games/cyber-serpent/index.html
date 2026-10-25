@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cyber Grid Serpent</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #060913;
+      color: #f8fafc;
+      font-family: system-ui, -apple-system, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+      user-select: none;
+    }
+    #stage {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+    .topbar {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .stat {
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .stat span { color: #10b981; }
+    canvas {
+      background: #090f1d;
+      border: 2px solid rgba(16, 185, 129, 0.45);
+      border-radius: 14px;
+      box-shadow: 0 0 45px rgba(16, 185, 129, 0.15);
+      max-width: 95vw;
+      max-height: 82vh;
+    }
+    #modal {
+      position: absolute;
+      inset: 0;
+      background: rgba(6, 9, 19, 0.84);
+      backdrop-filter: blur(5px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 14px;
+      text-align: center;
+      padding: 24px;
+    }
+    #modal.hidden { display: none; }
+    h1 {
+      font-size: 36px;
+      font-weight: 900;
+      background: linear-gradient(90deg, #10b981, #38bdf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #94a3b8;
+      max-width: 400px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    button {
+      background: linear-gradient(135deg, #10b981, #0ea5e9);
+      color: #04131a;
+      border: none;
+      padding: 12px 26px;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 15px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="stage">
+    <div class="topbar">
+      <div class="stat">SCORE <span id="score">0</span></div>
+      <div class="stat">COMBO <span id="combo">x1</span></div>
+      <div class="stat">HIGH SCORE <span id="best">0</span></div>
+    </div>
+    <canvas id="grid" width="720" height="480"></canvas>
+    <div id="modal">
+      <h1 id="mTitle">CYBER GRID SERPENT</h1>
+      <p id="mDesc">Collect cyan data cores before your combo timer expires. Hold SPACE for Turbo Boost (2x points)!</p>
+      <button id="playBtn">ENTER THE GRID</button>
+    </div>
+  </div>
+
+  <script>
+    const canvas = document.getElementById('grid');
+    const ctx = canvas.getContext('2d');
+    const scoreEl = document.getElementById('score');
+    const comboEl = document.getElementById('combo');
+    const bestEl = document.getElementById('best');
+    const modal = document.getElementById('modal');
+    const mTitle = document.getElementById('mTitle');
+    const mDesc = document.getElementById('mDesc');
+    const playBtn = document.getElementById('playBtn');
+
+    const CELL = 24;
+    const COLS = canvas.width / CELL;
+    const ROWS = canvas.height / CELL;
+
+    let best = Number(localStorage.getItem('arena_serpent_best') || 0);
+    bestEl.textContent = best;
+
+    let snake = [];
+    let dir = { x: 1, y: 0 };
+    let nextDir = { x: 1, y: 0 };
+    let core = { x: 10, y: 10 };
+    let bonusCore = null;
+    let score = 0;
+    let combo = 1;
+    let comboTimer = 0;
+    let turbo = false;
+    let running = false;
+    let stepAccum = 0;
+
+    function randomFreeCell() {
+      while (true) {
+        const x = Math.floor(Math.random() * COLS);
+        const y = Math.floor(Math.random() * ROWS);
+        if (!snake.some((s) => s.x === x && s.y === y)) {
+          return { x, y };
+        }
+      }
+    }
+
+    function startGame() {
+      snake = [
+        { x: 8, y: 10 },
+        { x: 7, y: 10 },
+        { x: 6, y: 10 },
+        { x: 5, y: 10 }
+      ];
+      dir = { x: 1, y: 0 };
+      nextDir = { x: 1, y: 0 };
+      score = 0;
+      combo = 1;
+      comboTimer = 0;
+      core = randomFreeCell();
+      bonusCore = null;
+      running = true;
+      modal.classList.add('hidden');
+      updateHud();
+    }
+
+    function updateHud() {
+      scoreEl.textContent = score;
+      comboEl.textContent = `x${combo}`;
+    }
+
+    window.addEventListener('keydown', (e) => {
+      if ((e.code === 'ArrowUp' || e.code === 'KeyW') && dir.y === 0) nextDir = { x: 0, y: -1 };
+      if ((e.code === 'ArrowDown' || e.code === 'KeyS') && dir.y === 0) nextDir = { x: 0, y: 1 };
+      if ((e.code === 'ArrowLeft' || e.code === 'KeyA') && dir.x === 0) nextDir = { x: -1, y: 0 };
+      if ((e.code === 'ArrowRight' || e.code === 'KeyD') && dir.x === 0) nextDir = { x: 1, y: 0 };
+      if (e.code === 'Space') turbo = true;
+    });
+    window.addEventListener('keyup', (e) => {
+      if (e.code === 'Space') turbo = false;
+    });
+
+    playBtn.addEventListener('click', startGame);
+
+    let last = performance.now();
+    function loop(now) {
+      const dt = Math.min(0.05, (now - last) / 1000);
+      last = now;
+
+      if (running) {
+        if (combo > 1) {
+          comboTimer -= dt;
+          if (comboTimer <= 0) {
+            combo = 1;
+            updateHud();
+          }
+        }
+
+        const stepInterval = turbo ? 0.055 : 0.1;
+        stepAccum += dt;
+        if (stepAccum >= stepInterval) {
+          stepAccum = 0;
+          dir = nextDir;
+          const head = {
+            x: (snake[0].x + dir.x + COLS) % COLS,
+            y: (snake[0].y + dir.y + ROWS) % ROWS
+          };
+
+          // Self collision
+          if (snake.some((s) => s.x === head.x && s.y === head.y)) {
+            running = false;
+            if (score > best) {
+              best = score;
+              localStorage.setItem('arena_serpent_best', String(best));
+              bestEl.textContent = best;
+            }
+            mTitle.textContent = 'SYSTEM OVERLOAD';
+            mDesc.textContent = `Final Score: ${score} — High Score: ${best}`;
+            playBtn.textContent = 'REBOOT GRID';
+            modal.classList.remove('hidden');
+          } else {
+            snake.unshift(head);
+            if (head.x === core.x && head.y === core.y) {
+              const pts = 10 * combo * (turbo ? 2 : 1);
+              score += pts;
+              combo = Math.min(8, combo + 1);
+              comboTimer = 4.0;
+              core = randomFreeCell();
+              if (!bonusCore && Math.random() < 0.25) {
+                bonusCore = randomFreeCell();
+              }
+              updateHud();
+            } else if (bonusCore && head.x === bonusCore.x && head.y === bonusCore.y) {
+              score += 50 * combo;
+              bonusCore = null;
+              updateHud();
+            } else {
+              snake.pop();
+            }
+          }
+        }
+      }
+
+      // Draw background grid
+      ctx.fillStyle = '#090f1d';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      ctx.strokeStyle = 'rgba(30, 41, 59, 0.55)';
+      ctx.lineWidth = 1;
+      for (let x = 0; x <= canvas.width; x += CELL) {
+        ctx.beginPath();
+        ctx.moveTo(x, 0);
+        ctx.lineTo(x, canvas.height);
+        ctx.stroke();
+      }
+      for (let y = 0; y <= canvas.height; y += CELL) {
+        ctx.beginPath();
+        ctx.moveTo(0, y);
+        ctx.lineTo(canvas.width, y);
+        ctx.stroke();
+      }
+
+      // Draw core
+      ctx.fillStyle = '#38bdf8';
+      ctx.beginPath();
+      ctx.arc(core.x * CELL + CELL / 2, core.y * CELL + CELL / 2, CELL * 0.38, 0, Math.PI * 2);
+      ctx.fill();
+
+      if (bonusCore) {
+        ctx.fillStyle = '#facc15';
+        ctx.beginPath();
+        ctx.arc(bonusCore.x * CELL + CELL / 2, bonusCore.y * CELL + CELL / 2, CELL * 0.42, 0, Math.PI * 2);
+        ctx.fill();
+      }
+
+      // Draw serpent
+      snake.forEach((seg, idx) => {
+        ctx.fillStyle = idx === 0 ? (turbo ? '#facc15' : '#10b981') : '#059669';
+        ctx.fillRect(seg.x * CELL + 2, seg.y * CELL + 2, CELL - 4, CELL - 4);
+      });
+
+      requestAnimationFrame(loop);
+    }
+
+    requestAnimationFrame(loop);
+  </script>
+</body>
+</html>

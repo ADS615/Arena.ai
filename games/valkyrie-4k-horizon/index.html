@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Valkyrie 4K: Horizon Protocol — UHD 4K AAA Action-RPG</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #02040a;
+      color: #f8fafc;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+    }
+    #shell {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+    canvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    /* AAA 4K Glassmorphism HUD */
+    .hud-top {
+      position: absolute;
+      top: 16px;
+      left: 20px;
+      right: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+      pointer-events: none;
+    }
+    .hud-interactive {
+      pointer-events: auto;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .hud-btn {
+      background: rgba(8, 13, 26, 0.84);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(56, 189, 248, 0.45);
+      color: #f8fafc;
+      padding: 7px 13px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .hud-btn:hover {
+      background: rgba(37, 99, 235, 0.5);
+    }
+
+    /* Boss Health Bar */
+    .boss-bar-wrap {
+      background: rgba(8, 13, 26, 0.82);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(244, 63, 94, 0.45);
+      border-radius: 12px;
+      padding: 10px 18px;
+      min-width: 340px;
+      text-align: center;
+    }
+    .boss-name {
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      color: #fda4af;
+      margin-bottom: 6px;
+    }
+    .bar-track {
+      width: 100%;
+      height: 10px;
+      background: #1e293b;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+    .bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #f43f5e, #facc15);
+      width: 100%;
+      transition: width 0.12s;
+    }
+
+    /* Bottom Player HUD & Ability Dock */
+    .hud-bottom {
+      position: absolute;
+      bottom: 18px;
+      left: 22px;
+      right: 22px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      pointer-events: none;
+    }
+    .player-vitals {
+      background: rgba(8, 13, 26, 0.84);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      border-radius: 14px;
+      padding: 14px 18px;
+      min-width: 280px;
+    }
+    .vital-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      font-weight: 800;
+      margin-bottom: 5px;
+    }
+    .ability-pills {
+      display: flex;
+      gap: 8px;
+      margin-top: 10px;
+      font-size: 11px;
+      color: #93c5fd;
+    }
+    .ability-pill {
+      background: rgba(30, 41, 59, 0.9);
+      border: 1px solid rgba(148, 163, 184, 0.3);
+      padding: 4px 9px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div id="shell">
+    <canvas id="gameCanvas"></canvas>
+
+    <!-- Top AAA HUD -->
+    <div class="hud-top">
+      <div class="hud-interactive">
+        <button class="hud-btn" id="resBtn">📺 4K UHD (3840×2160)</button>
+        <button class="hud-btn" id="todBtn">🌅 Sky: Synthwave Sunset</button>
+        <button class="hud-btn" id="raysBtn">✨ Volumetric God-Rays: ON</button>
+        <span class="hud-btn" id="fpsBadge">60 FPS &bull; HDR ACES</span>
+      </div>
+
+      <div class="boss-bar-wrap">
+        <div class="boss-name" id="bossTitle">⚔ TITAN MECH LEGION — WAVE 1</div>
+        <div class="bar-track">
+          <div class="bar-fill" id="bossHpFill"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Vitals & Controls -->
+    <div class="hud-bottom">
+      <div class="player-vitals">
+        <div class="vital-row">
+          <span>COMMANDER KAELEN (HP)</span>
+          <span id="hpText" style="color:#4ade80">100 / 100</span>
+        </div>
+        <div class="bar-track" style="margin-bottom:8px">
+          <div class="bar-fill" id="playerHpFill" style="background:linear-gradient(90deg,#10b981,#38bdf8)"></div>
+        </div>
+        <div class="vital-row">
+          <span>ASTRAL NOVA ENERGY</span>
+          <span id="energyText" style="color:#38bdf8">READY (Press E)</span>
+        </div>
+        <div class="ability-pills">
+          <span class="ability-pill">WASD: Move</span>
+          <span class="ability-pill">SPACE/Click: Sword Combo</span>
+          <span class="ability-pill">SHIFT: Jetpack</span>
+          <span class="ability-pill">E: Nova Slam</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module">
+    import {
+      UHD4KCanvasManager,
+      renderAtmosphericSky4K,
+      CombatStyleMeter
+    } from '../../assets/aaa-4k-engine.js';
+    import {
+      createCharacterBible,
+      evaluateCharacterPose,
+      renderRiggedCharacter
+    } from '../../assets/ai-animation-studio.js';
+    import { createPresetModel, norm3, dot3, sub3, cross3 } from '../../assets/ai-blender-engine.js';
+    import { SoundSynth, ScreenShake, ParticleSystem2D } from '../../assets/arena-ui-kit.js';
+
+    const canvas = document.getElementById('gameCanvas');
+    const uhd = new UHD4KCanvasManager(canvas, '4k');
+    const ctx = uhd.ctx;
+    const synth = new SoundSynth();
+    const shake = new ScreenShake();
+    const particles = new ParticleSystem2D(350);
+    const styleMeter = new CombatStyleMeter();
+
+    // Load 3D Models & Rigged Hero Bible
+    const heroBible = createCharacterBible({
+      id: 'kaelen-4k',
+      name: 'Commander Kaelen',
+      primaryColor: '#38bdf8',
+      secondaryColor: '#6366f1',
+      emissiveColor: '#22d3ee'
+    });
+    const mechMesh = createPresetModel('cyber-mech');
+    const shipMesh = createPresetModel('interceptor-ship');
+    const crystalMesh = createPresetModel('crystal-cluster');
+
+    let todOrder = ['sunset', 'dawn', 'midnight'];
+    let todIdx = 0;
+    let godRays = true;
+
+    const player = {
+      x: 420,
+      z: 0,
+      facing: 1,
+      hp: 100,
+      action: 'idle',
+      attackTimer: 0,
+      novaCd: 0
+    };
+
+    let wave = 1;
+    let mechs = [];
+
+    function spawnWave() {
+      mechs = [];
+      for (let i = 0; i < 2 + Math.min(3, wave); i++) {
+        mechs.push({
+          x: 780 + i * 150,
+          z: (i % 2 === 0 ? -1 : 1) * 35,
+          hp: 120 + wave * 40,
+          maxHp: 120 + wave * 40,
+          rotY: Math.PI * 0.75,
+          hitFlash: 0
+        });
+      }
+      document.getElementById('bossTitle').textContent = `⚔ TITAN MECH LEGION — WAVE ${wave}`;
+    }
+    spawnWave();
+
+    // UI Controls
+    document.getElementById('resBtn').addEventListener('click', (e) => {
+      const preset = uhd.cyclePreset();
+      e.target.textContent = `📺 ${preset.label}`;
+      synth.playUiSelect();
+    });
+    document.getElementById('todBtn').addEventListener('click', (e) => {
+      todIdx = (todIdx + 1) % todOrder.length;
+      const names = { sunset: 'Synthwave Sunset', dawn: 'Astral Golden Dawn', midnight: 'Quantum Midnight' };
+      e.target.textContent = `🌅 Sky: ${names[todOrder[todIdx]]}`;
+      synth.playUiNav();
+    });
+    document.getElementById('raysBtn').addEventListener('click', (e) => {
+      godRays = !godRays;
+      e.target.textContent = `✨ Volumetric God-Rays: ${godRays ? 'ON' : 'OFF'}`;
+    });
+
+    const keys = {};
+    window.addEventListener('keydown', (e) => {
+      keys[e.code] = true;
+      if (e.code === 'Space') triggerSwordSlash();
+      if (e.code === 'KeyE') triggerNovaSlam();
+      if (e.code === 'KeyT') document.getElementById('todBtn').click();
+    });
+    window.addEventListener('keyup', (e) => { keys[e.code] = false; });
+    canvas.addEventListener('mousedown', triggerSwordSlash);
+
+    function triggerSwordSlash() {
+      player.attackTimer = 0.42;
+      player.action = 'sword-combo';
+      synth.playLaser();
+      particles.burst(player.x + player.facing * 85, 480 + player.z, {
+        count: 20,
+        color: '#38bdf8',
+        minSpeed: 80,
+        maxSpeed: 280
+      });
+
+      for (const m of mechs) {
+        if (Math.abs(m.x - player.x) < 190) {
+          m.hp -= 35;
+          m.hitFlash = 0.2;
+          shake.addTrauma(0.28);
+          styleMeter.registerHit(150);
+          particles.burst(m.x, 430 + m.z, { count: 24, color: '#facc15' });
+        }
+      }
+      mechs = mechs.filter((m) => m.hp > 0);
+      if (mechs.length === 0) {
+        wave++;
+        synth.playTrophyChime();
+        spawnWave();
+      }
+    }
+
+    function triggerNovaSlam() {
+      if (player.novaCd > 0) return;
+      player.novaCd = 4.0;
+      player.attackTimer = 0.65;
+      player.action = 'heroic-land';
+      synth.playExplosion();
+      shake.addTrauma(0.65);
+      particles.burst(player.x, 490, { count: 55, color: '#22d3ee', minSpeed: 120, maxSpeed: 420 });
+
+      for (const m of mechs) {
+        if (Math.abs(m.x - player.x) < 360) {
+          m.hp -= 85;
+          m.hitFlash = 0.35;
+          styleMeter.registerHit(300);
+        }
+      }
+      mechs = mechs.filter((m) => m.hp > 0);
+      if (mechs.length === 0) {
+        wave++;
+        synth.playTrophyChime();
+        spawnWave();
+      }
+    }
+
+    function draw3DMeshOnStage(mesh, sx, sy, scaleFactor, yaw, rgb) {
+      const c = Math.cos(yaw), s = Math.sin(yaw);
+      const light = norm3([0.45, 0.8, -0.5]);
+
+      // Planar ground shadow
+      ctx.fillStyle = 'rgba(0, 0, 0, 0.42)';
+      ctx.beginPath();
+      ctx.ellipse(sx, sy + 75, 58, 16, 0, 0, Math.PI * 2);
+      ctx.fill();
+
+      const proj = mesh.vertices.map(([vx, vy, vz]) => {
+        const x1 = vx * c + vz * s;
+        const z1 = -vx * s + vz * c + 5.2;
+        const sc = scaleFactor / Math.max(0.5, z1);
+        return [sx + x1 * sc, sy - vy * sc, z1, [x1, vy, z1]];
+      });
+
+      const tris = [];
+      for (const [i0, i1, i2] of mesh.faces) {
+        const p0 = proj[i0], p1 = proj[i1], p2 = proj[i2];
+        const n = norm3(cross3(sub3(p1[3], p0[3]), sub3(p2[3], p0[3])));
+        tris.push({ p0, p1, p2, depth: (p0[2] + p1[2] + p2[2]) / 3, n });
+      }
+      tris.sort((a, b) => b.depth - a.depth);
+
+      for (const t of tris) {
+        const ndl = Math.max(0.2, Math.abs(dot3(t.n, light)));
+        const spec = Math.pow(ndl, 14) * 75;
+        const r = Math.min(255, Math.round(rgb[0] * ndl + spec));
+        const g = Math.min(255, Math.round(rgb[1] * ndl + spec));
+        const b = Math.min(255, Math.round(rgb[2] * ndl + spec));
+        ctx.beginPath();
+        ctx.moveTo(t.p0[0], t.p0[1]);
+        ctx.lineTo(t.p1[0], t.p1[1]);
+        ctx.lineTo(t.p2[0], t.p2[1]);
+        ctx.closePath();
+        ctx.fillStyle = `rgb(${r},${g},${b})`;
+        ctx.fill();
+      }
+    }
+
+    let last = performance.now();
+    function loop(now) {
+      const dt = Math.min(0.05, (now - last) / 1000);
+      last = now;
+      const tSec = now / 1000;
+
+      const fps = uhd.updateTelemetry(dt);
+      document.getElementById('fpsBadge').textContent = `${fps} FPS • HDR ACES`;
+
+      // Update Player Movement & Actions
+      const jetpack = keys['ShiftLeft'] || keys['ShiftRight'];
+      const spd = jetpack ? 440 : 260;
+      let moving = false;
+
+      if (keys['KeyA'] || keys['ArrowLeft']) {
+        player.x = Math.max(90, player.x - spd * dt);
+        player.facing = -1;
+        moving = true;
+      }
+      if (keys['KeyD'] || keys['ArrowRight']) {
+        player.x = Math.min(1190, player.x + spd * dt);
+        player.facing = 1;
+        moving = true;
+      }
+      if (keys['KeyW'] || keys['ArrowUp']) {
+        player.z = Math.max(-55, player.z - 160 * dt);
+        moving = true;
+      }
+      if (keys['KeyS'] || keys['ArrowDown']) {
+        player.z = Math.min(55, player.z + 160 * dt);
+        moving = true;
+      }
+
+      player.attackTimer = Math.max(0, player.attackTimer - dt);
+      player.novaCd = Math.max(0, player.novaCd - dt);
+      document.getElementById('energyText').textContent =
+        player.novaCd <= 0 ? 'READY (Press E)' : `RECHARGING (${player.novaCd.toFixed(1)}s)`;
+
+      if (player.attackTimer <= 0) {
+        player.action = jetpack ? 'flight-soar' : moving ? 'run' : 'idle';
+      }
+
+      // Update Mechs AI
+      let totalBossHp = 0;
+      let totalBossMax = 0;
+      for (const m of mechs) {
+        totalBossHp += m.hp;
+        totalBossMax += m.maxHp;
+        m.hitFlash = Math.max(0, m.hitFlash - dt);
+        const dir = player.x < m.x ? -1 : 1;
+        if (Math.abs(player.x - m.x) > 110) {
+          m.x += dir * 75 * dt;
+        }
+        m.rotY += 0.8 * dt;
+      }
+      const bossPct = totalBossMax > 0 ? (totalBossHp / totalBossMax) * 100 : 0;
+      document.getElementById('bossHpFill').style.width = `${bossPct}%`;
+
+      styleMeter.update(dt);
+      const camShake = shake.update(dt);
+
+      const w = uhd.logicalWidth;
+      const h = uhd.logicalHeight;
+      ctx.save();
+      ctx.translate(camShake.offsetX, camShake.offsetY);
+
+      // 1. Render 4K Atmospheric Sky & Volumetric God-Rays
+      const { horizonY } = renderAtmosphericSky4K(ctx, w, h, todOrder[todIdx], tSec, godRays);
+
+      // 2. Render 3D Perspective Ground Grid & Horizon Mountains
+      const groundGrad = ctx.createLinearGradient(0, horizonY, 0, h);
+      groundGrad.addColorStop(0, '#090d1c');
+      groundGrad.addColorStop(1, '#03060f');
+      ctx.fillStyle = groundGrad;
+      ctx.fillRect(0, horizonY, w, h - horizonY);
+
+      ctx.strokeStyle = 'rgba(56, 189, 248, 0.2)';
+      ctx.lineWidth = 1.2;
+      for (let gx = -12; gx <= 12; gx++) {
+        ctx.beginPath();
+        ctx.moveTo(w / 2 + gx * 35, horizonY);
+        ctx.lineTo(w / 2 + gx * 190, h);
+        ctx.stroke();
+      }
+
+      // 3. Render 3D Background Starfighter & Crystal Monoliths
+      draw3DMeshOnStage(shipMesh, (tSec * 140) % (w + 200) - 100, 145, 220, tSec * 0.6, [56, 189, 248]);
+      draw3DMeshOnStage(crystalMesh, 210, horizonY + 15, 280, tSec * 0.4, [34, 211, 238]);
+      draw3DMeshOnStage(crystalMesh, 1060, horizonY + 15, 280, -tSec * 0.4, [34, 211, 238]);
+
+      // 4. Render 3D Cyber-Mech Bosses
+      for (const m of mechs) {
+        const rgb = m.hitFlash > 0 ? [250, 204, 21] : [168, 85, 247];
+        draw3DMeshOnStage(mechMesh, m.x, 430 + m.z, 360, m.rotY, rgb);
+      }
+
+      // 5. Render Rigged Hero Character (Commander Kaelen)
+      const heroPose = evaluateCharacterPose(player.action, tSec * 1.35);
+      ctx.fillStyle = 'rgba(0, 0, 0, 0.45)';
+      ctx.beginPath();
+      ctx.ellipse(player.x, 548 + player.z, 38, 11, 0, 0, Math.PI * 2);
+      ctx.fill();
+
+      renderRiggedCharacter(ctx, {
+        bible: heroBible,
+        pose: heroPose,
+        x: player.x,
+        y: 470 + player.z,
+        scale: 112,
+        mode: '3d',
+        facing: player.facing
+      });
+
+      // 6. Render Particle Bursts
+      particles.updateAndDraw(ctx, dt);
+
+      // 7. Render SSS-Rank Combat Style Meter & Minimap Radar on Canvas
+      const rank = styleMeter.getRank();
+      ctx.fillStyle = 'rgba(8, 13, 26, 0.82)';
+      ctx.strokeStyle = rank.color;
+      ctx.lineWidth = 2;
+      ctx.fillRect(w - 250, 95, 225, 84);
+      ctx.strokeRect(w - 250, 95, 225, 84);
+
+      ctx.fillStyle = rank.color;
+      ctx.font = '900 32px Inter, sans-serif';
+      ctx.fillText(rank.code, w - 236, 142);
+      ctx.fillStyle = '#f8fafc';
+      ctx.font = '800 12px Inter, sans-serif';
+      ctx.fillText(rank.name, w - 160, 126);
+      ctx.fillStyle = '#94a3b8';
+      ctx.fillText(`${styleMeter.hits} HITS • ${styleMeter.score} PTS`, w - 160, 146);
+
+      ctx.restore();
+      requestAnimationFrame(loop);
+    }
+
+    requestAnimationFrame(loop);
+  </script>
+</body>
+</html>

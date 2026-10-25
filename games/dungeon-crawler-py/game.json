@@ -1,0 +1,22 @@
+{
+  "slug": "dungeon-crawler-py",
+  "title": "Crypt of the Astral King",
+  "description": "Turn-based tactical dungeon roguelike! Play directly in the interactive browser terminal or download the standalone Python 3 game script.",
+  "author": "Arena.ai",
+  "version": "1.0.0",
+  "type": "hybrid",
+  "genre": "RPG / Roguelike",
+  "tags": ["roguelike", "rpg", "python", "download", "hybrid"],
+  "entry": "index.html",
+  "thumbnail": "thumbnail.svg",
+  "controls": "WASD / Arrow Keys to explore & attack, R to drink potion, or click actions",
+  "downloads": [
+    {
+      "label": "Standalone Python 3 Game (dungeon_crawler.py)",
+      "file": "dungeon_crawler.py",
+      "platform": "Windows / macOS / Linux (Python 3)"
+    }
+  ],
+  "featured": true,
+  "createdAt": "2026-10-24"
+}

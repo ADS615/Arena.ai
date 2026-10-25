@@ -1,0 +1,27 @@
+{
+  "slug": "ps5-os-clone",
+  "title": "PlayStation 5 OS & 3D DualSense Clone",
+  "description": "Full interactive PS5 Console OS & 3D Hardware Clone! Features the PS5 Cross-Media Bar, Control Center Quick Dock, Trophy Unlock Popups, System Settings, Rest Mode, and interactive 3D PS5 + DualSense models.",
+  "author": "Arena.ai (Full Recreation Lab)",
+  "version": "2.0.0",
+  "type": "hybrid",
+  "genre": "3D Console OS / Clone",
+  "tags": ["ps5", "3d", "blender", "console", "clone", "os", "ui"],
+  "entry": "index.html",
+  "thumbnail": "thumbnail.svg",
+  "controls": "Arrow Keys / A-D to navigate tiles, Enter to Launch, P or Space for PS5 Control Center, T to Unlock Trophy, 3 to toggle 3D PS5/DualSense",
+  "downloads": [
+    {
+      "label": "3D PS5 Console Tower Mesh (.obj)",
+      "file": "ps5-console.obj",
+      "platform": "Wavefront 3D Object (.OBJ)"
+    },
+    {
+      "label": "3D DualSense Controller Model (.gltf)",
+      "file": "dualsense-controller.gltf",
+      "platform": "glTF 2.0 Standard 3D Asset"
+    }
+  ],
+  "featured": true,
+  "createdAt": "2026-10-24"
+}

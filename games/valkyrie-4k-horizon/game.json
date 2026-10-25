@@ -1,0 +1,22 @@
+{
+  "slug": "valkyrie-4k-horizon",
+  "title": "Valkyrie 4K: Horizon Protocol (UHD 4K AAA Action-RPG)",
+  "description": "Flagship UHD 4K (3840×2160) 3D Action-RPG! Features volumetric god-rays, ACES Filmic HDR, dynamic time-of-day sky, 24-bone skeletal sword combos, 3D Cyber-Mech bosses, SSS-Rank style meter, and minimap radar.",
+  "author": "Arena.ai (UHD 4K AAA Engine)",
+  "version": "1.0.0",
+  "type": "hybrid",
+  "genre": "4K 3D Action-RPG",
+  "tags": ["4k", "3d", "aaa", "rpg", "action", "blender", "animation", "hdr"],
+  "entry": "index.html",
+  "thumbnail": "thumbnail.svg",
+  "controls": "WASD / Arrows to Run, Space / Click for Plasma Sword Combo, Shift for Jetpack Dash, E for Astral Nova Slam, T for Time of Day",
+  "downloads": [
+    {
+      "label": "3D Plasma Energy Blade (.obj)",
+      "file": "plasma-sword.obj",
+      "platform": "Blender / Unity / Unreal / Godot (.OBJ)"
+    }
+  ],
+  "featured": true,
+  "createdAt": "2026-10-24"
+}

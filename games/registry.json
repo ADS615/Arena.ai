@@ -1,0 +1,249 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-25T00:03:30.472Z",
+  "totalGames": 7,
+  "games": [
+    {
+      "slug": "astra-3d-overdrive",
+      "title": "Astra 3D: Overdrive Starfighter",
+      "description": "Full 3D space combat game powered by the Arena AI-Blender 3D Engine! Pilot a 3D Interceptor Starfighter through displaced asteroid fields, crystal warp gates, and Cyber-Mech squadrons.",
+      "author": "Arena.ai (AI-Blender 3D)",
+      "version": "1.0.0",
+      "type": "hybrid",
+      "genre": "3D Action / Space",
+      "tags": [
+        "3d",
+        "blender",
+        "space",
+        "shooter",
+        "webgl",
+        "pbr"
+      ],
+      "entry": "index.html",
+      "playUrl": "games/astra-3d-overdrive/index.html",
+      "thumbnail": "thumbnail.svg",
+      "thumbnailUrl": "games/astra-3d-overdrive/thumbnail.svg",
+      "controls": "WASD / Arrows or Mouse to pilot 3D ship, Space / Click to fire plasma cannons, Shift for Hyper-Boost",
+      "instructions": "",
+      "downloads": [
+        {
+          "label": "3D Interceptor Starfighter Mesh (.obj)",
+          "file": "interceptor-ship.obj",
+          "url": "games/astra-3d-overdrive/interceptor-ship.obj",
+          "platform": "Blender / Unity / Godot / Three.js (.OBJ)",
+          "size": "49.1 KB",
+          "bytes": 50295
+        },
+        {
+          "label": "3D Cyber-Mech Boss Model (.gltf)",
+          "file": "cyber-mech.gltf",
+          "url": "games/astra-3d-overdrive/cyber-mech.gltf",
+          "platform": "glTF 2.0 Standard 3D Asset",
+          "size": "127.9 KB",
+          "bytes": 131010
+        }
+      ],
+      "featured": true,
+      "createdAt": "2026-10-24"
+    },
+    {
+      "slug": "astral-odyssey-film",
+      "title": "Chronicles of the Astral Core (20-Min 2D/3D Animated Film)",
+      "description": "Full 20-minute (5-Act) consistent 2D & 3D animated film and Blender NLA Animation Studio! Switch seamlessly between 3D Blender PBR Mode and 2D Anime Cel-Shaded Mode with skeletal IK, lip-sync, camera cuts, and F-Curve graph inspector.",
+      "author": "Arena.ai (2D/3D Animation Studio)",
+      "version": "1.0.0",
+      "type": "hybrid",
+      "genre": "2D/3D Animated Film",
+      "tags": [
+        "3d",
+        "2d",
+        "animation",
+        "blender",
+        "film",
+        "cinema"
+      ],
+      "entry": "index.html",
+      "playUrl": "games/astral-odyssey-film/index.html",
+      "thumbnail": "thumbnail.svg",
+      "thumbnailUrl": "games/astral-odyssey-film/thumbnail.svg",
+      "controls": "Space to Play/Pause, Drag 20:00 Timeline Scrubber, Click 2D/3D Mode Toggle, B to toggle Bone Rig + F-Curve Graph",
+      "instructions": "",
+      "downloads": [
+        {
+          "label": "Baked 60fps Skeletal Animation Clip (sword-combo.json)",
+          "file": "sword-combo.json",
+          "url": "games/astral-odyssey-film/sword-combo.json",
+          "platform": "Blender / WebGL / JSON Skeletal Clip (60fps)",
+          "size": "139.2 KB",
+          "bytes": 142534
+        }
+      ],
+      "featured": true,
+      "createdAt": "2026-10-24"
+    },
+    {
+      "slug": "dungeon-crawler-py",
+      "title": "Crypt of the Astral King",
+      "description": "Turn-based tactical dungeon roguelike! Play directly in the interactive browser terminal or download the standalone Python 3 game script.",
+      "author": "Arena.ai",
+      "version": "1.0.0",
+      "type": "hybrid",
+      "genre": "RPG / Roguelike",
+      "tags": [
+        "roguelike",
+        "rpg",
+        "python",
+        "download",
+        "hybrid"
+      ],
+      "entry": "index.html",
+      "playUrl": "games/dungeon-crawler-py/index.html",
+      "thumbnail": "thumbnail.svg",
+      "thumbnailUrl": "games/dungeon-crawler-py/thumbnail.svg",
+      "controls": "WASD / Arrow Keys to explore & attack, R to drink potion, or click actions",
+      "instructions": "",
+      "downloads": [
+        {
+          "label": "Standalone Python 3 Game (dungeon_crawler.py)",
+          "file": "dungeon_crawler.py",
+          "url": "games/dungeon-crawler-py/dungeon_crawler.py",
+          "platform": "Windows / macOS / Linux (Python 3)",
+          "size": "4.7 KB",
+          "bytes": 4814
+        }
+      ],
+      "featured": true,
+      "createdAt": "2026-10-24"
+    },
+    {
+      "slug": "cyber-serpent",
+      "title": "Cyber Grid Serpent",
+      "description": "High-speed cyberpunk grid runner with turbo boost, combo multipliers, plasma cores, and reactive synth audio.",
+      "author": "Arena.ai",
+      "version": "1.0.0",
+      "type": "web",
+      "genre": "Arcade",
+      "tags": [
+        "arcade",
+        "snake",
+        "cyberpunk",
+        "canvas"
+      ],
+      "entry": "index.html",
+      "playUrl": "games/cyber-serpent/index.html",
+      "thumbnail": "thumbnail.svg",
+      "thumbnailUrl": "games/cyber-serpent/thumbnail.svg",
+      "controls": "WASD / Arrow Keys to steer, Space to Turbo Boost",
+      "instructions": "",
+      "downloads": [],
+      "featured": true,
+      "createdAt": "2026-10-24"
+    },
+    {
+      "slug": "neon-blaster",
+      "title": "Neon Void Blaster",
+      "description": "Fast-paced twin-stick arcade space shooter with wave survival, particle explosions, overdrive power-ups, and WebAudio synth effects.",
+      "author": "Arena.ai",
+      "version": "1.0.0",
+      "type": "web",
+      "genre": "Shooter",
+      "tags": [
+        "arcade",
+        "shooter",
+        "canvas",
+        "space",
+        "synth"
+      ],
+      "entry": "index.html",
+      "playUrl": "games/neon-blaster/index.html",
+      "thumbnail": "thumbnail.svg",
+      "thumbnailUrl": "games/neon-blaster/thumbnail.svg",
+      "controls": "WASD / Arrows to move, Mouse or Space to fire, Shift to Dash, P to Pause",
+      "instructions": "",
+      "downloads": [],
+      "featured": true,
+      "createdAt": "2026-10-24"
+    },
+    {
+      "slug": "ps5-os-clone",
+      "title": "PlayStation 5 OS & 3D DualSense Clone",
+      "description": "Full interactive PS5 Console OS & 3D Hardware Clone! Features the PS5 Cross-Media Bar, Control Center Quick Dock, Trophy Unlock Popups, System Settings, Rest Mode, and interactive 3D PS5 + DualSense models.",
+      "author": "Arena.ai (Full Recreation Lab)",
+      "version": "2.0.0",
+      "type": "hybrid",
+      "genre": "3D Console OS / Clone",
+      "tags": [
+        "ps5",
+        "3d",
+        "blender",
+        "console",
+        "clone",
+        "os",
+        "ui"
+      ],
+      "entry": "index.html",
+      "playUrl": "games/ps5-os-clone/index.html",
+      "thumbnail": "thumbnail.svg",
+      "thumbnailUrl": "games/ps5-os-clone/thumbnail.svg",
+      "controls": "Arrow Keys / A-D to navigate tiles, Enter to Launch, P or Space for PS5 Control Center, T to Unlock Trophy, 3 to toggle 3D PS5/DualSense",
+      "instructions": "",
+      "downloads": [
+        {
+          "label": "3D PS5 Console Tower Mesh (.obj)",
+          "file": "ps5-console.obj",
+          "url": "games/ps5-os-clone/ps5-console.obj",
+          "platform": "Wavefront 3D Object (.OBJ)",
+          "size": "9.3 KB",
+          "bytes": 9511
+        },
+        {
+          "label": "3D DualSense Controller Model (.gltf)",
+          "file": "dualsense-controller.gltf",
+          "url": "games/ps5-os-clone/dualsense-controller.gltf",
+          "platform": "glTF 2.0 Standard 3D Asset",
+          "size": "390.9 KB",
+          "bytes": 400275
+        }
+      ],
+      "featured": true,
+      "createdAt": "2026-10-24"
+    },
+    {
+      "slug": "valkyrie-4k-horizon",
+      "title": "Valkyrie 4K: Horizon Protocol (UHD 4K AAA Action-RPG)",
+      "description": "Flagship UHD 4K (3840×2160) 3D Action-RPG! Features volumetric god-rays, ACES Filmic HDR, dynamic time-of-day sky, 24-bone skeletal sword combos, 3D Cyber-Mech bosses, SSS-Rank style meter, and minimap radar.",
+      "author": "Arena.ai (UHD 4K AAA Engine)",
+      "version": "1.0.0",
+      "type": "hybrid",
+      "genre": "4K 3D Action-RPG",
+      "tags": [
+        "4k",
+        "3d",
+        "aaa",
+        "rpg",
+        "action",
+        "blender",
+        "animation",
+        "hdr"
+      ],
+      "entry": "index.html",
+      "playUrl": "games/valkyrie-4k-horizon/index.html",
+      "thumbnail": "thumbnail.svg",
+      "thumbnailUrl": "games/valkyrie-4k-horizon/thumbnail.svg",
+      "controls": "WASD / Arrows to Run, Space / Click for Plasma Sword Combo, Shift for Jetpack Dash, E for Astral Nova Slam, T for Time of Day",
+      "instructions": "",
+      "downloads": [
+        {
+          "label": "3D Plasma Energy Blade (.obj)",
+          "file": "plasma-sword.obj",
+          "url": "games/valkyrie-4k-horizon/plasma-sword.obj",
+          "platform": "Blender / Unity / Unreal / Godot (.OBJ)",
+          "size": "26.7 KB",
+          "bytes": 27315
+        }
+      ],
+      "featured": true,
+      "createdAt": "2026-10-24"
+    }
+  ]
+}
