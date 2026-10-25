@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-25T00:03:30.503Z",
-  "totalChunks": 574,
+  "updatedAt": "2026-10-25T01:14:09.229Z",
+  "totalChunks": 840,
   "chunks": [
     {
       "file": "AGENTS.md",
@@ -11,87 +11,94 @@
     },
     {
       "file": "AGENTS.md",
-      "name": "0. Master Operating Rules (Read First!)",
+      "name": "🚨 DIRECTIVE 0 — BUILD MODE: CODE THE USER'S REQUEST, NEVER NARRATE THE REPO (HIGHEST PRIORITY)",
       "kind": "md-h2",
       "startLine": 7,
-      "endLine": 43
+      "endLine": 22
+    },
+    {
+      "file": "AGENTS.md",
+      "name": "0. Master Operating Rules (Read First!)",
+      "kind": "md-h2",
+      "startLine": 23,
+      "endLine": 60
     },
     {
       "file": "AGENTS.md",
       "name": "1. Where Games Live (`games/<slug>/`)",
       "kind": "md-h2",
-      "startLine": 44,
-      "endLine": 55
+      "startLine": 61,
+      "endLine": 72
     },
     {
       "file": "AGENTS.md",
       "name": "2. Quick Workflow to Create & Upload a New Game",
       "kind": "md-h2",
-      "startLine": 56,
-      "endLine": 57
+      "startLine": 73,
+      "endLine": 74
     },
     {
       "file": "AGENTS.md",
       "name": "Option A: Scaffold with the CLI + Build Your Game",
       "kind": "md-h3",
-      "startLine": 58,
-      "endLine": 59
+      "startLine": 75,
+      "endLine": 76
     },
     {
       "file": "AGENTS.md",
       "name": "1. Scaffold a new browser game (or --type download / --type hybrid)",
       "kind": "md-h1",
-      "startLine": 60,
-      "endLine": 62
+      "startLine": 77,
+      "endLine": 79
     },
     {
       "file": "AGENTS.md",
       "name": "2. Write or replace games/my-game/index.html (and any assets or downloadable files)",
       "kind": "md-h1",
-      "startLine": 63,
-      "endLine": 64
+      "startLine": 80,
+      "endLine": 81
     },
     {
       "file": "AGENTS.md",
       "name": "3. Sync the catalog and validate",
       "kind": "md-h1",
-      "startLine": 65,
-      "endLine": 69
+      "startLine": 82,
+      "endLine": 86
     },
     {
       "file": "AGENTS.md",
       "name": "Option B: Create `games/<slug>/` Directly",
       "kind": "md-h3",
-      "startLine": 70,
-      "endLine": 81
+      "startLine": 87,
+      "endLine": 98
     },
     {
       "file": "AGENTS.md",
       "name": "3. `game.json` Manifest Schema",
       "kind": "md-h2",
-      "startLine": 82,
-      "endLine": 108
+      "startLine": 99,
+      "endLine": 125
     },
     {
       "file": "AGENTS.md",
       "name": "Supported `type` values:",
       "kind": "md-h3",
-      "startLine": 109,
-      "endLine": 115
+      "startLine": 126,
+      "endLine": 132
     },
     {
       "file": "AGENTS.md",
       "name": "4. Running the Live Preview & Upload Server",
       "kind": "md-h2",
-      "startLine": 116,
-      "endLine": 124
+      "startLine": 133,
+      "endLine": 141
     },
     {
       "file": "AGENTS.md",
       "name": "5. Best Practices for Games Built by Arena Agents",
       "kind": "md-h2",
-      "startLine": 125,
-      "endLine": 131
+      "startLine": 142,
+      "endLine": 148
     },
     {
       "file": "assets/aaa-4k-engine.js",
@@ -868,21 +875,21 @@
       "name": "updateArenaPrompt",
       "kind": "function",
       "startLine": 560,
-      "endLine": 571
+      "endLine": 573
     },
     {
       "file": "assets/app.js",
       "name": "promptIdeaInput.on(input)",
       "kind": "listener",
-      "startLine": 572,
-      "endLine": 574
+      "startLine": 574,
+      "endLine": 576
     },
     {
       "file": "assets/app.js",
       "name": "copyPromptBtn.on(click)",
       "kind": "listener",
-      "startLine": 575,
-      "endLine": 588
+      "startLine": 577,
+      "endLine": 590
     },
     {
       "file": "assets/arena-ui-kit.js",
@@ -911,6 +918,1651 @@
       "kind": "function",
       "startLine": 256,
       "endLine": 339
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "V",
+      "kind": "state",
+      "startLine": 19,
+      "endLine": 31
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "M4",
+      "kind": "state",
+      "startLine": 32,
+      "endLine": 87
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "hash3",
+      "kind": "function",
+      "startLine": 88,
+      "endLine": 92
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "noise3",
+      "kind": "function",
+      "startLine": 93,
+      "endLine": 96
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "n",
+      "kind": "const-fn",
+      "startLine": 97,
+      "endLine": 97
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "lerp",
+      "kind": "const-fn",
+      "startLine": 98,
+      "endLine": 102
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "fbm3",
+      "kind": "function",
+      "startLine": 103,
+      "endLine": 107
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "clamp",
+      "kind": "function",
+      "startLine": 108,
+      "endLine": 108
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "uid",
+      "kind": "function",
+      "startLine": 109,
+      "endLine": 199
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "b",
+      "kind": "state",
+      "startLine": 217,
+      "endLine": 257
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "l",
+      "kind": "state",
+      "startLine": 258,
+      "endLine": 268
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "sock",
+      "kind": "function",
+      "startLine": 269,
+      "endLine": 272
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "make_node",
+      "kind": "function",
+      "startLine": 273,
+      "endLine": 273
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "n",
+      "kind": "state",
+      "startLine": 274,
+      "endLine": 274
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "I",
+      "kind": "const-fn",
+      "startLine": 275,
+      "endLine": 275
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "O",
+      "kind": "const-fn",
+      "startLine": 276,
+      "endLine": 366
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "sock_value",
+      "kind": "function",
+      "startLine": 372,
+      "endLine": 375
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "eval_socket",
+      "kind": "function",
+      "startLine": 376,
+      "endLine": 383
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "eval_node",
+      "kind": "function",
+      "startLine": 384,
+      "endLine": 384
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "I",
+      "kind": "const-fn",
+      "startLine": 385,
+      "endLine": 475
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "eval_shader_tree",
+      "kind": "function",
+      "startLine": 538,
+      "endLine": 558
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "e",
+      "kind": "state",
+      "startLine": 559,
+      "endLine": 574
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "f",
+      "kind": "state",
+      "startLine": 575,
+      "endLine": 622
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "v",
+      "kind": "state",
+      "startLine": 623,
+      "endLine": 713
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "getCut",
+      "kind": "const-fn",
+      "startLine": 782,
+      "endLine": 872
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "map",
+      "kind": "const-fn",
+      "startLine": 911,
+      "endLine": 921
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "face_center",
+      "kind": "function",
+      "startLine": 922,
+      "endLine": 926
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "face_normal",
+      "kind": "function",
+      "startLine": 927,
+      "endLine": 930
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "rot_matrix_axis",
+      "kind": "function",
+      "startLine": 931,
+      "endLine": 941
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "convexHullPoints",
+      "kind": "function",
+      "startLine": 942,
+      "endLine": 946
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "key",
+      "kind": "const-fn",
+      "startLine": 947,
+      "endLine": 1010
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "primitive_cube",
+      "kind": "function",
+      "startLine": 1011,
+      "endLine": 1022
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "primitive_uv_sphere",
+      "kind": "function",
+      "startLine": 1023,
+      "endLine": 1047
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "primitive_ico_sphere",
+      "kind": "function",
+      "startLine": 1048,
+      "endLine": 1058
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "mid",
+      "kind": "const-fn",
+      "startLine": 1059,
+      "endLine": 1079
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "primitive_cylinder",
+      "kind": "function",
+      "startLine": 1080,
+      "endLine": 1102
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "primitive_plane",
+      "kind": "function",
+      "startLine": 1103,
+      "endLine": 1110
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "primitive_cone",
+      "kind": "function",
+      "startLine": 1111,
+      "endLine": 1132
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "primitive_torus",
+      "kind": "function",
+      "startLine": 1133,
+      "endLine": 1157
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "primitive_grid",
+      "kind": "function",
+      "startLine": 1158,
+      "endLine": 1173
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "primitive_monkey",
+      "kind": "function",
+      "startLine": 1174,
+      "endLine": 1261
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "resolve_path",
+      "kind": "function",
+      "startLine": 1262,
+      "endLine": 1352
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "pt",
+      "kind": "state",
+      "startLine": 1366,
+      "endLine": 1418
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "m",
+      "kind": "state",
+      "startLine": 1419,
+      "endLine": 1423
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "interpolate",
+      "kind": "function",
+      "startLine": 1424,
+      "endLine": 1514
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "evaluate_object_animation",
+      "kind": "function",
+      "startLine": 1540,
+      "endLine": 1544
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "poseState",
+      "kind": "state",
+      "startLine": 1545,
+      "endLine": 1559
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "apply_action_frame",
+      "kind": "function",
+      "startLine": 1560,
+      "endLine": 1567
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "write_path",
+      "kind": "function",
+      "startLine": 1568,
+      "endLine": 1568
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "blend",
+      "kind": "const-fn",
+      "startLine": 1569,
+      "endLine": 1595
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "commit_pose_state",
+      "kind": "function",
+      "startLine": 1596,
+      "endLine": 1604
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "idCollection",
+      "kind": "function",
+      "startLine": 1605,
+      "endLine": 1606
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "col",
+      "kind": "state",
+      "startLine": 1607,
+      "endLine": 1623
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "data",
+      "kind": "state",
+      "startLine": 1624,
+      "endLine": 1677
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "get_scene",
+      "kind": "function",
+      "startLine": 1678,
+      "endLine": 1680
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "context",
+      "kind": "state",
+      "startLine": 1681,
+      "endLine": 1705
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "new_object",
+      "kind": "function",
+      "startLine": 1706,
+      "endLine": 1715
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "poseEnsureBones",
+      "kind": "function",
+      "startLine": 1716,
+      "endLine": 1733
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "update_pose_matrices",
+      "kind": "function",
+      "startLine": 1734,
+      "endLine": 1752
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "quatToMatrix",
+      "kind": "function",
+      "startLine": 1753,
+      "endLine": 1761
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "eulerToQuat",
+      "kind": "function",
+      "startLine": 1762,
+      "endLine": 1822
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "add_modifier",
+      "kind": "function",
+      "startLine": 1823,
+      "endLine": 1828
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "apply_modifier_stack",
+      "kind": "function",
+      "startLine": 1829,
+      "endLine": 1844
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "apply_one_modifier",
+      "kind": "function",
+      "startLine": 1845,
+      "endLine": 1886
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "modArray",
+      "kind": "function",
+      "startLine": 1887,
+      "endLine": 1904
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "modMirror",
+      "kind": "function",
+      "startLine": 1905,
+      "endLine": 1906
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "src",
+      "kind": "state",
+      "startLine": 1907,
+      "endLine": 1922
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "modSolidify",
+      "kind": "function",
+      "startLine": 1923,
+      "endLine": 1942
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "vertexNormal",
+      "kind": "function",
+      "startLine": 1943,
+      "endLine": 1953
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "modSubsurf",
+      "kind": "function",
+      "startLine": 1954,
+      "endLine": 1958
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "subsurfOnce",
+      "kind": "function",
+      "startLine": 1959,
+      "endLine": 1962
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "getMid",
+      "kind": "const-fn",
+      "startLine": 1963,
+      "endLine": 1986
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "modBevel",
+      "kind": "function",
+      "startLine": 1987,
+      "endLine": 1992
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "modTriangulate",
+      "kind": "function",
+      "startLine": 1993,
+      "endLine": 2000
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "modDecimate",
+      "kind": "function",
+      "startLine": 2001,
+      "endLine": 2022
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "modWireframe",
+      "kind": "function",
+      "startLine": 2023,
+      "endLine": 2046
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "modEdgeSplit",
+      "kind": "function",
+      "startLine": 2047,
+      "endLine": 2057
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "modBoolean",
+      "kind": "function",
+      "startLine": 2058,
+      "endLine": 2061
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "insideOther",
+      "kind": "const-fn",
+      "startLine": 2062,
+      "endLine": 2083
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "evaluated_points",
+      "kind": "function",
+      "startLine": 2084,
+      "endLine": 2087
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "pointInMesh",
+      "kind": "function",
+      "startLine": 2088,
+      "endLine": 2095
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "rayHitsTriangle",
+      "kind": "function",
+      "startLine": 2096,
+      "endLine": 2112
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "modRemesh",
+      "kind": "function",
+      "startLine": 2113,
+      "endLine": 2118
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "key",
+      "kind": "const-fn",
+      "startLine": 2119,
+      "endLine": 2151
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "modScrew",
+      "kind": "function",
+      "startLine": 2152,
+      "endLine": 2157
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "modSkin",
+      "kind": "function",
+      "startLine": 2158,
+      "endLine": 2180
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "modBuild",
+      "kind": "function",
+      "startLine": 2181,
+      "endLine": 2186
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "modMask",
+      "kind": "function",
+      "startLine": 2187,
+      "endLine": 2193
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "modGeometryNodes",
+      "kind": "function",
+      "startLine": 2194,
+      "endLine": 2198
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "eval_geometry_tree",
+      "kind": "function",
+      "startLine": 2199,
+      "endLine": 2205
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "eval_geo_node",
+      "kind": "function",
+      "startLine": 2206,
+      "endLine": 2207
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "I",
+      "kind": "const-fn",
+      "startLine": 2208,
+      "endLine": 2223
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "mesh",
+      "kind": "state",
+      "startLine": 2224,
+      "endLine": 2233
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "mesh",
+      "kind": "state",
+      "startLine": 2234,
+      "endLine": 2256
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "out",
+      "kind": "state",
+      "startLine": 2257,
+      "endLine": 2267
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "out",
+      "kind": "state",
+      "startLine": 2268,
+      "endLine": 2280
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "out",
+      "kind": "state",
+      "startLine": 2281,
+      "endLine": 2301
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "out",
+      "kind": "state",
+      "startLine": 2302,
+      "endLine": 2320
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "out",
+      "kind": "state",
+      "startLine": 2321,
+      "endLine": 2343
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "out",
+      "kind": "state",
+      "startLine": 2344,
+      "endLine": 2358
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "out",
+      "kind": "state",
+      "startLine": 2359,
+      "endLine": 2368
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "out",
+      "kind": "state",
+      "startLine": 2369,
+      "endLine": 2384
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "eval_geo_socket",
+      "kind": "function",
+      "startLine": 2385,
+      "endLine": 2392
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "modSimpleDeform",
+      "kind": "function",
+      "startLine": 2393,
+      "endLine": 2423
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "modWave",
+      "kind": "function",
+      "startLine": 2424,
+      "endLine": 2433
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "modDisplace",
+      "kind": "function",
+      "startLine": 2434,
+      "endLine": 2445
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "modSmooth",
+      "kind": "function",
+      "startLine": 2446,
+      "endLine": 2460
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "modCast",
+      "kind": "function",
+      "startLine": 2461,
+      "endLine": 2470
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "modShrinkwrap",
+      "kind": "function",
+      "startLine": 2471,
+      "endLine": 2487
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "modArmature",
+      "kind": "function",
+      "startLine": 2488,
+      "endLine": 2492
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "modHook",
+      "kind": "function",
+      "startLine": 2493,
+      "endLine": 2506
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "modWarp",
+      "kind": "function",
+      "startLine": 2507,
+      "endLine": 2514
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "modCurveDeform",
+      "kind": "function",
+      "startLine": 2515,
+      "endLine": 2529
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "modLattice",
+      "kind": "function",
+      "startLine": 2530,
+      "endLine": 2544
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "modCloth",
+      "kind": "function",
+      "startLine": 2545,
+      "endLine": 2572
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "modSoftBody",
+      "kind": "function",
+      "startLine": 2573,
+      "endLine": 2575
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "modOcean",
+      "kind": "function",
+      "startLine": 2576,
+      "endLine": 2584
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "modFluid",
+      "kind": "function",
+      "startLine": 2585,
+      "endLine": 2593
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "modParticles",
+      "kind": "function",
+      "startLine": 2594,
+      "endLine": 2615
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "sculpt_stroke",
+      "kind": "function",
+      "startLine": 2616,
+      "endLine": 2620
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "falloff",
+      "kind": "const-fn",
+      "startLine": 2621,
+      "endLine": 2711
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "sculpt_dyntopo",
+      "kind": "function",
+      "startLine": 2754,
+      "endLine": 2772
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "uv_mark_seam",
+      "kind": "function",
+      "startLine": 2773,
+      "endLine": 2782
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "uv_unwrap",
+      "kind": "function",
+      "startLine": 2783,
+      "endLine": 2813
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "uv_islands",
+      "kind": "function",
+      "startLine": 2814,
+      "endLine": 2836
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "island",
+      "kind": "state",
+      "startLine": 2837,
+      "endLine": 2850
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "uv_smart_project",
+      "kind": "function",
+      "startLine": 2851,
+      "endLine": 2854
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "uv_cube_project",
+      "kind": "function",
+      "startLine": 2855,
+      "endLine": 2871
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "uv_cylinder_project",
+      "kind": "function",
+      "startLine": 2872,
+      "endLine": 2885
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "uv_sphere_project",
+      "kind": "function",
+      "startLine": 2886,
+      "endLine": 2899
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "uv_pack_islands",
+      "kind": "function",
+      "startLine": 2900,
+      "endLine": 2935
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "uv_texel_density",
+      "kind": "function",
+      "startLine": 2936,
+      "endLine": 2968
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "build_joints",
+      "kind": "function",
+      "startLine": 2969,
+      "endLine": 2985
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "auto_weights",
+      "kind": "function",
+      "startLine": 2986,
+      "endLine": 3022
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "skin_deform_mesh",
+      "kind": "function",
+      "startLine": 3023,
+      "endLine": 3068
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "bind_armature",
+      "kind": "function",
+      "startLine": 3069,
+      "endLine": 3079
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "shape_key_add",
+      "kind": "function",
+      "startLine": 3080,
+      "endLine": 3090
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "shape_key_eval",
+      "kind": "function",
+      "startLine": 3091,
+      "endLine": 3107
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "constraint_apply",
+      "kind": "function",
+      "startLine": 3108,
+      "endLine": 3173
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "find_pose_bone",
+      "kind": "function",
+      "startLine": 3174,
+      "endLine": 3176
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "solve_ik",
+      "kind": "function",
+      "startLine": 3177,
+      "endLine": 3202
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "quat_mul",
+      "kind": "function",
+      "startLine": 3203,
+      "endLine": 3213
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "op_result",
+      "kind": "function",
+      "startLine": 3214,
+      "endLine": 3214
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "ops",
+      "kind": "state",
+      "startLine": 3215,
+      "endLine": 3305
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "render_scene",
+      "kind": "function",
+      "startLine": 3970,
+      "endLine": 4001
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "img",
+      "kind": "state",
+      "startLine": 4002,
+      "endLine": 4016
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "raster_tri",
+      "kind": "function",
+      "startLine": 4017,
+      "endLine": 4018
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "proj",
+      "kind": "const-fn",
+      "startLine": 4019,
+      "endLine": 4084
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "edge",
+      "kind": "function",
+      "startLine": 4085,
+      "endLine": 4087
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "collect_export_objects",
+      "kind": "function",
+      "startLine": 4088,
+      "endLine": 4093
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "export_obj",
+      "kind": "function",
+      "startLine": 4094,
+      "endLine": 4120
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "export_bblend",
+      "kind": "function",
+      "startLine": 4121,
+      "endLine": 4123
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "doc",
+      "kind": "state",
+      "startLine": 4124,
+      "endLine": 4140
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "rec",
+      "kind": "state",
+      "startLine": 4141,
+      "endLine": 4194
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "export_gltf",
+      "kind": "function",
+      "startLine": 4195,
+      "endLine": 4196
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "gltf",
+      "kind": "state",
+      "startLine": 4197,
+      "endLine": 4211
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "pushBuffer",
+      "kind": "const-fn",
+      "startLine": 4212,
+      "endLine": 4213
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "view",
+      "kind": "state",
+      "startLine": 4214,
+      "endLine": 4223
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "pushAccessor",
+      "kind": "const-fn",
+      "startLine": 4224,
+      "endLine": 4224
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "acc",
+      "kind": "state",
+      "startLine": 4225,
+      "endLine": 4245
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "node",
+      "kind": "state",
+      "startLine": 4246,
+      "endLine": 4275
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "prim",
+      "kind": "state",
+      "startLine": 4276,
+      "endLine": 4325
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "skin",
+      "kind": "state",
+      "startLine": 4326,
+      "endLine": 4352
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "anim",
+      "kind": "state",
+      "startLine": 4353,
+      "endLine": 4358
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "interpMap",
+      "kind": "state",
+      "startLine": 4359,
+      "endLine": 4360
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "sampler",
+      "kind": "state",
+      "startLine": 4361,
+      "endLine": 4367
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "pathMap",
+      "kind": "state",
+      "startLine": 4368,
+      "endLine": 4404
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "import_gltf",
+      "kind": "function",
+      "startLine": 4405,
+      "endLine": 4433
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "decode_data_uri",
+      "kind": "function",
+      "startLine": 4434,
+      "endLine": 4441
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "import_obj",
+      "kind": "function",
+      "startLine": 4442,
+      "endLine": 4453
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "import_bblend",
+      "kind": "function",
+      "startLine": 4454,
+      "endLine": 4524
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "pose",
+      "kind": "state",
+      "startLine": 4525,
+      "endLine": 4592
+    },
+    {
+      "file": "assets/bpy-core.js",
+      "name": "bpy",
+      "kind": "state",
+      "startLine": 4593,
+      "endLine": 4656
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "$",
+      "kind": "const-fn",
+      "startLine": 12,
+      "endLine": 12
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "$$",
+      "kind": "const-fn",
+      "startLine": 13,
+      "endLine": 15
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "state",
+      "kind": "state",
+      "startLine": 16,
+      "endLine": 32
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "boot",
+      "kind": "function",
+      "startLine": 33,
+      "endLine": 90
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "resizeViewport",
+      "kind": "function",
+      "startLine": 91,
+      "endLine": 97
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "camMatrix",
+      "kind": "function",
+      "startLine": 98,
+      "endLine": 108
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "project",
+      "kind": "function",
+      "startLine": 109,
+      "endLine": 123
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "evaluatedMesh",
+      "kind": "function",
+      "startLine": 124,
+      "endLine": 140
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "drawViewport",
+      "kind": "function",
+      "startLine": 141,
+      "endLine": 231
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "drawLine3d",
+      "kind": "function",
+      "startLine": 236,
+      "endLine": 245
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "drawGizmo",
+      "kind": "function",
+      "startLine": 246,
+      "endLine": 273
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "vpCanvas.on(mousedown)",
+      "kind": "listener",
+      "startLine": 274,
+      "endLine": 280
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "window.on(mouseup)",
+      "kind": "listener",
+      "startLine": 281,
+      "endLine": 284
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "window.on(mousemove)",
+      "kind": "listener",
+      "startLine": 285,
+      "endLine": 303
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "vpCanvas.on(wheel)",
+      "kind": "listener",
+      "startLine": 304,
+      "endLine": 308
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "vpCanvas.on(contextmenu)",
+      "kind": "listener",
+      "startLine": 309,
+      "endLine": 310
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "sculptPointer",
+      "kind": "function",
+      "startLine": 311,
+      "endLine": 345
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "renderOutliner",
+      "kind": "function",
+      "startLine": 346,
+      "endLine": 348
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "icon",
+      "kind": "const-fn",
+      "startLine": 349,
+      "endLine": 371
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "row.on(click)",
+      "kind": "listener",
+      "startLine": 372,
+      "endLine": 387
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "renderProps",
+      "kind": "function",
+      "startLine": 388,
+      "endLine": 391
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "sect",
+      "kind": "const-fn",
+      "startLine": 392,
+      "endLine": 392
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "row",
+      "kind": "const-fn",
+      "startLine": 393,
+      "endLine": 393
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "num",
+      "kind": "const-fn",
+      "startLine": 394,
+      "endLine": 394
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "txt",
+      "kind": "const-fn",
+      "startLine": 395,
+      "endLine": 484
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "rgbHex",
+      "kind": "function",
+      "startLine": 485,
+      "endLine": 487
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "bindProps",
+      "kind": "function",
+      "startLine": 488,
+      "endLine": 490
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "on",
+      "kind": "const-fn",
+      "startLine": 491,
+      "endLine": 581
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "hexRgb",
+      "kind": "function",
+      "startLine": 588,
+      "endLine": 595
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "resizeAnim",
+      "kind": "function",
+      "startLine": 596,
+      "endLine": 600
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "drawAnimEditor",
+      "kind": "function",
+      "startLine": 601,
+      "endLine": 606
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "toX",
+      "kind": "const-fn",
+      "startLine": 607,
+      "endLine": 696
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "animCanvas.on(mousedown)",
+      "kind": "listener",
+      "startLine": 697,
+      "endLine": 705
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "setFrame",
+      "kind": "function",
+      "startLine": 706,
+      "endLine": 717
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "currentNodeTree",
+      "kind": "function",
+      "startLine": 718,
+      "endLine": 739
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "drawNodeEditor",
+      "kind": "function",
+      "startLine": 740,
+      "endLine": 788
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "drawUVEditor",
+      "kind": "function",
+      "startLine": 789,
+      "endLine": 821
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "drawRenderPreview",
+      "kind": "function",
+      "startLine": 822,
+      "endLine": 840
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "logConsole",
+      "kind": "function",
+      "startLine": 841,
+      "endLine": 848
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "runConsole",
+      "kind": "function",
+      "startLine": 849,
+      "endLine": 856
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "BMeshApi",
+      "kind": "state",
+      "startLine": 857,
+      "endLine": 873
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "workspaceConfig",
+      "kind": "state",
+      "startLine": 874,
+      "endLine": 886
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "setWorkspace",
+      "kind": "function",
+      "startLine": 887,
+      "endLine": 909
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "modeLabels",
+      "kind": "state",
+      "startLine": 910,
+      "endLine": 914
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "setMode",
+      "kind": "function",
+      "startLine": 915,
+      "endLine": 926
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "btn.on(click)",
+      "kind": "listener",
+      "startLine": 927,
+      "endLine": 934
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "document.on(click)",
+      "kind": "listener",
+      "startLine": 935,
+      "endLine": 936
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "pushUndo",
+      "kind": "function",
+      "startLine": 937,
+      "endLine": 940
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "exportSession",
+      "kind": "function",
+      "startLine": 941,
+      "endLine": 944
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "commands",
+      "kind": "state",
+      "startLine": 945,
+      "endLine": 1035
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "keyframe",
+      "kind": "function",
+      "startLine": 1114,
+      "endLine": 1128
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "document.on(click)",
+      "kind": "listener",
+      "startLine": 1129,
+      "endLine": 1149
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "togglePlay",
+      "kind": "function",
+      "startLine": 1150,
+      "endLine": 1158
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "playLoop",
+      "kind": "function",
+      "startLine": 1159,
+      "endLine": 1170
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "pickFile",
+      "kind": "function",
+      "startLine": 1171,
+      "endLine": 1183
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "downloadFile",
+      "kind": "function",
+      "startLine": 1184,
+      "endLine": 1193
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "window.on(keydown)",
+      "kind": "listener",
+      "startLine": 1194,
+      "endLine": 1222
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "fillSculptTools",
+      "kind": "function",
+      "startLine": 1223,
+      "endLine": 1225
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "sel.on(change)",
+      "kind": "listener",
+      "startLine": 1226,
+      "endLine": 1232
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "resizeAll",
+      "kind": "function",
+      "startLine": 1233,
+      "endLine": 1238
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "refreshAll",
+      "kind": "function",
+      "startLine": 1239,
+      "endLine": 1250
+    },
+    {
+      "file": "assets/full-blender-workstation.js",
+      "name": "window.on(resize)",
+      "kind": "listener",
+      "startLine": 1251,
+      "endLine": 1261
     },
     {
       "file": "assets/styles.css",
@@ -1694,168 +3346,217 @@
       "name": "<style> block",
       "kind": "html-style",
       "startLine": 7,
-      "endLine": 156
+      "endLine": 125
     },
     {
       "file": "blender-studio.html",
-      "name": "#presetBtns (div)",
+      "name": "#app (div)",
       "kind": "dom-section",
-      "startLine": 177,
-      "endLine": 212
+      "startLine": 128,
+      "endLine": 163
     },
     {
       "file": "blender-studio.html",
-      "name": "#primBtns (div)",
+      "name": "#menubar (div)",
       "kind": "dom-section",
-      "startLine": 192,
-      "endLine": 227
+      "startLine": 130,
+      "endLine": 165
     },
     {
       "file": "blender-studio.html",
-      "name": "#meshStatsHud (div)",
+      "name": "#workspaces (div)",
       "kind": "dom-section",
-      "startLine": 208,
-      "endLine": 243
+      "startLine": 197,
+      "endLine": 232
     },
     {
       "file": "blender-studio.html",
-      "name": "#modBtns (div)",
+      "name": "#main (div)",
       "kind": "dom-section",
-      "startLine": 217,
-      "endLine": 252
+      "startLine": 212,
+      "endLine": 247
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "#outliner-col (div)",
+      "kind": "dom-section",
+      "startLine": 213,
+      "endLine": 248
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "#outliner-tree (div)",
+      "kind": "dom-section",
+      "startLine": 215,
+      "endLine": 250
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "#viewport-col (div)",
+      "kind": "dom-section",
+      "startLine": 218,
+      "endLine": 253
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "#vp-wrap (div)",
+      "kind": "dom-section",
+      "startLine": 220,
+      "endLine": 255
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "#vp-overlay (div)",
+      "kind": "dom-section",
+      "startLine": 222,
+      "endLine": 257
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "#sculpt-tools (div)",
+      "kind": "dom-section",
+      "startLine": 239,
+      "endLine": 274
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "#vp-stats (div)",
+      "kind": "dom-section",
+      "startLine": 245,
+      "endLine": 280
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "#uv-wrap (div)",
+      "kind": "dom-section",
+      "startLine": 250,
+      "endLine": 285
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "#node-wrap (div)",
+      "kind": "dom-section",
+      "startLine": 263,
+      "endLine": 298
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "#render-wrap (div)",
+      "kind": "dom-section",
+      "startLine": 278,
+      "endLine": 313
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "#render-actions (div)",
+      "kind": "dom-section",
+      "startLine": 280,
+      "endLine": 315
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "#script-wrap (div)",
+      "kind": "dom-section",
+      "startLine": 287,
+      "endLine": 322
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "#console-wrap (div)",
+      "kind": "dom-section",
+      "startLine": 288,
+      "endLine": 323
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "#console-out (div)",
+      "kind": "dom-section",
+      "startLine": 289,
+      "endLine": 324
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "#console-bar (div)",
+      "kind": "dom-section",
+      "startLine": 290,
+      "endLine": 325
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "#compositor-wrap (div)",
+      "kind": "dom-section",
+      "startLine": 299,
+      "endLine": 334
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "#props-col (div)",
+      "kind": "dom-section",
+      "startLine": 304,
+      "endLine": 339
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "#props-tabs (div)",
+      "kind": "dom-section",
+      "startLine": 305,
+      "endLine": 340
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "#props-content (div)",
+      "kind": "dom-section",
+      "startLine": 321,
+      "endLine": 356
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "#timeline-col (div)",
+      "kind": "dom-section",
+      "startLine": 326,
+      "endLine": 361
+    },
+    {
+      "file": "blender-studio.html",
+      "name": "#statusbar (div)",
+      "kind": "dom-section",
+      "startLine": 352,
+      "endLine": 368
     },
     {
       "file": "blender-studio.html",
       "name": "<script> block",
       "kind": "html-script",
-      "startLine": 258,
-      "endLine": 516
+      "startLine": 364,
+      "endLine": 364
     },
     {
       "file": "blender-studio.html",
-      "name": "updateHud",
-      "kind": "function",
-      "startLine": 295,
-      "endLine": 303
-    },
-    {
-      "file": "blender-studio.html",
-      "name": "canvas.on(mousedown)",
-      "kind": "listener",
-      "startLine": 304,
-      "endLine": 308
-    },
-    {
-      "file": "blender-studio.html",
-      "name": "window.on(mouseup)",
-      "kind": "listener",
-      "startLine": 309,
-      "endLine": 309
-    },
-    {
-      "file": "blender-studio.html",
-      "name": "window.on(mousemove)",
-      "kind": "listener",
-      "startLine": 310,
-      "endLine": 316
-    },
-    {
-      "file": "blender-studio.html",
-      "name": "canvas.on(wheel)",
-      "kind": "listener",
-      "startLine": 317,
-      "endLine": 323
-    },
-    {
-      "file": "blender-studio.html",
-      "name": "btn.on(click)",
-      "kind": "listener",
-      "startLine": 324,
-      "endLine": 331
-    },
-    {
-      "file": "blender-studio.html",
-      "name": "btn.on(click)",
-      "kind": "listener",
-      "startLine": 332,
-      "endLine": 346
-    },
-    {
-      "file": "blender-studio.html",
-      "name": "btn.on(click)",
-      "kind": "listener",
-      "startLine": 347,
-      "endLine": 368
-    },
-    {
-      "file": "blender-studio.html",
-      "name": "syncMaterialInputs",
-      "kind": "function",
-      "startLine": 369,
-      "endLine": 377
-    },
-    {
-      "file": "blender-studio.html",
-      "name": "el.on(input)",
-      "kind": "listener",
-      "startLine": 378,
-      "endLine": 388
-    },
-    {
-      "file": "blender-studio.html",
-      "name": "toggleSpinBtn.on(click)",
-      "kind": "listener",
-      "startLine": 389,
-      "endLine": 392
-    },
-    {
-      "file": "blender-studio.html",
-      "name": "toggleWireBtn.on(click)",
-      "kind": "listener",
-      "startLine": 393,
-      "endLine": 397
-    },
-    {
-      "file": "blender-studio.html",
-      "name": "downloadText",
-      "kind": "function",
-      "startLine": 398,
-      "endLine": 414
-    },
-    {
-      "file": "blender-studio.html",
-      "name": "hexToRgb",
-      "kind": "function",
-      "startLine": 415,
-      "endLine": 420
-    },
-    {
-      "file": "blender-studio.html",
-      "name": "project",
-      "kind": "function",
-      "startLine": 421,
-      "endLine": 435
-    },
-    {
-      "file": "blender-studio.html",
-      "name": "renderLoop",
-      "kind": "function",
-      "startLine": 436,
-      "endLine": 515
+      "name": "<script> block",
+      "kind": "html-script",
+      "startLine": 365,
+      "endLine": 365
     },
     {
       "file": "CLAUDE.md",
       "name": "CLAUDE.md — Arena.ai Agent Guide",
       "kind": "md-h1",
       "startLine": 1,
-      "endLine": 12
+      "endLine": 2
+    },
+    {
+      "file": "CLAUDE.md",
+      "name": "🚨 RULE 0 — BUILD MODE (BEFORE ANYTHING ELSE)",
+      "kind": "md-h2",
+      "startLine": 3,
+      "endLine": 16
     },
     {
       "file": "CLAUDE.md",
       "name": "Quick Commands",
       "kind": "md-h2",
-      "startLine": 13,
-      "endLine": 29
+      "startLine": 17,
+      "endLine": 33
     },
     {
       "file": "games/astra-3d-overdrive/game.json",
@@ -3174,6 +4875,83 @@
       "endLine": 36
     },
     {
+      "file": "memory/FULL_BLENDER_BPY_PROMPT.md",
+      "name": "🎬 FULL BLENDER `bpy` SYSTEM — AI Build, Rig & Animate Directive (`memory/FULL_BLENDER_BPY_PROMPT.md`)",
+      "kind": "md-h1",
+      "startLine": 1,
+      "endLine": 6
+    },
+    {
+      "file": "memory/FULL_BLENDER_BPY_PROMPT.md",
+      "name": "1. THE THREE ENTRY POINTS",
+      "kind": "md-h2",
+      "startLine": 7,
+      "endLine": 24
+    },
+    {
+      "file": "memory/FULL_BLENDER_BPY_PROMPT.md",
+      "name": "2. `bpy.data` — FULL ID DATABLOCKS",
+      "kind": "md-h2",
+      "startLine": 25,
+      "endLine": 28
+    },
+    {
+      "file": "memory/FULL_BLENDER_BPY_PROMPT.md",
+      "name": "3. `bpy.ops` — FULL OPERATOR SET",
+      "kind": "md-h2",
+      "startLine": 29,
+      "endLine": 41
+    },
+    {
+      "file": "memory/FULL_BLENDER_BPY_PROMPT.md",
+      "name": "4. `bmesh` — TOPOLOGY ENGINE",
+      "kind": "md-h2",
+      "startLine": 42,
+      "endLine": 45
+    },
+    {
+      "file": "memory/FULL_BLENDER_BPY_PROMPT.md",
+      "name": "5. MODIFIER STACK — 28+ TYPES",
+      "kind": "md-h2",
+      "startLine": 46,
+      "endLine": 49
+    },
+    {
+      "file": "memory/FULL_BLENDER_BPY_PROMPT.md",
+      "name": "6. 🌉 SEAMLESS MODEL → RIG → ANIMATE PIPELINE (the whole point)",
+      "kind": "md-h2",
+      "startLine": 50,
+      "endLine": 91
+    },
+    {
+      "file": "memory/FULL_BLENDER_BPY_PROMPT.md",
+      "name": "7. ANIMATION SYSTEM",
+      "kind": "md-h2",
+      "startLine": 92,
+      "endLine": 99
+    },
+    {
+      "file": "memory/FULL_BLENDER_BPY_PROMPT.md",
+      "name": "8. EXPORTS (all self-contained)",
+      "kind": "md-h2",
+      "startLine": 100,
+      "endLine": 105
+    },
+    {
+      "file": "memory/FULL_BLENDER_BPY_PROMPT.md",
+      "name": "9. WORKSTATION (`blender-studio.html`)",
+      "kind": "md-h2",
+      "startLine": 106,
+      "endLine": 109
+    },
+    {
+      "file": "memory/FULL_BLENDER_BPY_PROMPT.md",
+      "name": "10. RULES FOR THE AI",
+      "kind": "md-h2",
+      "startLine": 110,
+      "endLine": 117
+    },
+    {
       "file": "memory/MASTER_PROMPT.md",
       "name": "⚡ MASTER AGENT SYSTEM PROMPT (`memory/MASTER_PROMPT.md`)",
       "kind": "md-h1",
@@ -3182,38 +4960,45 @@
     },
     {
       "file": "memory/MASTER_PROMPT.md",
-      "name": "DIRECTIVE 1: NEVER STOP RANDOMLY (CONTINUOUS END-TO-END EXECUTION)",
+      "name": "DIRECTIVE 0: BUILD MODE — CODE FIRST, NEVER NARRATE THE REPO (HIGHEST PRIORITY, OVERRIDES ALL)",
       "kind": "md-h2",
       "startLine": 8,
-      "endLine": 18
+      "endLine": 17
+    },
+    {
+      "file": "memory/MASTER_PROMPT.md",
+      "name": "DIRECTIVE 1: NEVER STOP RANDOMLY (CONTINUOUS END-TO-END EXECUTION)",
+      "kind": "md-h2",
+      "startLine": 18,
+      "endLine": 28
     },
     {
       "file": "memory/MASTER_PROMPT.md",
       "name": "DIRECTIVE 2: SURGICAL CHUNK READING & EDITING (NO FULL-FILE RE-READS)",
       "kind": "md-h2",
-      "startLine": 19,
-      "endLine": 38
+      "startLine": 29,
+      "endLine": 48
     },
     {
       "file": "memory/MASTER_PROMPT.md",
       "name": "DIRECTIVE 3: SUB-AGENT ORCHESTRATION (4 MODELING + 8 CODING/RESEARCH SUB-AGENTS)",
       "kind": "md-h2",
-      "startLine": 39,
-      "endLine": 61
+      "startLine": 49,
+      "endLine": 71
     },
     {
       "file": "memory/MASTER_PROMPT.md",
       "name": "DIRECTIVE 4: AI-BLENDER 3D MODELING & ONLINE 3D ASSETS (`memory/3D_MODELING_PROMPT.md`)",
       "kind": "md-h2",
-      "startLine": 62,
-      "endLine": 67
+      "startLine": 72,
+      "endLine": 77
     },
     {
       "file": "memory/MASTER_PROMPT.md",
       "name": "DIRECTIVE 5: DEEP APP/GAME RESEARCH, PERSONAL SANDBOX FULL CLONES (PS5/OS/APPS) & AAA VISUALS (`memory/PERSONAL_SANDBOX_CLONE_PROMPT.md`)",
       "kind": "md-h2",
-      "startLine": 68,
-      "endLine": 78
+      "startLine": 78,
+      "endLine": 88
     },
     {
       "file": "memory/PERSONAL_SANDBOX_CLONE_PROMPT.md",
@@ -3255,7 +5040,7 @@
       "name": "full-file",
       "kind": "file",
       "startLine": 1,
-      "endLine": 31
+      "endLine": 32
     },
     {
       "file": "README.md",
@@ -3403,6 +5188,83 @@
       "kind": "state",
       "startLine": 65,
       "endLine": 95
+    },
+    {
+      "file": "scripts/bpy-full.mjs",
+      "name": "PRESETS",
+      "kind": "state",
+      "startLine": 39,
+      "endLine": 53
+    },
+    {
+      "file": "scripts/bpy-full.mjs",
+      "name": "buildInterceptorShip",
+      "kind": "function",
+      "startLine": 54,
+      "endLine": 91
+    },
+    {
+      "file": "scripts/bpy-full.mjs",
+      "name": "buildHeroCharacter",
+      "kind": "function",
+      "startLine": 92,
+      "endLine": 109
+    },
+    {
+      "file": "scripts/bpy-full.mjs",
+      "name": "buildMech",
+      "kind": "function",
+      "startLine": 110,
+      "endLine": 130
+    },
+    {
+      "file": "scripts/bpy-full.mjs",
+      "name": "autoRigChain",
+      "kind": "function",
+      "startLine": 131,
+      "endLine": 136
+    },
+    {
+      "file": "scripts/bpy-full.mjs",
+      "name": "rigCurrentModel",
+      "kind": "function",
+      "startLine": 137,
+      "endLine": 166
+    },
+    {
+      "file": "scripts/bpy-full.mjs",
+      "name": "bakeWalkCycle",
+      "kind": "function",
+      "startLine": 167,
+      "endLine": 187
+    },
+    {
+      "file": "scripts/bpy-full.mjs",
+      "name": "printHelp",
+      "kind": "function",
+      "startLine": 188,
+      "endLine": 198
+    },
+    {
+      "file": "scripts/bpy-full.mjs",
+      "name": "main",
+      "kind": "function",
+      "startLine": 199,
+      "endLine": 201
+    },
+    {
+      "file": "scripts/bpy-full.mjs",
+      "name": "flag",
+      "kind": "const-fn",
+      "startLine": 202,
+      "endLine": 259
+    },
+    {
+      "file": "scripts/bpy-full.mjs",
+      "name": "writer",
+      "kind": "state",
+      "startLine": 260,
+      "endLine": 303
     },
     {
       "file": "scripts/chunk-editor.mjs",

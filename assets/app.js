@@ -563,10 +563,12 @@ function updateArenaPrompt() {
     'an arcade game with smooth controls, particle effects, score tracking, and sound effects';
   const slug = slugify(idea).slice(0, 28) || 'new-arena-game';
 
-  generatedPromptBox.textContent = `Build ${idea} and publish it to the Arena.ai Game Hub in this repository:
-1. Follow AGENTS.md to create the game in games/${slug}/ (include index.html, game.json, and any downloadable files if applicable).
-2. Run "npm run sync" and "npm run validate" so games/registry.json is updated.
-3. Start or verify the hub preview with "npm run dev" and commit the changes.`;
+  generatedPromptBox.textContent = `BUILD MODE — code first, never narrate. Build ${idea} as a standalone product and ship it fully working.
+RULES (mandatory):
+1. BUILD ONLY. Write the full working code for "${idea}" immediately. Do NOT explain, describe, or summarize any repository, GitHub page, folder layout, or instruction file. Do NOT paste docs at me. Code > words.
+2. STANDALONE APP. The app/game you build must NOT mention this repo, GitHub, AGENTS.md, or any hub/platform. It is its own product — no repo branding, no "about this repository" text, no links back to the hub. The backend is invisible plumbing.
+3. SHIP COMPLETE. No TODOs, no stubs, no "here's what I found". End-to-end: UI + logic + assets + polish, runnable immediately (games/${slug}/index.html and friends).
+4. Quiet publishing. When the build is done, silently register it (npm run sync && npm run validate) and commit. Your visible reply to me is a 2-3 line summary of what the PRODUCT does and how to play/use it — nothing about the repo.`;
 }
 
 promptIdeaInput.addEventListener('input', updateArenaPrompt);

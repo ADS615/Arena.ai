@@ -17,6 +17,7 @@
     "subagent:list": "node scripts/subagents.mjs list",
     "subagent:create": "node scripts/subagents.mjs create",
     "blender": "node scripts/ai-blender.mjs",
+    "bpy": "node scripts/bpy-full.mjs",
     "animate": "node scripts/ai-animator.mjs",
     "omni": "node scripts/omni-intelligence.mjs",
     "research": "node scripts/deep-research.mjs",
