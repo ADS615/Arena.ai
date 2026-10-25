@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arena.ai Game Hub — Play, Build &amp; Upload Games</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <!-- Top Navigation -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="brand" id="brandHome">
+        <div class="brand-logo">🎮</div>
+        <div>
+          <span class="brand-title">Arena.ai</span>
+          <span class="brand-badge">GAME HUB</span>
+        </div>
+      </a>
+
+      <div class="nav-search">
+        <input
+          type="search"
+          id="searchInput"
+          placeholder="Search games by title, genre, tag, or platform..."
+          aria-label="Search games"
+        />
+      </div>
+
+      <div class="nav-actions">
+        <span id="serverBadge" class="status-pill">Checking mode...</span>
+        <button class="btn btn-secondary" id="openFilmStudioBtn">🎬 20-Min 2D/3D Film Studio</button>
+        <button class="btn btn-secondary" id="openBlenderStudioBtn">🧊 AI-Blender 3D Studio</button>
+        <button class="btn btn-secondary" id="openAgentGuideBtn">🤖 Agent &amp; Sub-Agents</button>
+        <button class="btn btn-primary" id="openUploadBtn">＋ Upload / New Game</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container main-content">
+    <!-- Hero Banner -->
+    <section class="hero" id="heroSection">
+      <div class="hero-copy">
+        <div class="eyebrow">ARENA.AI 3D STUDIO, 20-MIN FILM ANIMATOR, DEEP RESEARCH &amp; GAME HUB</div>
+        <h1>Build 3D Models, Animate 20-Min 2D/3D Films &amp; Recreate Any App or Game</h1>
+        <p>
+          Powered by the <strong>AI-Blender 3D Engine</strong>, <strong>Blender-Grade 2D/3D Skeletal &amp; NLA Animation Studio</strong>,
+          <strong>4 Modeling + 9 Coding/Research Sub-Agents</strong>, and <strong>Surgical Chunk Editing</strong>.
+        </p>
+        <div class="hero-buttons">
+          <button class="btn btn-primary btn-lg" id="heroPlayFeaturedBtn">▶ Launch PS5 OS / Featured 3D</button>
+          <button class="btn btn-secondary btn-lg" id="heroFilmStudioBtn">🎬 Watch 20-Min 2D/3D Film</button>
+          <button class="btn btn-secondary btn-lg" id="heroBlenderBtn">🧊 Open AI-Blender 3D Studio</button>
+          <button class="btn btn-secondary btn-lg" id="heroPromptBtn">🔬 Deep-Research / Build with Arena</button>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-card">
+          <div class="stat-value" id="statTotal">0</div>
+          <div class="stat-label">Published Games &amp; Apps</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="statWeb">0</div>
+          <div class="stat-label">Playable in Browser</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="statDownload">0</div>
+          <div class="stat-label">3D Models &amp; Builds</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dedicated Games & Recreated Apps Showcase Section -->
+    <section id="gamesVaultSection" class="vault-section">
+      <div class="vault-header">
+        <div>
+          <div class="eyebrow">DEDICATED ARCADE &amp; RECREATION VAULT</div>
+          <h2>🎮 Published Games, 3D Worlds &amp; Recreated Apps</h2>
+        </div>
+        <div class="subagent-summary-pills">
+          <span class="badge badge-web">🧊 4 Modeling Sub-Agents Active</span>
+          <span class="badge badge-hybrid">⚡ 8 Coding &amp; Deep-Research Sub-Agents Active</span>
+        </div>
+      </div>
+
+      <!-- Filter Bar -->
+      <div class="filters-bar">
+        <div class="type-tabs" id="typeTabs">
+          <button class="tab active" data-filter="all">All Projects</button>
+          <button class="tab" data-filter="3d">🧊 3D &amp; AI-Blender</button>
+          <button class="tab" data-filter="web">🌐 Browser Playable</button>
+          <button class="tab" data-filter="download">⬇ Downloadable Builds &amp; .OBJ/.GLTF</button>
+        </div>
+        <div class="genre-pills" id="genrePills"></div>
+      </div>
+
+      <!-- Games Grid -->
+      <div id="gamesGrid" class="games-grid"></div>
+      <div id="emptyState" class="empty-state hidden">
+        <h3>No matching games or apps found</h3>
+        <p>Try clearing your search filter or click "＋ Upload / New Game" to add one!</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Theatre Player Modal -->
+  <div id="playerModal" class="modal-backdrop hidden" role="dialog" aria-modal="true">
+    <div class="player-modal">
+      <div class="player-header">
+        <div class="player-title-wrap">
+          <h2 id="playerTitle">Game Title</h2>
+          <span id="playerGenreBadge" class="badge">Arcade</span>
+        </div>
+        <div class="player-actions">
+          <button class="btn btn-sm btn-secondary" id="reloadGameBtn" title="Restart Game">↻ Restart</button>
+          <button class="btn btn-sm btn-secondary" id="fullscreenGameBtn" title="Fullscreen">⛶ Fullscreen</button>
+          <a class="btn btn-sm btn-secondary" id="openNewTabBtn" href="#" target="_blank" rel="noopener">↗ New Tab</a>
+          <button class="btn btn-sm btn-danger" id="closePlayerBtn">✕ Close</button>
+        </div>
+      </div>
+
+      <div class="player-viewport" id="playerViewport">
+        <iframe id="gameIframe" title="Game Viewport" allow="autoplay; fullscreen; gamepad"></iframe>
+      </div>
+
+      <div class="player-footer">
+        <div class="player-meta">
+          <div><strong>Controls:</strong> <span id="playerControls">WASD / Mouse</span></div>
+          <p id="playerDescription"></p>
+        </div>
+        <div id="playerDownloads" class="player-downloads"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Upload / Create Game Modal -->
+  <div id="uploadModal" class="modal-backdrop hidden" role="dialog" aria-modal="true">
+    <div class="dialog-modal">
+      <div class="dialog-header">
+        <h2>Add or Upload a Game</h2>
+        <button class="icon-close" id="closeUploadBtn">✕</button>
+      </div>
+
+      <div class="dialog-tabs">
+        <button class="dialog-tab active" data-tab="uploadTab">📤 Upload / Scaffold Game</button>
+        <button class="dialog-tab" data-tab="arenaTab">🤖 Ask Arena to Build</button>
+        <button class="dialog-tab" data-tab="repoSearchTab">🔍 Search Repo &amp; Chunks</button>
+      </div>
+
+      <!-- Tab 1: Direct Upload / Scaffold -->
+      <div id="uploadTab" class="dialog-body">
+        <form id="uploadForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="gameTitle">Game Title *</label>
+              <input type="text" id="gameTitle" required placeholder="e.g. Astro Drift 3000" />
+            </div>
+            <div class="form-group">
+              <label for="gameSlug">Folder Slug (in <code>games/</code>)</label>
+              <input type="text" id="gameSlug" placeholder="auto-generated-from-title" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="gameType">Game Format</label>
+              <select id="gameType">
+                <option value="web">🌐 Browser Playable (HTML5 / JS / Canvas)</option>
+                <option value="download">⬇ Downloadable Build (Python, Zip, Exe, Godot...)</option>
+                <option value="hybrid">⚡ Hybrid (Browser Playable + Downloadable Files)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="gameGenre">Genre</label>
+              <input type="text" id="gameGenre" value="Arcade" placeholder="Arcade, RPG, Puzzle, Action..." />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="gameControls">Controls</label>
+            <input type="text" id="gameControls" value="WASD / Arrow Keys / Mouse" />
+          </div>
+
+          <div class="form-group">
+            <label for="gameDescription">Description</label>
+            <textarea id="gameDescription" rows="2" placeholder="Short description of gameplay and features..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label>Game Files (Optional — leave empty to generate from starter template)</label>
+            <div class="dropzone" id="fileDropzone">
+              <input type="file" id="gameFilesInput" multiple />
+              <div class="dropzone-text">
+                <strong>Click or drag files here</strong>
+                <span>Upload <code>index.html</code>, scripts, assets, or downloadable builds (<code>.py</code>, <code>.zip</code>, <code>.exe</code>, etc.)</span>
+              </div>
+              <div id="selectedFilesList" class="selected-files"></div>
+            </div>
+          </div>
+
+          <div id="uploadStatusMsg" class="form-status hidden"></div>
+
+          <div class="dialog-footer">
+            <button type="button" class="btn btn-secondary" id="cancelUploadBtn">Cancel</button>
+            <button type="submit" class="btn btn-primary" id="submitUploadBtn">🚀 Publish Game to Hub</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Tab 2: Arena Prompt & Agent Workflow -->
+      <div id="arenaTab" class="dialog-body hidden">
+        <p class="helper-text">
+          This repository includes <code>AGENTS.md</code> and automated CLI scripts so any Arena.ai session knows how to create and upload games here automatically.
+        </p>
+
+        <div class="form-group">
+          <label for="promptIdeaInput">What kind of game do you want Arena to make?</label>
+          <input
+            type="text"
+            id="promptIdeaInput"
+            placeholder="e.g. A retrobrick breaker with laser powerups and synthwave music"
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Copy &amp; Paste into any Arena.ai Session on this Repo:</label>
+          <pre id="generatedPromptBox" class="code-box"></pre>
+          <button type="button" class="btn btn-secondary btn-sm" id="copyPromptBtn">📋 Copy Arena Prompt</button>
+        </div>
+
+        <div class="agent-cli-reference">
+          <h4>CLI Commands Available for Arena Agents &amp; Developers</h4>
+          <pre class="code-box"># 1. Scaffold a new browser or downloadable game in games/&lt;slug&gt;/
+npm run new-game -- --slug my-game --title "My Game" --type web --genre "Arcade"
+
+# 2. Auto-discover all folders in games/ and update games/registry.json
+npm run sync
+
+# 3. Validate all game manifests &amp; entry files
+npm run validate
+
+# 4. Run live preview &amp; upload server (bound to 0.0.0.0:3000)
+npm run dev</pre>
+        </div>
+      </div>
+
+      <!-- Tab 3: Live Repository & Chunk Search Explorer -->
+      <div id="repoSearchTab" class="dialog-body hidden">
+        <p class="helper-text">
+          Search any part of the <code>Arena.ai</code> repository by function, 3D model, animation clip, subsystem (<code>3d</code>, <code>animation</code>, <code>4k</code>, <code>ui</code>, <code>games</code>, <code>subagents</code>, <code>memory</code>), or keyword.
+        </p>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="repoSearchInput">Search Query or Subsystem</label>
+            <input type="text" id="repoSearchInput" placeholder="e.g. createPS5ConsoleMesh, evaluateCharacterPose, 3d, 4k..." />
+          </div>
+          <div class="form-group">
+            <label for="repoSearchMode">Search Mode</label>
+            <select id="repoSearchMode">
+              <option value="search">🔍 Chunks, Files &amp; Code Lines</option>
+              <option value="exports">📦 All Exported Engine APIs</option>
+              <option value="map">🗺️ Subsystem Architecture Map</option>
+            </select>
+          </div>
+        </div>
+        <pre id="repoSearchResultsBox" class="code-box" style="max-height:320px;overflow-y:auto">Type a query above or select a mode to inspect exact [Lstart-Lend] chunks.</pre>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div><strong>Arena.ai Game Hub</strong> — Configured for automated game creation &amp; publishing</div>
+      <div>Add games in <code>games/&lt;slug&gt;/</code> &bull; Run <code>npm run sync</code></div>
+    </div>
+  </footer>
+
+  <script type="module" src="assets/app.js"></script>
+</body>
+</html>

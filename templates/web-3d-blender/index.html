@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>__GAME_TITLE__</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #040711;
+      color: #f8fafc;
+      font-family: system-ui, -apple-system, sans-serif;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    canvas {
+      width: 920px;
+      max-width: 98vw;
+      aspect-ratio: 16 / 10;
+      background: radial-gradient(circle at center, #111b36 0%, #040711 100%);
+      border: 2px solid rgba(56, 189, 248, 0.4);
+      border-radius: 16px;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="c" width="920" height="575"></canvas>
+  <script type="module">
+    import { createPresetModel, norm3, dot3, sub3, cross3 } from '../../assets/ai-blender-engine.js';
+    const canvas = document.getElementById('c');
+    const ctx = canvas.getContext('2d');
+    const mesh = createPresetModel('interceptor-ship');
+    let angle = 0;
+
+    function loop() {
+      angle += 0.015;
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      const cy = Math.cos(angle), sy = Math.sin(angle);
+      const light = norm3([0.5, 0.8, -0.5]);
+
+      const proj = mesh.vertices.map(([x, y, z]) => {
+        const x1 = x * cy + z * sy;
+        const z1 = -x * sy + z * cy + 5.5;
+        const sc = 480 / Math.max(0.5, z1);
+        return [canvas.width / 2 + x1 * sc, canvas.height / 2 - y * sc, z1, [x1, y, z1]];
+      });
+
+      const tris = mesh.faces.map(([a, b, c]) => {
+        const p0 = proj[a], p1 = proj[b], p2 = proj[c];
+        const n = norm3(cross3(sub3(p1[3], p0[3]), sub3(p2[3], p0[3])));
+        return { p0, p1, p2, depth: (p0[2] + p1[2] + p2[2]) / 3, n };
+      }).sort((a, b) => b.depth - a.depth);
+
+      for (const t of tris) {
+        const ndl = Math.max(0.2, Math.abs(dot3(t.n, light)));
+        ctx.beginPath();
+        ctx.moveTo(t.p0[0], t.p0[1]);
+        ctx.lineTo(t.p1[0], t.p1[1]);
+        ctx.lineTo(t.p2[0], t.p2[1]);
+        ctx.closePath();
+        ctx.fillStyle = `rgb(${Math.round(56 * ndl)},${Math.round(189 * ndl)},${Math.round(248 * ndl)})`;
+        ctx.fill();
+      }
+      requestAnimationFrame(loop);
+    }
+    requestAnimationFrame(loop);
+  </script>
+</body>
+</html>

@@ -1,0 +1,646 @@
+{
+  "updatedAt": "2026-10-25T00:03:30.503Z",
+  "totalFiles": 80,
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 101,
+      "lines": 0,
+      "hash": "",
+      "chunkCount": 0,
+      "description": "Repository file"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 7067,
+      "lines": 131,
+      "hash": "0dc08f2d14",
+      "chunkCount": 13,
+      "description": "Primary instructions, Master Prompt, Chunk Editing protocol & Sub-Agent guide for Arena agents"
+    },
+    {
+      "path": "assets/aaa-4k-engine.js",
+      "bytes": 8150,
+      "lines": 251,
+      "hash": "70c022ad4a",
+      "chunkCount": 6,
+      "description": "Repository file"
+    },
+    {
+      "path": "assets/ai-animation-studio.js",
+      "bytes": 20114,
+      "lines": 602,
+      "hash": "a147c16d9e",
+      "chunkCount": 9,
+      "description": "Repository file"
+    },
+    {
+      "path": "assets/ai-blender-engine.js",
+      "bytes": 38947,
+      "lines": 1189,
+      "hash": "109855c897",
+      "chunkCount": 56,
+      "description": "Repository file"
+    },
+    {
+      "path": "assets/app.js",
+      "bytes": 20343,
+      "lines": 588,
+      "hash": "0260b74502",
+      "chunkCount": 42,
+      "description": "Frontend application state, catalog filtering, iframe player, file uploader, and prompt generator"
+    },
+    {
+      "path": "assets/arena-ui-kit.js",
+      "bytes": 8967,
+      "lines": 339,
+      "hash": "4257892675",
+      "chunkCount": 4,
+      "description": "Repository file"
+    },
+    {
+      "path": "assets/styles.css",
+      "bytes": 14450,
+      "lines": 802,
+      "hash": "a7b7810e59",
+      "chunkCount": 111,
+      "description": "Dark arcade UI styles, responsive grid, theatre modal, and dialog styles"
+    },
+    {
+      "path": "blender-studio.html",
+      "bytes": 17901,
+      "lines": 519,
+      "hash": "86c1b329db",
+      "chunkCount": 22,
+      "description": "Repository file"
+    },
+    {
+      "path": "CLAUDE.md",
+      "bytes": 3248,
+      "lines": 29,
+      "hash": "37a5f67fd6",
+      "chunkCount": 2,
+      "description": "Agent instructions mirror pointing to AGENTS.md & Master Prompt"
+    },
+    {
+      "path": "games/astra-3d-overdrive/cyber-mech.gltf",
+      "bytes": 131010,
+      "lines": 0,
+      "hash": "",
+      "chunkCount": 0,
+      "description": "Game asset/source for astra-3d-overdrive"
+    },
+    {
+      "path": "games/astra-3d-overdrive/game.json",
+      "bytes": 1024,
+      "lines": 28,
+      "hash": "71d4fa549d",
+      "chunkCount": 1,
+      "description": "Game asset/source for astra-3d-overdrive"
+    },
+    {
+      "path": "games/astra-3d-overdrive/index.html",
+      "bytes": 16015,
+      "lines": 486,
+      "hash": "7ee675e9e9",
+      "chunkCount": 16,
+      "description": "Game asset/source for astra-3d-overdrive"
+    },
+    {
+      "path": "games/astra-3d-overdrive/interceptor-ship.obj",
+      "bytes": 50295,
+      "lines": 0,
+      "hash": "",
+      "chunkCount": 0,
+      "description": "Game asset/source for astra-3d-overdrive"
+    },
+    {
+      "path": "games/astra-3d-overdrive/thumbnail.svg",
+      "bytes": 1745,
+      "lines": 25,
+      "hash": "b7c7247c4b",
+      "chunkCount": 1,
+      "description": "Game asset/source for astra-3d-overdrive"
+    },
+    {
+      "path": "games/astral-odyssey-film/game.json",
+      "bytes": 997,
+      "lines": 23,
+      "hash": "89b8acdb3e",
+      "chunkCount": 1,
+      "description": "Game asset/source for astral-odyssey-film"
+    },
+    {
+      "path": "games/astral-odyssey-film/index.html",
+      "bytes": 17045,
+      "lines": 519,
+      "hash": "d5686ecbc9",
+      "chunkCount": 19,
+      "description": "Game asset/source for astral-odyssey-film"
+    },
+    {
+      "path": "games/astral-odyssey-film/sword-combo.json",
+      "bytes": 142534,
+      "lines": 6344,
+      "hash": "5fea87c362",
+      "chunkCount": 1,
+      "description": "Game asset/source for astral-odyssey-film"
+    },
+    {
+      "path": "games/astral-odyssey-film/thumbnail.svg",
+      "bytes": 1749,
+      "lines": 25,
+      "hash": "bd56a6cdbb",
+      "chunkCount": 1,
+      "description": "Game asset/source for astral-odyssey-film"
+    },
+    {
+      "path": "games/cyber-serpent/game.json",
+      "bytes": 522,
+      "lines": 17,
+      "hash": "03a17b6761",
+      "chunkCount": 1,
+      "description": "Game asset/source for cyber-serpent"
+    },
+    {
+      "path": "games/cyber-serpent/index.html",
+      "bytes": 8327,
+      "lines": 286,
+      "hash": "a716994159",
+      "chunkCount": 12,
+      "description": "Game asset/source for cyber-serpent"
+    },
+    {
+      "path": "games/cyber-serpent/thumbnail.svg",
+      "bytes": 1716,
+      "lines": 25,
+      "hash": "e06ac14a3d",
+      "chunkCount": 1,
+      "description": "Game asset/source for cyber-serpent"
+    },
+    {
+      "path": "games/dungeon-crawler-py/dungeon_crawler.py",
+      "bytes": 4814,
+      "lines": 141,
+      "hash": "f447488994",
+      "chunkCount": 6,
+      "description": "Game asset/source for dungeon-crawler-py"
+    },
+    {
+      "path": "games/dungeon-crawler-py/game.json",
+      "bytes": 779,
+      "lines": 23,
+      "hash": "fdc70c7637",
+      "chunkCount": 1,
+      "description": "Game asset/source for dungeon-crawler-py"
+    },
+    {
+      "path": "games/dungeon-crawler-py/index.html",
+      "bytes": 9345,
+      "lines": 304,
+      "hash": "b085608b78",
+      "chunkCount": 11,
+      "description": "Game asset/source for dungeon-crawler-py"
+    },
+    {
+      "path": "games/dungeon-crawler-py/thumbnail.svg",
+      "bytes": 1736,
+      "lines": 25,
+      "hash": "441a1f65b6",
+      "chunkCount": 1,
+      "description": "Game asset/source for dungeon-crawler-py"
+    },
+    {
+      "path": "games/neon-blaster/game.json",
+      "bytes": 575,
+      "lines": 17,
+      "hash": "72d263bbb0",
+      "chunkCount": 1,
+      "description": "Game asset/source for neon-blaster"
+    },
+    {
+      "path": "games/neon-blaster/index.html",
+      "bytes": 15680,
+      "lines": 502,
+      "hash": "d2ab2188be",
+      "chunkCount": 19,
+      "description": "Game asset/source for neon-blaster"
+    },
+    {
+      "path": "games/neon-blaster/thumbnail.svg",
+      "bytes": 1715,
+      "lines": 25,
+      "hash": "204e35a9d3",
+      "chunkCount": 1,
+      "description": "Game asset/source for neon-blaster"
+    },
+    {
+      "path": "games/ps5-os-clone/dualsense-controller.gltf",
+      "bytes": 400275,
+      "lines": 0,
+      "hash": "",
+      "chunkCount": 0,
+      "description": "Game asset/source for ps5-os-clone"
+    },
+    {
+      "path": "games/ps5-os-clone/game.json",
+      "bytes": 1084,
+      "lines": 28,
+      "hash": "d251c06cea",
+      "chunkCount": 1,
+      "description": "Game asset/source for ps5-os-clone"
+    },
+    {
+      "path": "games/ps5-os-clone/index.html",
+      "bytes": 28686,
+      "lines": 846,
+      "hash": "bd56ef54bd",
+      "chunkCount": 25,
+      "description": "Game asset/source for ps5-os-clone"
+    },
+    {
+      "path": "games/ps5-os-clone/ps5-console.obj",
+      "bytes": 9511,
+      "lines": 0,
+      "hash": "",
+      "chunkCount": 0,
+      "description": "Game asset/source for ps5-os-clone"
+    },
+    {
+      "path": "games/ps5-os-clone/thumbnail.svg",
+      "bytes": 1744,
+      "lines": 25,
+      "hash": "1d95282ff9",
+      "chunkCount": 1,
+      "description": "Game asset/source for ps5-os-clone"
+    },
+    {
+      "path": "games/README.md",
+      "bytes": 472,
+      "lines": 10,
+      "hash": "c1da1b5513",
+      "chunkCount": 2,
+      "description": "Game asset/source for README.md"
+    },
+    {
+      "path": "games/registry.json",
+      "bytes": 8855,
+      "lines": 250,
+      "hash": "1e6f2474dd",
+      "chunkCount": 1,
+      "description": "Game asset/source for registry.json"
+    },
+    {
+      "path": "games/valkyrie-4k-horizon/AAA_BLUEPRINT.json",
+      "bytes": 1712,
+      "lines": 32,
+      "hash": "338ca4a874",
+      "chunkCount": 1,
+      "description": "Game asset/source for valkyrie-4k-horizon"
+    },
+    {
+      "path": "games/valkyrie-4k-horizon/game.json",
+      "bytes": 955,
+      "lines": 23,
+      "hash": "47bf168391",
+      "chunkCount": 1,
+      "description": "Game asset/source for valkyrie-4k-horizon"
+    },
+    {
+      "path": "games/valkyrie-4k-horizon/index.html",
+      "bytes": 15835,
+      "lines": 510,
+      "hash": "1250eefc81",
+      "chunkCount": 17,
+      "description": "Game asset/source for valkyrie-4k-horizon"
+    },
+    {
+      "path": "games/valkyrie-4k-horizon/plasma-sword.obj",
+      "bytes": 27315,
+      "lines": 0,
+      "hash": "",
+      "chunkCount": 0,
+      "description": "Game asset/source for valkyrie-4k-horizon"
+    },
+    {
+      "path": "games/valkyrie-4k-horizon/thumbnail.svg",
+      "bytes": 1746,
+      "lines": 25,
+      "hash": "99a220486b",
+      "chunkCount": 1,
+      "description": "Game asset/source for valkyrie-4k-horizon"
+    },
+    {
+      "path": "index.html",
+      "bytes": 12560,
+      "lines": 282,
+      "hash": "c30ecff30c",
+      "chunkCount": 21,
+      "description": "Main Arena.ai Game Hub frontend layout (navbar, hero, filters, theatre modal, upload modal)"
+    },
+    {
+      "path": "memory/3D_MODELING_PROMPT.md",
+      "bytes": 3996,
+      "lines": 60,
+      "hash": "14e9a57cf7",
+      "chunkCount": 6,
+      "description": "Repository file"
+    },
+    {
+      "path": "memory/ANIMATION_FILM_PROMPT.md",
+      "bytes": 3417,
+      "lines": 49,
+      "hash": "855a5fe528",
+      "chunkCount": 8,
+      "description": "Repository file"
+    },
+    {
+      "path": "memory/BEAST_MODE_PROMPT.md",
+      "bytes": 2625,
+      "lines": 36,
+      "hash": "1ddb266747",
+      "chunkCount": 4,
+      "description": "Repository file"
+    },
+    {
+      "path": "memory/COMPLETION_STATUS.json",
+      "bytes": 155,
+      "lines": 9,
+      "hash": "3ebaf030ef",
+      "chunkCount": 1,
+      "description": "Repository file"
+    },
+    {
+      "path": "memory/DEEP_RESEARCH_PROMPT.md",
+      "bytes": 2731,
+      "lines": 36,
+      "hash": "8fcffdea7e",
+      "chunkCount": 4,
+      "description": "Repository file"
+    },
+    {
+      "path": "memory/MASTER_PROMPT.md",
+      "bytes": 6214,
+      "lines": 78,
+      "hash": "4424637a12",
+      "chunkCount": 6,
+      "description": "Master Self-Prompt enforcing continuous execution, chunk-only reading, and sub-agent usage"
+    },
+    {
+      "path": "memory/PERSONAL_SANDBOX_CLONE_PROMPT.md",
+      "bytes": 2112,
+      "lines": 35,
+      "hash": "d5d8f8f7e3",
+      "chunkCount": 4,
+      "description": "Repository file"
+    },
+    {
+      "path": "memory/subagents.json",
+      "bytes": 4155,
+      "lines": 111,
+      "hash": "a6d73d0511",
+      "chunkCount": 1,
+      "description": "Registry of specialist sub-agents available to the main agent"
+    },
+    {
+      "path": "package.json",
+      "bytes": 1219,
+      "lines": 31,
+      "hash": "42e06e6f07",
+      "chunkCount": 1,
+      "description": "NPM scripts for dev server, game sync, chunk memory, and sub-agents"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3914,
+      "lines": 75,
+      "hash": "639931e191",
+      "chunkCount": 9,
+      "description": "Repository overview, CLI documentation, and structure guide"
+    },
+    {
+      "path": "scripts/ai-animator.mjs",
+      "bytes": 4927,
+      "lines": 116,
+      "hash": "77e37acbab",
+      "chunkCount": 4,
+      "description": "Repository file"
+    },
+    {
+      "path": "scripts/ai-blender.mjs",
+      "bytes": 7395,
+      "lines": 210,
+      "hash": "595deb45a1",
+      "chunkCount": 6,
+      "description": "Repository file"
+    },
+    {
+      "path": "scripts/anti-stop-enforcer.mjs",
+      "bytes": 3495,
+      "lines": 95,
+      "hash": "5f9fb0ae97",
+      "chunkCount": 2,
+      "description": "Repository file"
+    },
+    {
+      "path": "scripts/chunk-editor.mjs",
+      "bytes": 5434,
+      "lines": 143,
+      "hash": "a1123a47bb",
+      "chunkCount": 3,
+      "description": "Repository file"
+    },
+    {
+      "path": "scripts/chunk-tool.mjs",
+      "bytes": 16494,
+      "lines": 486,
+      "hash": "4e886a4483",
+      "chunkCount": 11,
+      "description": "File Memory & Semantic Chunk Indexer for surgical line-range reading and chunk editing"
+    },
+    {
+      "path": "scripts/deep-research.mjs",
+      "bytes": 2798,
+      "lines": 72,
+      "hash": "1e57c2a709",
+      "chunkCount": 2,
+      "description": "Repository file"
+    },
+    {
+      "path": "scripts/dev-server.mjs",
+      "bytes": 10477,
+      "lines": 290,
+      "hash": "39e69c0a2e",
+      "chunkCount": 12,
+      "description": "Zero-dependency HTTP server (0.0.0.0:3000) with static file serving and REST upload API"
+    },
+    {
+      "path": "scripts/new-game.mjs",
+      "bytes": 4587,
+      "lines": 153,
+      "hash": "ebdc045e24",
+      "chunkCount": 5,
+      "description": "CLI generator that scaffolds new browser or downloadable games from templates/"
+    },
+    {
+      "path": "scripts/omni-intelligence.mjs",
+      "bytes": 3582,
+      "lines": 83,
+      "hash": "0af7ad4b66",
+      "chunkCount": 2,
+      "description": "Repository file"
+    },
+    {
+      "path": "scripts/repo-search.mjs",
+      "bytes": 12291,
+      "lines": 356,
+      "hash": "8e0cbdb60e",
+      "chunkCount": 6,
+      "description": "Repository file"
+    },
+    {
+      "path": "scripts/subagents.mjs",
+      "bytes": 14266,
+      "lines": 418,
+      "hash": "a89901e967",
+      "chunkCount": 11,
+      "description": "Parallel Sub-Agent Orchestrator, QA syntax verifier, game blueprinter, and custom sub-agent creator"
+    },
+    {
+      "path": "scripts/sync-games.mjs",
+      "bytes": 10654,
+      "lines": 299,
+      "hash": "0f8154f705",
+      "chunkCount": 9,
+      "description": "Auto-discovers games/* folders, generates missing manifests/thumbnails, and updates registry + memory"
+    },
+    {
+      "path": "scripts/validate-games.mjs",
+      "bytes": 1686,
+      "lines": 57,
+      "hash": "027c54819b",
+      "chunkCount": 1,
+      "description": "Validator checking all game manifests, entry points, thumbnails, and downloads"
+    },
+    {
+      "path": "subagents/asset-optimizer.mjs",
+      "bytes": 859,
+      "lines": 26,
+      "hash": "56af307f72",
+      "chunkCount": 1,
+      "description": "Repository file"
+    },
+    {
+      "path": "subagents/chunk-health.mjs",
+      "bytes": 728,
+      "lines": 24,
+      "hash": "692637e096",
+      "chunkCount": 1,
+      "description": "Repository file"
+    },
+    {
+      "path": "subagents/coder-deep-research.mjs",
+      "bytes": 540,
+      "lines": 15,
+      "hash": "91d8e3f926",
+      "chunkCount": 1,
+      "description": "Repository file"
+    },
+    {
+      "path": "subagents/coder-visual-polish.mjs",
+      "bytes": 582,
+      "lines": 18,
+      "hash": "5a57c64bc4",
+      "chunkCount": 1,
+      "description": "Repository file"
+    },
+    {
+      "path": "subagents/modeler-materials-shaders.mjs",
+      "bytes": 769,
+      "lines": 16,
+      "hash": "1d612b8fd5",
+      "chunkCount": 1,
+      "description": "Repository file"
+    },
+    {
+      "path": "subagents/modeler-mesh.mjs",
+      "bytes": 571,
+      "lines": 14,
+      "hash": "91266c051b",
+      "chunkCount": 1,
+      "description": "Repository file"
+    },
+    {
+      "path": "subagents/modeler-modifiers-sculpt.mjs",
+      "bytes": 830,
+      "lines": 24,
+      "hash": "22fd937894",
+      "chunkCount": 1,
+      "description": "Repository file"
+    },
+    {
+      "path": "subagents/modeler-rig-anim-export.mjs",
+      "bytes": 1184,
+      "lines": 22,
+      "hash": "0696f4158c",
+      "chunkCount": 1,
+      "description": "Repository file"
+    },
+    {
+      "path": "templates/downloadable/game.json",
+      "bytes": 493,
+      "lines": 21,
+      "hash": "9491611ad8",
+      "chunkCount": 1,
+      "description": "Starter template file (templates/downloadable/game.json)"
+    },
+    {
+      "path": "templates/downloadable/index.html",
+      "bytes": 1938,
+      "lines": 74,
+      "hash": "c01761a02f",
+      "chunkCount": 1,
+      "description": "Starter template file (templates/downloadable/index.html)"
+    },
+    {
+      "path": "templates/downloadable/main.py",
+      "bytes": 870,
+      "lines": 38,
+      "hash": "404a98e4ef",
+      "chunkCount": 1,
+      "description": "Starter template file (templates/downloadable/main.py)"
+    },
+    {
+      "path": "templates/web-3d-blender/game.json",
+      "bytes": 372,
+      "lines": 15,
+      "hash": "c178454d05",
+      "chunkCount": 1,
+      "description": "Starter template file (templates/web-3d-blender/game.json)"
+    },
+    {
+      "path": "templates/web-3d-blender/index.html",
+      "bytes": 2373,
+      "lines": 73,
+      "hash": "8ba0f02e04",
+      "chunkCount": 3,
+      "description": "Starter template file (templates/web-3d-blender/index.html)"
+    },
+    {
+      "path": "templates/web-canvas/game.json",
+      "bytes": 367,
+      "lines": 15,
+      "hash": "a30f17ff74",
+      "chunkCount": 1,
+      "description": "Starter template file (templates/web-canvas/game.json)"
+    },
+    {
+      "path": "templates/web-canvas/index.html",
+      "bytes": 3321,
+      "lines": 117,
+      "hash": "e35ca3e26f",
+      "chunkCount": 10,
+      "description": "Starter template file (templates/web-canvas/index.html)"
+    }
+  ]
+}

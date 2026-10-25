@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>__GAME_TITLE__ — Download &amp; Info</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #090d16;
+      color: #f8fafc;
+      font-family: system-ui, -apple-system, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 24px;
+    }
+    .card {
+      background: #111827;
+      border: 1px solid rgba(99, 102, 241, 0.35);
+      border-radius: 16px;
+      padding: 32px;
+      max-width: 560px;
+      width: 100%;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(99, 102, 241, 0.2);
+      color: #818cf8;
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    h1 { font-size: 28px; margin-bottom: 10px; }
+    p { color: #94a3b8; line-height: 1.6; margin-bottom: 20px; }
+    pre {
+      background: #090d16;
+      border: 1px solid #1e293b;
+      padding: 14px;
+      border-radius: 10px;
+      color: #38bdf8;
+      font-size: 13px;
+      margin-bottom: 24px;
+      overflow-x: auto;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, #6366f1, #06b6d4);
+      color: white;
+      text-decoration: none;
+      padding: 12px 22px;
+      border-radius: 10px;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <span class="badge">Downloadable Game Build</span>
+    <h1>__GAME_TITLE__</h1>
+    <p>__GAME_DESCRIPTION__</p>
+    <pre>python3 main.py</pre>
+    <a class="btn" href="main.py?download=1" download="main.py">⬇ Download main.py</a>
+  </div>
+</body>
+</html>

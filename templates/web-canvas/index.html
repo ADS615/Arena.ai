@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>__GAME_TITLE__</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #090d16;
+      color: #f8fafc;
+      font-family: system-ui, -apple-system, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow: hidden;
+      user-select: none;
+    }
+    #hud {
+      position: fixed;
+      top: 16px;
+      left: 16px;
+      right: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      pointer-events: none;
+      z-index: 10;
+    }
+    .pill {
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(99, 102, 241, 0.4);
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    canvas {
+      border: 2px solid rgba(99, 102, 241, 0.4);
+      border-radius: 12px;
+      background: #0f172a;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+      max-width: 96vw;
+      max-height: 88vh;
+    }
+  </style>
+</head>
+<body>
+  <div id="hud">
+    <div class="pill">__GAME_TITLE__</div>
+    <div class="pill">Score: <span id="score">0</span></div>
+  </div>
+  <canvas id="game" width="800" height="500"></canvas>
+
+  <script>
+    const canvas = document.getElementById('game');
+    const ctx = canvas.getContext('2d');
+    const scoreEl = document.getElementById('score');
+
+    const keys = {};
+    window.addEventListener('keydown', (e) => { keys[e.code] = true; });
+    window.addEventListener('keyup', (e) => { keys[e.code] = false; });
+
+    let score = 0;
+    const player = { x: 400, y: 250, r: 16, speed: 260 };
+    const orb = { x: 200, y: 150, r: 10 };
+
+    function respawnOrb() {
+      orb.x = 40 + Math.random() * (canvas.width - 80);
+      orb.y = 40 + Math.random() * (canvas.height - 80);
+    }
+
+    let last = performance.now();
+    function loop(now) {
+      const dt = Math.min(0.05, (now - last) / 1000);
+      last = now;
+
+      if (keys['ArrowLeft'] || keys['KeyA']) player.x -= player.speed * dt;
+      if (keys['ArrowRight'] || keys['KeyD']) player.x += player.speed * dt;
+      if (keys['ArrowUp'] || keys['KeyW']) player.y -= player.speed * dt;
+      if (keys['ArrowDown'] || keys['KeyS']) player.y += player.speed * dt;
+
+      player.x = Math.max(player.r, Math.min(canvas.width - player.r, player.x));
+      player.y = Math.max(player.r, Math.min(canvas.height - player.r, player.y));
+
+      const dx = player.x - orb.x;
+      const dy = player.y - orb.y;
+      if (Math.hypot(dx, dy) < player.r + orb.r) {
+        score += 10;
+        scoreEl.textContent = score;
+        respawnOrb();
+      }
+
+      ctx.fillStyle = '#0f172a';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      // Draw target orb
+      ctx.beginPath();
+      ctx.arc(orb.x, orb.y, orb.r, 0, Math.PI * 2);
+      ctx.fillStyle = '#22d3ee';
+      ctx.fill();
+
+      // Draw player
+      ctx.beginPath();
+      ctx.arc(player.x, player.y, player.r, 0, Math.PI * 2);
+      ctx.fillStyle = '#6366f1';
+      ctx.fill();
+
+      requestAnimationFrame(loop);
+    }
+    requestAnimationFrame(loop);
+  </script>
+</body>
+</html>

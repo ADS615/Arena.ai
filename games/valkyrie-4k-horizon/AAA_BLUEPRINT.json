@@ -1,0 +1,31 @@
+{
+  "title": "Valkyrie 4K: Horizon Protocol",
+  "slug": "valkyrie-4k-horizon",
+  "mode": "blueprint",
+  "createdAt": "2026-10-24T23:39:56.415Z",
+  "enginesUsed": [
+    "assets/aaa-4k-engine.js (UHD 3840x2160 Scaler, ACES Filmic HDR, Volumetric God-Rays, 3D Physics, SSS-Rank Combat)",
+    "assets/ai-blender-engine.js (Procedural 3D Meshes, Modifiers, Sculpting, Principled BSDF, OBJ/glTF Export)",
+    "assets/ai-animation-studio.js (24-Bone IK/FK, Squash & Stretch, Lip-Sync, 20-Min Film Continuity)",
+    "assets/arena-ui-kit.js (Multi-Voice WebAudio Synth, Spatial Hash Grid, A* Pathfinding, Trophies, SaveStateVault)"
+  ],
+  "webAndVideoResearchPipeline": {
+    "step1_webSearchQueries": [
+      "Valkyrie 4K: Horizon Protocol complete mechanics & UI breakdown",
+      "Valkyrie 4K: Horizon Protocol shader lighting & camera controller math",
+      "Valkyrie 4K: Horizon Protocol tutorial transcript step by step implementation"
+    ],
+    "step2_videoTutorialExtraction": [
+      "Extract core game loop / state machine architecture from technical breakdowns",
+      "Extract camera framing, FOV, spring damping, and screen-shake parameters",
+      "Extract UI layout hierarchy, HUD iconography, and keyboard/gamepad bindings",
+      "Extract 3D model silhouettes, material roughness/metallic values, and animation timings"
+    ],
+    "step3_cloneVerificationChecklist": [
+      "100% of menus, tabs, settings, and interactive buttons have working logic",
+      "Native 4K UHD (3840x2160) / QHD / FHD dynamic resolution toggle active",
+      "3D models & skeletal animations remain 100% consistent with zero slop",
+      "WebAudio sound effects & adaptive music respond to every player action"
+    ]
+  }
+}

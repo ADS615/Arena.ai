@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arena.ai AI-Blender 3D Studio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #070a12;
+      color: #f8fafc;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      height: 100vh;
+      display: grid;
+      grid-template-rows: 48px 1fr 34px;
+      overflow: hidden;
+      user-select: none;
+    }
+    .topbar {
+      background: #0e1424;
+      border-bottom: 1px solid rgba(148, 163, 184, 0.16);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 16px;
+      font-size: 13px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+    }
+    .badge {
+      background: rgba(56, 189, 248, 0.18);
+      color: #38bdf8;
+      border: 1px solid rgba(56, 189, 248, 0.4);
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 11px;
+    }
+    .top-actions {
+      display: flex;
+      gap: 8px;
+    }
+    .workspace {
+      display: grid;
+      grid-template-columns: 230px 1fr 270px;
+      height: 100%;
+      overflow: hidden;
+    }
+    .panel {
+      background: #0b101d;
+      border-right: 1px solid rgba(148, 163, 184, 0.14);
+      padding: 14px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .panel-right {
+      border-right: none;
+      border-left: 1px solid rgba(148, 163, 184, 0.14);
+    }
+    .section-title {
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #94a3b8;
+      margin-bottom: 6px;
+    }
+    .btn-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+    }
+    .btn-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    button {
+      background: #162038;
+      color: #e2e8f0;
+      border: 1px solid rgba(148, 163, 184, 0.2);
+      padding: 7px 10px;
+      border-radius: 7px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      text-align: left;
+      transition: background 0.12s, border-color 0.12s;
+    }
+    button:hover {
+      background: #1e2b4a;
+      border-color: #38bdf8;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #6366f1, #06b6d4);
+      color: #fff;
+      border: none;
+      text-align: center;
+      font-weight: 700;
+    }
+    .viewport-wrap {
+      position: relative;
+      background: radial-gradient(circle at center, #11192e 0%, #060911 100%);
+      overflow: hidden;
+    }
+    canvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+      cursor: grab;
+    }
+    canvas:active { cursor: grabbing; }
+    .hud-overlay {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(7, 10, 18, 0.78);
+      border: 1px solid rgba(148, 163, 184, 0.2);
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 12px;
+      color: #cbd5e1;
+      pointer-events: none;
+    }
+    .control-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      margin-bottom: 6px;
+      color: #cbd5e1;
+    }
+    input[type='range'] { width: 120px; }
+    input[type='color'] {
+      background: transparent;
+      border: none;
+      width: 32px;
+      height: 24px;
+      cursor: pointer;
+    }
+    .statusbar {
+      background: #0e1424;
+      border-top: 1px solid rgba(148, 163, 184, 0.16);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 16px;
+      font-size: 12px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span>🧊 AI-Blender 3D Studio</span>
+      <span class="badge">PROCEDURAL MESH + MODIFIERS + PBR + EXPORT</span>
+    </div>
+    <div class="top-actions">
+      <button id="toggleSpinBtn">⟳ Turntable: ON</button>
+      <button id="toggleWireBtn">▦ Wireframe: OFF</button>
+      <button class="btn-primary" id="exportObjBtn">⬇ Export .OBJ</button>
+      <button class="btn-primary" id="exportGltfBtn">⬇ Export .GLTF</button>
+    </div>
+  </header>
+
+  <div class="workspace">
+    <!-- Left Panel: Presets & Mesh Primitives -->
+    <aside class="panel">
+      <div>
+        <div class="section-title">AI 3D Model Presets</div>
+        <div class="btn-stack" id="presetBtns">
+          <button data-preset="ps5-console">🎮 PlayStation 5 Console Tower</button>
+          <button data-preset="dualsense-controller">🕹️ DualSense 3D Controller</button>
+          <button data-preset="interceptor-ship">🚀 Interceptor Starfighter</button>
+          <button data-preset="cyber-mech">🤖 Cyber Mech Unit</button>
+          <button data-preset="hyper-car">🏎️ Synthwave HyperCar</button>
+          <button data-preset="plasma-sword">⚔️ Plasma Energy Blade</button>
+          <button data-preset="suzanne-head">🐵 Suzanne Pro Head</button>
+          <button data-preset="crystal-cluster">💎 Astral Crystal Cluster</button>
+          <button data-preset="asteroid">☄️ Displaced Asteroid</button>
+        </div>
+      </div>
+
+      <div>
+        <div class="section-title">Add Mesh Primitive</div>
+        <div class="btn-grid" id="primBtns">
+          <button data-prim="cube">Cube</button>
+          <button data-prim="sphere">UV Sphere</button>
+          <button data-prim="cylinder">Cylinder</button>
+          <button data-prim="cone">Cone</button>
+          <button data-prim="torus">Torus</button>
+          <button data-prim="lathe">Lathe Vase</button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Center 3D Viewport -->
+    <main class="viewport-wrap">
+      <canvas id="viewport"></canvas>
+      <div class="hud-overlay">
+        <div><strong id="meshNameHud">InterceptorShip</strong></div>
+        <div id="meshStatsHud">Vertices: 0 | Triangles: 0</div>
+        <div style="color:#64748b;margin-top:4px">Drag to Orbit &bull; Scroll to Zoom</div>
+      </div>
+    </main>
+
+    <!-- Right Panel: Modifiers, Edit Mode, Sculpt, Principled BSDF -->
+    <aside class="panel panel-right">
+      <div>
+        <div class="section-title">Edit Mode &amp; Modifiers Stack</div>
+        <div class="btn-stack" id="modBtns">
+          <button data-op="subdivide">✨ Subdivision Surface (Smooth)</button>
+          <button data-op="extrude">🔼 Extrude Faces Outward</button>
+          <button data-op="mirror">🪞 Mirror X-Axis</button>
+          <button data-op="array">♊ Radial Array (3x)</button>
+          <button data-op="twist">🌀 Simple Deform: Twist</button>
+          <button data-op="taper">📐 Simple Deform: Taper</button>
+          <button data-op="bend">🌈 Simple Deform: Bend</button>
+          <button data-op="displace">⛰️ Noise Displace (Organic)</button>
+          <button data-op="solidify">🛡️ Solidify Shell</button>
+          <button data-op="sculpt">🖌️ Sculpt: Inflate Center</button>
+        </div>
+      </div>
+
+      <div>
+        <div class="section-title">Principled BSDF Material</div>
+        <div class="control-row">
+          <span>Base Color</span>
+          <input type="color" id="matColor" value="#38bdf8" />
+        </div>
+        <div class="control-row">
+          <span>Emissive Glow</span>
+          <input type="color" id="matEmissive" value="#0284c7" />
+        </div>
+        <div class="control-row">
+          <span>Metallic</span>
+          <input type="range" id="matMetal" min="0" max="1" step="0.05" value="0.75" />
+        </div>
+        <div class="control-row">
+          <span>Roughness</span>
+          <input type="range" id="matRough" min="0" max="1" step="0.05" value="0.2" />
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="statusbar">
+    <span>AI-Blender Engine Ready — CLI: <code>npm run blender -- build --preset interceptor-ship --out models/ship.obj</code></span>
+    <span id="statusText">4 Modeling Sub-Agents Active</span>
+  </footer>
+
+  <script type="module">
+    import {
+      createCube,
+      createSphere,
+      createCylinder,
+      createCone,
+      createTorus,
+      createLatheMesh,
+      createPresetModel,
+      extrudeFaces,
+      subdivideMesh,
+      modifierMirror,
+      modifierArray,
+      modifierDeform,
+      modifierDisplaceNoise,
+      modifierSolidify,
+      sculptBrush,
+      exportToOBJ,
+      exportToGLTF,
+      norm3,
+      dot3,
+      sub3,
+      cross3
+    } from './assets/ai-blender-engine.js';
+
+    const canvas = document.getElementById('viewport');
+    const ctx = canvas.getContext('2d');
+    const meshNameHud = document.getElementById('meshNameHud');
+    const meshStatsHud = document.getElementById('meshStatsHud');
+
+    let currentMesh = createPresetModel('interceptor-ship');
+    let camYaw = 0.6;
+    let camPitch = 0.35;
+    let camDist = 5.2;
+    let autoSpin = true;
+    let showWire = false;
+
+    function updateHud() {
+      meshNameHud.textContent = currentMesh.name || 'Mesh';
+      meshStatsHud.textContent = `Vertices: ${currentMesh.vertices.length} | Triangles: ${currentMesh.faces.length}`;
+    }
+    updateHud();
+
+    // Orbit controls
+    let dragging = false;
+    let lastX = 0, lastY = 0;
+    canvas.addEventListener('mousedown', (e) => {
+      dragging = true;
+      lastX = e.clientX;
+      lastY = e.clientY;
+    });
+    window.addEventListener('mouseup', () => { dragging = false; });
+    window.addEventListener('mousemove', (e) => {
+      if (!dragging) return;
+      camYaw += (e.clientX - lastX) * 0.01;
+      camPitch = Math.max(-1.4, Math.min(1.4, camPitch + (e.clientY - lastY) * 0.01));
+      lastX = e.clientX;
+      lastY = e.clientY;
+    });
+    canvas.addEventListener('wheel', (e) => {
+      e.preventDefault();
+      camDist = Math.max(2.0, Math.min(14.0, camDist + e.deltaY * 0.004));
+    }, { passive: false });
+
+    // Presets & Primitives
+    document.querySelectorAll('[data-preset]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        currentMesh = createPresetModel(btn.dataset.preset);
+        syncMaterialInputs();
+        updateHud();
+      });
+    });
+
+    document.querySelectorAll('[data-prim]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const p = btn.dataset.prim;
+        if (p === 'cube') currentMesh = createCube();
+        else if (p === 'sphere') currentMesh = createSphere();
+        else if (p === 'cylinder') currentMesh = createCylinder();
+        else if (p === 'cone') currentMesh = createCone();
+        else if (p === 'torus') currentMesh = createTorus();
+        else if (p === 'lathe') currentMesh = createLatheMesh();
+        syncMaterialInputs();
+        updateHud();
+      });
+    });
+
+    // Modifiers & Edit Ops
+    document.querySelectorAll('[data-op]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const op = btn.dataset.op;
+        if (op === 'subdivide') currentMesh = subdivideMesh(currentMesh, { levels: 1 });
+        else if (op === 'extrude') currentMesh = extrudeFaces(currentMesh, { distance: 0.25, scale: 0.8 });
+        else if (op === 'mirror') currentMesh = modifierMirror(currentMesh, { axis: 'x', offset: 1.2 });
+        else if (op === 'array') currentMesh = modifierArray(currentMesh, { count: 3, radial: true });
+        else if (op === 'twist') currentMesh = modifierDeform(currentMesh, { mode: 'twist', factor: 0.65 });
+        else if (op === 'taper') currentMesh = modifierDeform(currentMesh, { mode: 'taper', factor: 0.5 });
+        else if (op === 'bend') currentMesh = modifierDeform(currentMesh, { mode: 'bend', factor: 0.6 });
+        else if (op === 'displace') currentMesh = modifierDisplaceNoise(currentMesh, { amplitude: 0.2 });
+        else if (op === 'solidify') currentMesh = modifierSolidify(currentMesh, { thickness: 0.12 });
+        else if (op === 'sculpt') currentMesh = sculptBrush(currentMesh, { mode: 'inflate', radius: 1.3, strength: 0.22 });
+        updateHud();
+      });
+    });
+
+    // Material bindings
+    const matColor = document.getElementById('matColor');
+    const matEmissive = document.getElementById('matEmissive');
+    const matMetal = document.getElementById('matMetal');
+    const matRough = document.getElementById('matRough');
+
+    function syncMaterialInputs() {
+      if (!currentMesh.material) return;
+      matColor.value = currentMesh.material.baseColor || '#38bdf8';
+      matEmissive.value = currentMesh.material.emissive || '#0284c7';
+      matMetal.value = currentMesh.material.metallic ?? 0.75;
+      matRough.value = currentMesh.material.roughness ?? 0.2;
+    }
+
+    [matColor, matEmissive, matMetal, matRough].forEach((el) => {
+      el.addEventListener('input', () => {
+        currentMesh.material.baseColor = matColor.value;
+        currentMesh.material.emissive = matEmissive.value;
+        currentMesh.material.metallic = Number(matMetal.value);
+        currentMesh.material.roughness = Number(matRough.value);
+      });
+    });
+
+    // Toolbar toggles & exporters
+    const toggleSpinBtn = document.getElementById('toggleSpinBtn');
+    const toggleWireBtn = document.getElementById('toggleWireBtn');
+    toggleSpinBtn.addEventListener('click', () => {
+      autoSpin = !autoSpin;
+      toggleSpinBtn.textContent = `⟳ Turntable: ${autoSpin ? 'ON' : 'OFF'}`;
+    });
+    toggleWireBtn.addEventListener('click', () => {
+      showWire = !showWire;
+      toggleWireBtn.textContent = `▦ Wireframe: ${showWire ? 'ON' : 'OFF'}`;
+    });
+
+    function downloadText(filename, text) {
+      const blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+
+    document.getElementById('exportObjBtn').addEventListener('click', () => {
+      downloadText(`${currentMesh.name || 'model'}.obj`, exportToOBJ(currentMesh));
+    });
+    document.getElementById('exportGltfBtn').addEventListener('click', () => {
+      downloadText(`${currentMesh.name || 'model'}.gltf`, exportToGLTF(currentMesh));
+    });
+
+    function hexToRgb(hex) {
+      const clean = (hex || '#38bdf8').replace('#', '');
+      const num = parseInt(clean, 16) || 0x38bdf8;
+      return [(num >> 16) & 255, (num >> 8) & 255, num & 255];
+    }
+
+    function project([x, y, z], w, h) {
+      // Rotate by yaw and pitch
+      const cy = Math.cos(camYaw), sy = Math.sin(camYaw);
+      const cp = Math.cos(camPitch), sp = Math.sin(camPitch);
+
+      const x1 = x * cy + z * sy;
+      const z1 = -x * sy + z * cy;
+      const y2 = y * cp - z1 * sp;
+      const z2 = y * sp + z1 * cp + camDist;
+
+      const fov = Math.min(w, h) * 0.95;
+      const scale = fov / Math.max(0.2, z2);
+      return [w / 2 + x1 * scale, h / 2 - y2 * scale, z2, [x1, y2, z2]];
+    }
+
+    function renderLoop() {
+      const rect = canvas.parentElement.getBoundingClientRect();
+      if (canvas.width !== rect.width || canvas.height !== rect.height) {
+        canvas.width = rect.width;
+        canvas.height = rect.height;
+      }
+
+      if (autoSpin && !dragging) {
+        camYaw += 0.008;
+      }
+
+      const w = canvas.width;
+      const h = canvas.height;
+      ctx.clearRect(0, 0, w, h);
+
+      // Draw 3D floor grid
+      ctx.strokeStyle = 'rgba(56, 189, 248, 0.12)';
+      ctx.lineWidth = 1;
+      for (let g = -3; g <= 3; g++) {
+        const p1 = project([g, -1.5, -3], w, h);
+        const p2 = project([g, -1.5, 3], w, h);
+        ctx.beginPath(); ctx.moveTo(p1[0], p1[1]); ctx.lineTo(p2[0], p2[1]); ctx.stroke();
+
+        const p3 = project([-3, -1.5, g], w, h);
+        const p4 = project([3, -1.5, g], w, h);
+        ctx.beginPath(); ctx.moveTo(p3[0], p3[1]); ctx.lineTo(p4[0], p4[1]); ctx.stroke();
+      }
+
+      // Project vertices
+      const projected = currentMesh.vertices.map((v) => project(v, w, h));
+      const baseRgb = hexToRgb(currentMesh.material?.baseColor);
+      const emRgb = hexToRgb(currentMesh.material?.emissive);
+      const metal = currentMesh.material?.metallic ?? 0.7;
+      const rough = currentMesh.material?.roughness ?? 0.25;
+      const lightDir = norm3([0.55, 0.75, -0.5]);
+
+      // Painter's algorithm depth sort
+      const tris = [];
+      for (const [i0, i1, i2] of currentMesh.faces) {
+        const p0 = projected[i0];
+        const p1 = projected[i1];
+        const p2 = projected[i2];
+        if (!p0 || !p1 || !p2) continue;
+        const depth = (p0[2] + p1[2] + p2[2]) / 3;
+        const e1 = sub3(p1[3], p0[3]);
+        const e2 = sub3(p2[3], p0[3]);
+        const n = norm3(cross3(e1, e2));
+        tris.push({ p0, p1, p2, depth, n });
+      }
+      tris.sort((a, b) => b.depth - a.depth);
+
+      for (const t of tris) {
+        const ndotl = Math.max(0.12, Math.abs(dot3(t.n, lightDir)));
+        const spec = Math.pow(ndotl, Math.max(2, (1 - rough) * 28)) * metal * 110;
+        const r = Math.min(255, Math.round(baseRgb[0] * ndotl + emRgb[0] * 0.22 + spec));
+        const g = Math.min(255, Math.round(baseRgb[1] * ndotl + emRgb[1] * 0.22 + spec));
+        const b = Math.min(255, Math.round(baseRgb[2] * ndotl + emRgb[2] * 0.22 + spec));
+
+        ctx.beginPath();
+        ctx.moveTo(t.p0[0], t.p0[1]);
+        ctx.lineTo(t.p1[0], t.p1[1]);
+        ctx.lineTo(t.p2[0], t.p2[1]);
+        ctx.closePath();
+
+        if (!showWire) {
+          ctx.fillStyle = `rgb(${r},${g},${b})`;
+          ctx.fill();
+          ctx.strokeStyle = `rgba(${r},${g},${b},0.35)`;
+          ctx.lineWidth = 0.6;
+          ctx.stroke();
+        } else {
+          ctx.strokeStyle = '#38bdf8';
+          ctx.lineWidth = 1;
+          ctx.stroke();
+        }
+      }
+
+      requestAnimationFrame(renderLoop);
+    }
+    requestAnimationFrame(renderLoop);
+  </script>
+</body>
+</html>

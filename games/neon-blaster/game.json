@@ -1,0 +1,16 @@
+{
+  "slug": "neon-blaster",
+  "title": "Neon Void Blaster",
+  "description": "Fast-paced twin-stick arcade space shooter with wave survival, particle explosions, overdrive power-ups, and WebAudio synth effects.",
+  "author": "Arena.ai",
+  "version": "1.0.0",
+  "type": "web",
+  "genre": "Shooter",
+  "tags": ["arcade", "shooter", "canvas", "space", "synth"],
+  "entry": "index.html",
+  "thumbnail": "thumbnail.svg",
+  "controls": "WASD / Arrows to move, Mouse or Space to fire, Shift to Dash, P to Pause",
+  "downloads": [],
+  "featured": true,
+  "createdAt": "2026-10-24"
+}

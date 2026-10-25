@@ -1,0 +1,16 @@
+{
+  "slug": "cyber-serpent",
+  "title": "Cyber Grid Serpent",
+  "description": "High-speed cyberpunk grid runner with turbo boost, combo multipliers, plasma cores, and reactive synth audio.",
+  "author": "Arena.ai",
+  "version": "1.0.0",
+  "type": "web",
+  "genre": "Arcade",
+  "tags": ["arcade", "snake", "cyberpunk", "canvas"],
+  "entry": "index.html",
+  "thumbnail": "thumbnail.svg",
+  "controls": "WASD / Arrow Keys to steer, Space to Turbo Boost",
+  "downloads": [],
+  "featured": true,
+  "createdAt": "2026-10-24"
+}

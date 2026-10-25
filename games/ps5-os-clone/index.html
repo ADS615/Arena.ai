@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PlayStation 5 Console OS &amp; 3D DualSense Clone</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #040814;
+      color: #f8fafc;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      height: 100vh;
+      overflow: hidden;
+      user-select: none;
+      position: relative;
+    }
+
+    /* Dynamic Background Canvas (PS5 Golden/Blue Ambient Particles + 3D Hardware Showcase) */
+    #bgCanvas {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .os-layer {
+      position: relative;
+      z-index: 5;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 26px 44px 22px;
+      background: radial-gradient(circle at 75% 40%, transparent 15%, rgba(4, 8, 20, 0.72) 85%);
+    }
+
+    /* Top PS5 Header Bar */
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .media-tabs {
+      display: flex;
+      gap: 28px;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+    }
+    .media-tab {
+      color: rgba(248, 250, 252, 0.45);
+      cursor: pointer;
+      transition: color 0.2s, transform 0.2s;
+    }
+    .media-tab.active {
+      color: #ffffff;
+      text-shadow: 0 0 18px rgba(255, 255, 255, 0.5);
+    }
+    .status-cluster {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      font-size: 14px;
+      color: #e2e8f0;
+    }
+    .icon-btn {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      color: #fff;
+      padding: 7px 13px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      backdrop-filter: blur(10px);
+      transition: background 0.15s, border-color 0.15s;
+    }
+    .icon-btn:hover {
+      background: rgba(255, 255, 255, 0.18);
+      border-color: #60a5fa;
+    }
+    .avatar-pill {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(15, 23, 42, 0.65);
+      border: 1px solid rgba(96, 165, 250, 0.4);
+      padding: 5px 12px 5px 6px;
+      border-radius: 999px;
+    }
+    .online-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #22c55e;
+      box-shadow: 0 0 8px #22c55e;
+    }
+
+    /* Cross-Media Game Tiles Row */
+    .tiles-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-top: 18px;
+      padding: 8px 4px;
+      overflow-x: auto;
+    }
+    .tile {
+      width: 82px;
+      height: 82px;
+      border-radius: 18px;
+      background: rgba(15, 23, 42, 0.78);
+      border: 2px solid rgba(255, 255, 255, 0.14);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+      overflow: hidden;
+    }
+    .tile.selected {
+      width: 112px;
+      height: 112px;
+      border-color: #ffffff;
+      box-shadow: 0 0 28px rgba(59, 130, 246, 0.55), inset 0 0 18px rgba(255, 255, 255, 0.2);
+      transform: translateY(-3px);
+    }
+    .tile-icon {
+      font-size: 32px;
+    }
+    .tile.selected .tile-icon {
+      font-size: 42px;
+    }
+    .tile-tag {
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: 0.6px;
+      color: #93c5fd;
+      margin-top: 4px;
+      text-transform: uppercase;
+    }
+
+    /* Selected Game Hero Info */
+    .hero-showcase {
+      margin-top: auto;
+      margin-bottom: 24px;
+      max-width: 560px;
+    }
+    .ps5-badge {
+      display: inline-block;
+      background: #ffffff;
+      color: #040814;
+      font-size: 10px;
+      font-weight: 900;
+      padding: 2px 7px;
+      border-radius: 4px;
+      letter-spacing: 0.8px;
+      margin-bottom: 10px;
+    }
+    .hero-title {
+      font-size: clamp(30px, 4vw, 46px);
+      font-weight: 900;
+      letter-spacing: -0.8px;
+      line-height: 1.08;
+      margin-bottom: 10px;
+      text-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+    }
+    .hero-desc {
+      color: #cbd5e1;
+      font-size: 14.5px;
+      line-height: 1.55;
+      margin-bottom: 20px;
+    }
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .play-cta {
+      background: #ffffff;
+      color: #040814;
+      border: none;
+      padding: 13px 34px;
+      border-radius: 999px;
+      font-size: 15px;
+      font-weight: 800;
+      cursor: pointer;
+      box-shadow: 0 10px 30px rgba(255, 255, 255, 0.25);
+      transition: transform 0.15s;
+    }
+    .play-cta:hover { transform: scale(1.04); }
+    .secondary-cta {
+      background: rgba(255, 255, 255, 0.12);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      padding: 12px 20px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      backdrop-filter: blur(12px);
+    }
+
+    /* Activity Cards & Trophy Progress Row */
+    .activity-row {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .activity-card {
+      background: rgba(15, 23, 42, 0.68);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 16px;
+      padding: 14px 18px;
+      min-width: 210px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .activity-label {
+      font-size: 11px;
+      color: #94a3b8;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.6px;
+    }
+    .activity-val {
+      font-size: 18px;
+      font-weight: 800;
+      color: #f8fafc;
+    }
+
+    /* Bottom Control Center Trigger Bar */
+    .bottom-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 10px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 12.5px;
+      color: #94a3b8;
+    }
+    .ps-button-trigger {
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.35), rgba(59, 130, 246, 0.15));
+      border: 1px solid rgba(96, 165, 250, 0.5);
+      color: #ffffff;
+      padding: 7px 20px;
+      border-radius: 999px;
+      font-weight: 800;
+      cursor: pointer;
+      box-shadow: 0 0 25px rgba(37, 99, 235, 0.45);
+    }
+
+    /* PS5 Control Center Quick Menu Overlay */
+    #controlCenter {
+      position: fixed;
+      left: 50%;
+      bottom: 24px;
+      transform: translateX(-50%);
+      z-index: 30;
+      background: rgba(10, 16, 32, 0.88);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 999px;
+      padding: 10px 18px;
+      display: flex;
+      gap: 12px;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.8);
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    #controlCenter.hidden {
+      opacity: 0;
+      pointer-events: none;
+      transform: translateX(-50%) translateY(20px);
+    }
+
+    /* PS5 Trophy Notification Toast */
+    #trophyToast {
+      position: fixed;
+      top: 24px;
+      right: 28px;
+      z-index: 50;
+      background: rgba(12, 18, 34, 0.92);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(250, 204, 21, 0.55);
+      border-radius: 999px;
+      padding: 10px 20px 10px 12px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.75);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s;
+    }
+    #trophyToast.hidden {
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(-30px);
+    }
+    .trophy-circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #facc15, #ca8a04);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+    }
+
+    /* Settings & Rest Mode Modals */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 40;
+      background: rgba(4, 8, 20, 0.86);
+      backdrop-filter: blur(14px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .modal-overlay.hidden { display: none; }
+    .settings-box {
+      background: #0d1528;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 20px;
+      width: 600px;
+      max-width: 95vw;
+      padding: 28px;
+    }
+    .setting-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 14px;
+    }
+    .rest-bar {
+      width: 280px;
+      height: 6px;
+      border-radius: 999px;
+      background: #f97316;
+      box-shadow: 0 0 30px #f97316, 0 0 60px #ea580c;
+      animation: pulseRest 2.2s infinite ease-in-out;
+      margin-bottom: 20px;
+    }
+    @keyframes pulseRest {
+      0%, 100% { opacity: 0.35; }
+      50% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- Trophy Unlock Toast -->
+  <div id="trophyToast" class="hidden">
+    <div class="trophy-circle">🏆</div>
+    <div>
+      <div style="font-size:11px;color:#facc15;font-weight:800;letter-spacing:0.6px">TROPHY EARNED!</div>
+      <div id="trophyName" style="font-size:14px;font-weight:700">Next-Gen Architect (Platinum)</div>
+    </div>
+  </div>
+
+  <div class="os-layer">
+    <!-- Top Header -->
+    <header class="top-bar">
+      <div class="media-tabs">
+        <span class="media-tab active" data-section="games">Games</span>
+        <span class="media-tab" data-section="media">Media</span>
+      </div>
+      <div class="status-cluster">
+        <button class="icon-btn" id="switch3dModelBtn">🧊 3D View: PS5 Console</button>
+        <button class="icon-btn" id="earnTrophyBtn">🏆 Earn Trophy</button>
+        <button class="icon-btn" id="openSettingsBtn">⚙ Settings</button>
+        <div class="avatar-pill">
+          <span class="online-dot"></span>
+          <strong>Arena_Player_1</strong>
+        </div>
+        <span id="clockText" style="font-weight:700">10:24 PM</span>
+      </div>
+    </header>
+
+    <!-- Game Tiles Row -->
+    <nav class="tiles-row" id="tilesRow"></nav>
+
+    <!-- Hero Info for Selected Tile -->
+    <section class="hero-showcase">
+      <div>
+        <span class="ps5-badge" id="selectedBadge">PS5 FULL 3D</span>
+        <h1 class="hero-title" id="selectedTitle">Astro's 3D Hardware Lab</h1>
+        <p class="hero-desc" id="selectedDesc">
+          Inspect the live 3D PlayStation 5 Console Tower and 3D DualSense Controller rendered in real time by the Arena AI-Blender 3D Engine. Drag anywhere to rotate the 3D hardware!
+        </p>
+        <div class="hero-actions">
+          <button class="play-cta" id="primaryPlayBtn">▶ Play / Launch</button>
+          <button class="secondary-cta" id="secondaryActionBtn">🔄 Swap PS5 / DualSense 3D Model</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Activity & Trophy Cards -->
+    <section class="activity-row">
+      <div class="activity-card">
+        <span class="activity-label">Trophy Progress</span>
+        <span class="activity-val" id="trophyCounterVal">14 / 18 Unlocked (78%)</span>
+      </div>
+      <div class="activity-card">
+        <span class="activity-label">3D Hardware Mesh</span>
+        <span class="activity-val" id="meshPolyVal">PS5 Tower + DualSense PBR</span>
+      </div>
+      <div class="activity-card">
+        <span class="activity-label">SSD Storage Available</span>
+        <span class="activity-val">642.4 GB / 825 GB</span>
+      </div>
+    </section>
+
+    <!-- Bottom Bar -->
+    <footer class="bottom-bar">
+      <span>⬅ ➡ Arrow Keys to Navigate &bull; <strong>Enter</strong> to Launch &bull; Drag Mouse to Orbit 3D Hardware</span>
+      <button class="ps-button-trigger" id="psButton">🎮 PS Control Center (Space)</button>
+      <span>Press <strong>T</strong> for Trophy Popup</span>
+    </footer>
+  </div>
+
+  <!-- PS5 Control Center Dock -->
+  <div id="controlCenter" class="hidden">
+    <button class="icon-btn" id="ccHomeBtn">🏠 Home</button>
+    <button class="icon-btn" id="ccModelBtn">🎮 Toggle PS5 / Controller 3D</button>
+    <button class="icon-btn" id="ccTrophyBtn">🏆 Trigger Platinum Trophy</button>
+    <button class="icon-btn" id="ccSoundBtn">🔊 UI Audio: ON</button>
+    <button class="icon-btn" id="ccSettingsBtn">⚙ System Settings</button>
+    <button class="icon-btn" id="ccRestModeBtn" style="border-color:#f97316;color:#fdba74">🌙 Enter Rest Mode</button>
+  </div>
+
+  <!-- PS5 Settings Modal -->
+  <div id="settingsModal" class="modal-overlay hidden">
+    <div class="settings-box">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+        <h2>⚙ PS5 System Settings</h2>
+        <button class="icon-btn" id="closeSettingsBtn">✕ Close</button>
+      </div>
+      <div class="setting-row">
+        <span>3D Hardware Showcase Model</span>
+        <button class="icon-btn" id="settingModelToggle">PS5 Console Tower</button>
+      </div>
+      <div class="setting-row">
+        <span>120Hz / 4K HDR Particle Wave Density</span>
+        <button class="icon-btn" id="settingParticlesToggle">Ultra (High)</button>
+      </div>
+      <div class="setting-row">
+        <span>System UI Synthesizer Audio</span>
+        <button class="icon-btn" id="settingAudioToggle">Enabled</button>
+      </div>
+      <div class="setting-row">
+        <span>Export 3D Hardware Assets</span>
+        <div style="display:flex;gap:8px">
+          <a class="icon-btn" href="ps5-console.obj?download=1" download="ps5-console.obj" style="text-decoration:none">⬇ PS5 .OBJ</a>
+          <a class="icon-btn" href="dualsense-controller.gltf?download=1" download="dualsense-controller.gltf" style="text-decoration:none">⬇ DualSense .GLTF</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rest Mode Overlay -->
+  <div id="restModal" class="modal-overlay hidden" style="flex-direction:column;text-align:center">
+    <div class="rest-bar"></div>
+    <h2 style="margin-bottom:8px">PS5 is in Rest Mode</h2>
+    <p style="color:#94a3b8;margin-bottom:20px">Charging DualSense Controller and syncing 3D Game Vault...</p>
+    <button class="play-cta" id="wakePs5Btn">🎮 Press PS Button to Wake Up</button>
+  </div>
+
+  <script type="module">
+    import { createPresetModel, norm3, dot3, sub3, cross3 } from '../../assets/ai-blender-engine.js';
+    import { SoundSynth, AchievementManager } from '../../assets/arena-ui-kit.js';
+
+    const synth = new SoundSynth();
+    const trophies = new AchievementManager('arena_ps5_trophies');
+
+    // Load 3D Models built in AI-Blender Engine
+    const ps5Mesh = createPresetModel('ps5-console');
+    const dualsenseMesh = createPresetModel('dualsense-controller');
+    const shipMesh = createPresetModel('interceptor-ship');
+    const mechMesh = createPresetModel('cyber-mech');
+
+    const CATALOG = [
+      {
+        id: 'astro-lab',
+        icon: '🎮',
+        tag: 'PS5 3D LAB',
+        badge: 'PS5 EXCLUSIVE 3D',
+        title: "Astro's 3D Hardware Showcase",
+        desc: 'Interactive 3D PlayStation 5 Console & DualSense Controller built in AI-Blender. Drag anywhere on screen to orbit the 3D hardware or swap models!',
+        model: 'ps5',
+        accent: [37, 99, 235],
+        launchUrl: null
+      },
+      {
+        id: 'dualsense-lab',
+        icon: '🕹️',
+        tag: 'DUALSENSE 3D',
+        badge: 'HAPTIC 3D RIG',
+        title: 'DualSense 3D Controller Studio',
+        desc: 'Inspect the 3D DualSense Wireless Controller mesh with adaptive trigger geometry and glowing blue lightbar accents.',
+        model: 'dualsense',
+        accent: [56, 189, 248],
+        launchUrl: null
+      },
+      {
+        id: 'astra-3d',
+        icon: '🚀',
+        tag: 'PS5 GAME',
+        badge: 'PS5 120FPS 3D',
+        title: 'Astra 3D: Overdrive Starfighter',
+        desc: 'Launch directly into full 3D space combat! Pilot the Interceptor Starfighter through asteroid fields and Cyber-Mech squadrons.',
+        model: 'ship',
+        accent: [14, 165, 233],
+        launchUrl: '../astra-3d-overdrive/index.html'
+      },
+      {
+        id: 'neon-blaster',
+        icon: '🌌',
+        tag: 'ARCADE',
+        badge: 'PS5 ENHANCED',
+        title: 'Neon Void Blaster',
+        desc: 'Twin-stick neon space shooter with overdrive weapons, dash mechanics, and synth wave survival.',
+        model: 'mech',
+        accent: [168, 85, 247],
+        launchUrl: '../neon-blaster/index.html'
+      },
+      {
+        id: 'cyber-serpent',
+        icon: '🐍',
+        tag: 'CYBERPUNK',
+        badge: 'PS5 4K EDITION',
+        title: 'Cyber Grid Serpent',
+        desc: 'High-speed cyberpunk grid runner with turbo boost multipliers and reactive synth audio.',
+        model: 'ps5',
+        accent: [16, 185, 129],
+        launchUrl: '../cyber-serpent/index.html'
+      },
+      {
+        id: 'astral-crypt',
+        icon: '⚔️',
+        tag: 'ROGUELIKE',
+        badge: 'HYBRID BUILD',
+        title: 'Crypt of the Astral King',
+        desc: 'Turn-based tactical dungeon roguelike with procedural floors, treasure chests, and standalone Python 3 build.',
+        model: 'dualsense',
+        accent: [236, 72, 153],
+        launchUrl: '../dungeon-crawler-py/index.html'
+      }
+    ];
+
+    let selectedIdx = 0;
+    let activeModelKey = 'ps5';
+    let trophyCount = 14;
+    let ultraParticles = true;
+
+    const tilesRow = document.getElementById('tilesRow');
+    const selectedBadge = document.getElementById('selectedBadge');
+    const selectedTitle = document.getElementById('selectedTitle');
+    const selectedDesc = document.getElementById('selectedDesc');
+    const primaryPlayBtn = document.getElementById('primaryPlayBtn');
+    const switch3dModelBtn = document.getElementById('switch3dModelBtn');
+
+    function renderTiles() {
+      tilesRow.innerHTML = CATALOG.map(
+        (item, idx) => `
+        <div class="tile ${idx === selectedIdx ? 'selected' : ''}" data-idx="${idx}">
+          <div class="tile-icon">${item.icon}</div>
+          <div class="tile-tag">${item.tag}</div>
+        </div>
+      `
+      ).join('');
+
+      tilesRow.querySelectorAll('.tile').forEach((el) => {
+        el.addEventListener('click', () => {
+          selectTile(Number(el.dataset.idx));
+        });
+      });
+
+      const item = CATALOG[selectedIdx];
+      selectedBadge.textContent = item.badge;
+      selectedTitle.textContent = item.title;
+      selectedDesc.textContent = item.desc;
+      activeModelKey = item.model;
+      primaryPlayBtn.textContent = item.launchUrl ? `▶ Play ${item.title}` : '✨ Trigger 3D Showcase Pulse';
+      updateModelLabel();
+    }
+
+    function selectTile(idx) {
+      selectedIdx = (idx + CATALOG.length) % CATALOG.length;
+      synth.playUiNav();
+      renderTiles();
+    }
+
+    function cycle3dModel() {
+      const order = ['ps5', 'dualsense', 'ship', 'mech'];
+      activeModelKey = order[(order.indexOf(activeModelKey) + 1) % order.length];
+      synth.playUiSelect();
+      updateModelLabel();
+    }
+
+    function updateModelLabel() {
+      const labels = {
+        ps5: 'PS5 Console Tower',
+        dualsense: 'DualSense 3D Controller',
+        ship: '3D Interceptor Starfighter',
+        mech: '3D Cyber-Mech Boss'
+      };
+      switch3dModelBtn.textContent = `🧊 3D View: ${labels[activeModelKey]}`;
+      document.getElementById('settingModelToggle').textContent = labels[activeModelKey];
+      document.getElementById('meshPolyVal').textContent = labels[activeModelKey];
+    }
+
+    // Trophy Toast Popup
+    let toastTimer = null;
+    function triggerTrophy(title = 'Next-Gen Console Master (Platinum)') {
+      synth.playTrophyChime();
+      trophyCount = Math.min(18, trophyCount + 1);
+      document.getElementById('trophyCounterVal').textContent = `${trophyCount} / 18 Unlocked (${Math.round((trophyCount / 18) * 100)}%)`;
+      const toast = document.getElementById('trophyToast');
+      document.getElementById('trophyName').textContent = title;
+      toast.classList.remove('hidden');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => toast.classList.add('hidden'), 3800);
+    }
+
+    // Button bindings
+    primaryPlayBtn.addEventListener('click', () => {
+      const item = CATALOG[selectedIdx];
+      synth.playUiSelect();
+      if (item.launchUrl) {
+        window.location.href = item.launchUrl;
+      } else {
+        triggerTrophy(`Explored ${item.title} (Gold)`);
+      }
+    });
+
+    document.getElementById('secondaryActionBtn').addEventListener('click', cycle3dModel);
+    switch3dModelBtn.addEventListener('click', cycle3dModel);
+    document.getElementById('earnTrophyBtn').addEventListener('click', () => triggerTrophy('Trophy Hunter (Platinum)'));
+
+    // Control Center & Modals
+    const controlCenter = document.getElementById('controlCenter');
+    const settingsModal = document.getElementById('settingsModal');
+    const restModal = document.getElementById('restModal');
+
+    function toggleControlCenter() {
+      synth.playUiNav();
+      controlCenter.classList.toggle('hidden');
+    }
+
+    document.getElementById('psButton').addEventListener('click', toggleControlCenter);
+    document.getElementById('ccHomeBtn').addEventListener('click', () => controlCenter.classList.add('hidden'));
+    document.getElementById('ccModelBtn').addEventListener('click', cycle3dModel);
+    document.getElementById('ccTrophyBtn').addEventListener('click', () => triggerTrophy('PS5 Architect (Platinum)'));
+    document.getElementById('ccSoundBtn').addEventListener('click', (e) => {
+      synth.enabled = !synth.enabled;
+      e.target.textContent = `🔊 UI Audio: ${synth.enabled ? 'ON' : 'OFF'}`;
+    });
+    document.getElementById('ccSettingsBtn').addEventListener('click', () => {
+      controlCenter.classList.add('hidden');
+      settingsModal.classList.remove('hidden');
+    });
+    document.getElementById('ccRestModeBtn').addEventListener('click', () => {
+      controlCenter.classList.add('hidden');
+      restModal.classList.remove('hidden');
+    });
+    document.getElementById('wakePs5Btn').addEventListener('click', () => {
+      restModal.classList.add('hidden');
+      synth.playBootChord();
+    });
+
+    document.getElementById('openSettingsBtn').addEventListener('click', () => settingsModal.classList.remove('hidden'));
+    document.getElementById('closeSettingsBtn').addEventListener('click', () => settingsModal.classList.add('hidden'));
+    document.getElementById('settingModelToggle').addEventListener('click', cycle3dModel);
+    document.getElementById('settingParticlesToggle').addEventListener('click', (e) => {
+      ultraParticles = !ultraParticles;
+      e.target.textContent = ultraParticles ? 'Ultra (High)' : 'Performance';
+    });
+    document.getElementById('settingAudioToggle').addEventListener('click', (e) => {
+      synth.enabled = !synth.enabled;
+      e.target.textContent = synth.enabled ? 'Enabled' : 'Muted';
+    });
+
+    // Media Tabs
+    document.querySelectorAll('.media-tab').forEach((tab) => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.media-tab').forEach((t) => t.classList.remove('active'));
+        tab.classList.add('active');
+        synth.playUiNav();
+      });
+    });
+
+    // Keyboard shortcuts
+    window.addEventListener('keydown', (e) => {
+      if (e.code === 'ArrowRight' || e.code === 'KeyD') selectTile(selectedIdx + 1);
+      if (e.code === 'ArrowLeft' || e.code === 'KeyA') selectTile(selectedIdx - 1);
+      if (e.code === 'Enter') primaryPlayBtn.click();
+      if (e.code === 'Space' || e.code === 'KeyP') toggleControlCenter();
+      if (e.code === 'KeyT') triggerTrophy('DualSense Legend (Platinum)');
+      if (e.code === 'Digit3') cycle3dModel();
+    });
+
+    // Clock
+    function updateClock() {
+      const now = new Date();
+      document.getElementById('clockText').textContent = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    }
+    updateClock();
+    setInterval(updateClock, 15000);
+
+    // 3D Hardware Viewport + PS5 Ambient Particle Wave Renderer
+    const canvas = document.getElementById('bgCanvas');
+    const ctx = canvas.getContext('2d');
+    let yaw = 0.55;
+    let pitch = 0.2;
+    let dragging = false;
+    let lastX = 0, lastY = 0;
+
+    window.addEventListener('mousedown', (e) => {
+      if (e.target.closest('button, a, .tile, .settings-box')) return;
+      dragging = true;
+      lastX = e.clientX;
+      lastY = e.clientY;
+    });
+    window.addEventListener('mouseup', () => { dragging = false; });
+    window.addEventListener('mousemove', (e) => {
+      if (!dragging) return;
+      yaw += (e.clientX - lastX) * 0.01;
+      pitch = Math.max(-1.2, Math.min(1.2, pitch + (e.clientY - lastY) * 0.01));
+      lastX = e.clientX;
+      lastY = e.clientY;
+    });
+
+    const particles = Array.from({ length: 90 }, () => ({
+      x: Math.random(),
+      y: Math.random(),
+      r: Math.random() * 2.4 + 0.8,
+      spd: Math.random() * 0.0004 + 0.00015,
+      gold: Math.random() < 0.45
+    }));
+
+    function getActiveMesh() {
+      if (activeModelKey === 'dualsense') return dualsenseMesh;
+      if (activeModelKey === 'ship') return shipMesh;
+      if (activeModelKey === 'mech') return mechMesh;
+      return ps5Mesh;
+    }
+
+    function renderLoop(now) {
+      if (canvas.width !== window.innerWidth || canvas.height !== window.innerHeight) {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      }
+      const w = canvas.width;
+      const h = canvas.height;
+      const accent = CATALOG[selectedIdx].accent;
+
+      // Dynamic background gradient
+      const grad = ctx.createRadialGradient(w * 0.72, h * 0.45, 40, w * 0.5, h * 0.5, w * 0.85);
+      grad.addColorStop(0, `rgba(${accent[0]}, ${accent[1]}, ${accent[2]}, 0.34)`);
+      grad.addColorStop(0.55, 'rgba(8, 15, 38, 0.92)');
+      grad.addColorStop(1, '#030611');
+      ctx.fillStyle = grad;
+      ctx.fillRect(0, 0, w, h);
+
+      // PS5 Ambient Golden & Blue Particle Dust
+      const count = ultraParticles ? particles.length : 35;
+      for (let i = 0; i < count; i++) {
+        const p = particles[i];
+        p.x = (p.x + p.spd) % 1;
+        p.y = (p.y - p.spd * 0.6 + 1) % 1;
+        ctx.fillStyle = p.gold ? 'rgba(250, 204, 21, 0.55)' : 'rgba(96, 165, 250, 0.55)';
+        ctx.beginPath();
+        ctx.arc(p.x * w, p.y * h, p.r, 0, Math.PI * 2);
+        ctx.fill();
+      }
+
+      // Render 3D Hardware Model on right side of screen
+      if (!dragging) yaw += 0.007;
+      const mesh = getActiveMesh();
+      const cy = Math.cos(yaw), sy = Math.sin(yaw);
+      const cp = Math.cos(pitch), sp = Math.sin(pitch);
+      const centerX = w * 0.72;
+      const centerY = h * 0.52 + Math.sin(now * 0.002) * 8;
+      const fov = Math.min(w, h) * 0.88;
+
+      const proj = mesh.vertices.map(([vx, vy, vz]) => {
+        const x1 = vx * cy + vz * sy;
+        const z1 = -vx * sy + vz * cy;
+        const y2 = vy * cp - z1 * sp;
+        const z2 = vy * sp + z1 * cp + 4.8;
+        const sc = fov / Math.max(0.4, z2);
+        return [centerX + x1 * sc, centerY - y2 * sc, z2, [x1, y2, z2]];
+      });
+
+      const light = norm3([0.5, 0.75, -0.5]);
+      const tris = [];
+      for (const [i0, i1, i2] of mesh.faces) {
+        const a = proj[i0], b = proj[i1], c = proj[i2];
+        if (!a || !b || !c) continue;
+        const depth = (a[2] + b[2] + c[2]) / 3;
+        const n = norm3(cross3(sub3(b[3], a[3]), sub3(c[3], a[3])));
+        tris.push({ a, b, c, depth, n });
+      }
+      tris.sort((t1, t2) => t2.depth - t1.depth);
+
+      for (const t of tris) {
+        const ndl = Math.max(0.2, Math.abs(dot3(t.n, light)));
+        const spec = Math.pow(ndl, 16) * 85;
+        const r = Math.min(255, Math.round(225 * ndl + accent[0] * 0.22 + spec));
+        const g = Math.min(255, Math.round(235 * ndl + accent[1] * 0.22 + spec));
+        const b = Math.min(255, Math.round(250 * ndl + accent[2] * 0.28 + spec));
+
+        ctx.beginPath();
+        ctx.moveTo(t.a[0], t.a[1]);
+        ctx.lineTo(t.b[0], t.b[1]);
+        ctx.lineTo(t.c[0], t.c[1]);
+        ctx.closePath();
+        ctx.fillStyle = `rgb(${r},${g},${b})`;
+        ctx.fill();
+        ctx.strokeStyle = `rgba(${accent[0]},${accent[1]},${accent[2]},0.28)`;
+        ctx.lineWidth = 0.6;
+        ctx.stroke();
+      }
+
+      requestAnimationFrame(renderLoop);
+    }
+
+    renderTiles();
+    requestAnimationFrame(renderLoop);
+  </script>
+</body>
+</html>

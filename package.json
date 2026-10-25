@@ -1,0 +1,30 @@
+{
+  "name": "arena-ai-game-hub",
+  "version": "1.0.0",
+  "description": "Arena.ai Game Hub & Arcade Platform — Create, upload, play, and share browser & downloadable games built with Arena.ai",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev-server.mjs",
+    "start": "node scripts/dev-server.mjs",
+    "sync": "node scripts/sync-games.mjs && node scripts/chunk-tool.mjs index",
+    "new-game": "node scripts/new-game.mjs",
+    "validate": "node scripts/validate-games.mjs",
+    "memory": "node scripts/chunk-tool.mjs index",
+    "tree": "node scripts/chunk-tool.mjs tree",
+    "find-chunk": "node scripts/chunk-tool.mjs find",
+    "subagent": "node scripts/subagents.mjs",
+    "subagent:list": "node scripts/subagents.mjs list",
+    "subagent:create": "node scripts/subagents.mjs create",
+    "blender": "node scripts/ai-blender.mjs",
+    "animate": "node scripts/ai-animator.mjs",
+    "omni": "node scripts/omni-intelligence.mjs",
+    "research": "node scripts/deep-research.mjs",
+    "search": "node scripts/repo-search.mjs",
+    "chunk-edit": "node scripts/chunk-editor.mjs",
+    "enforce": "node scripts/anti-stop-enforcer.mjs"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
