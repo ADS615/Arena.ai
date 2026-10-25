@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-10-25T00:03:30.503Z",
-  "totalFiles": 80,
+  "updatedAt": "2026-10-25T01:14:09.229Z",
+  "totalFiles": 84,
   "files": [
     {
       "path": ".gitignore",
-      "bytes": 101,
+      "bytes": 109,
       "lines": 0,
       "hash": "",
       "chunkCount": 0,
@@ -12,10 +12,10 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 7067,
-      "lines": 131,
-      "hash": "0dc08f2d14",
-      "chunkCount": 13,
+      "bytes": 9503,
+      "lines": 148,
+      "hash": "791437cd4a",
+      "chunkCount": 14,
       "description": "Primary instructions, Master Prompt, Chunk Editing protocol & Sub-Agent guide for Arena agents"
     },
     {
@@ -44,9 +44,9 @@
     },
     {
       "path": "assets/app.js",
-      "bytes": 20343,
-      "lines": 588,
-      "hash": "0260b74502",
+      "bytes": 20969,
+      "lines": 590,
+      "hash": "bd13704fd0",
       "chunkCount": 42,
       "description": "Frontend application state, catalog filtering, iframe player, file uploader, and prompt generator"
     },
@@ -59,6 +59,22 @@
       "description": "Repository file"
     },
     {
+      "path": "assets/bpy-core.js",
+      "bytes": 198725,
+      "lines": 4656,
+      "hash": "9ca8653560",
+      "chunkCount": 173,
+      "description": "Repository file"
+    },
+    {
+      "path": "assets/full-blender-workstation.js",
+      "bytes": 59144,
+      "lines": 1261,
+      "hash": "7bb81ff0ba",
+      "chunkCount": 62,
+      "description": "Repository file"
+    },
+    {
       "path": "assets/styles.css",
       "bytes": 14450,
       "lines": 802,
@@ -68,18 +84,18 @@
     },
     {
       "path": "blender-studio.html",
-      "bytes": 17901,
-      "lines": 519,
-      "hash": "86c1b329db",
-      "chunkCount": 22,
+      "bytes": 23046,
+      "lines": 368,
+      "hash": "71f87a61f5",
+      "chunkCount": 28,
       "description": "Repository file"
     },
     {
       "path": "CLAUDE.md",
-      "bytes": 3248,
-      "lines": 29,
-      "hash": "37a5f67fd6",
-      "chunkCount": 2,
+      "bytes": 4257,
+      "lines": 33,
+      "hash": "ad54edf6db",
+      "chunkCount": 3,
       "description": "Agent instructions mirror pointing to AGENTS.md & Master Prompt"
     },
     {
@@ -286,7 +302,7 @@
       "path": "games/registry.json",
       "bytes": 8855,
       "lines": 250,
-      "hash": "1e6f2474dd",
+      "hash": "fa8f54ca2b",
       "chunkCount": 1,
       "description": "Game asset/source for registry.json"
     },
@@ -332,9 +348,9 @@
     },
     {
       "path": "index.html",
-      "bytes": 12560,
+      "bytes": 12568,
       "lines": 282,
-      "hash": "c30ecff30c",
+      "hash": "0968d98110",
       "chunkCount": 21,
       "description": "Main Arena.ai Game Hub frontend layout (navbar, hero, filters, theatre modal, upload modal)"
     },
@@ -366,7 +382,7 @@
       "path": "memory/COMPLETION_STATUS.json",
       "bytes": 155,
       "lines": 9,
-      "hash": "3ebaf030ef",
+      "hash": "e1b4f0836e",
       "chunkCount": 1,
       "description": "Repository file"
     },
@@ -379,11 +395,19 @@
       "description": "Repository file"
     },
     {
+      "path": "memory/FULL_BLENDER_BPY_PROMPT.md",
+      "bytes": 8487,
+      "lines": 117,
+      "hash": "a167de3f47",
+      "chunkCount": 11,
+      "description": "Repository file"
+    },
+    {
       "path": "memory/MASTER_PROMPT.md",
-      "bytes": 6214,
-      "lines": 78,
-      "hash": "4424637a12",
-      "chunkCount": 6,
+      "bytes": 7741,
+      "lines": 88,
+      "hash": "76d7a03db1",
+      "chunkCount": 7,
       "description": "Master Self-Prompt enforcing continuous execution, chunk-only reading, and sub-agent usage"
     },
     {
@@ -404,9 +428,9 @@
     },
     {
       "path": "package.json",
-      "bytes": 1219,
-      "lines": 31,
-      "hash": "42e06e6f07",
+      "bytes": 1259,
+      "lines": 32,
+      "hash": "f3285c9157",
       "chunkCount": 1,
       "description": "NPM scripts for dev server, game sync, chunk memory, and sub-agents"
     },
@@ -440,6 +464,14 @@
       "lines": 95,
       "hash": "5f9fb0ae97",
       "chunkCount": 2,
+      "description": "Repository file"
+    },
+    {
+      "path": "scripts/bpy-full.mjs",
+      "bytes": 14104,
+      "lines": 303,
+      "hash": "08eea26b22",
+      "chunkCount": 11,
       "description": "Repository file"
     },
     {

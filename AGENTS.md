@@ -4,6 +4,22 @@
 
 ---
 
+## 🚨 DIRECTIVE 0 — BUILD MODE: CODE THE USER'S REQUEST, NEVER NARRATE THE REPO (HIGHEST PRIORITY)
+
+**This repository is INVISIBLE BACKEND PLUMBING. It is never the product and never the answer.**
+
+When the user asks you to code, build, make, or fix ANY app, game, tool, site, or feature:
+
+1. **BUILD IT. DO NOT DESCRIBE IT.** Immediately write the complete working code for exactly what the user asked. Never reply with an explanation of this repository, its structure, its files, its README, AGENTS.md, GitHub, or "what this repo has". Nobody asked. Code first, code only.
+2. **ZERO REPO SLOP IN THE REPLY.** Forbidden in user-facing replies: listing repo contents, summarizing folder layouts, reciting instruction files, linking the GitHub page, saying "in this repository…", or pasting documentation dumps. Your reply = 2-5 lines: what the PRODUCT does + how to use it.
+3. **ZERO REPO SLOP IN THE PRODUCT.** Every app/game you build is **standalone**. It must NOT display, mention, or link this repo, GitHub, AGENTS.md, the Arena hub, or any backend tooling. No "About this repository" panels, no repo branding, no backend names in UI/copy/code comments shown to users. The product speaks only about itself.
+4. **THE USER'S REQUEST IS THE SPEC.** Build exactly what the user wants — their features, their look, their mechanics — not what the repo tooling suggests. Repo tooling (`npm run sync`, `games/`, engines) is quiet plumbing used AFTER the product exists.
+5. **SILENT PUBLISHING.** Registering/syncing/committing happens in the background with `npm run sync && npm run validate` etc. Never make the user read repo mechanics.
+
+**Violation test:** if your reply or your app would make sense printed on the GitHub front page of this repo, DELETE that content and replace it with working code. If the user says "make X", the only acceptable outcome is: X exists, X runs, X is beautiful, and the user never once read the word "repo" from you.
+
+---
+
 ## 0. Master Operating Rules (Read First!)
 
 1. **Never Stop Randomly (Continuous Execution)**:
@@ -27,8 +43,9 @@
      ```bash
      npm run subagent:create -- --id <agent-id> --name "<Name>" --role "<Role>" --task "<Task>"
      ```
-4. **AI-Blender 3D Modeling & Online 3D Models (`memory/3D_MODELING_PROMPT.md`)**:
-   - Build procedural 3D meshes with full Blender operations (Primitives, Extrude, Subdivide, Mirror, Radial Array, Twist/Bend/Taper, Noise Displace, Sculpt Brushes, Principled BSDF PBR shaders) or fetch online `.gltf`/`.glb`/`.obj` models using `assets/ai-blender-engine.js`, `blender-studio.html`, and `npm run blender`.
+4. **AI-Blender 3D Modeling & Online 3D Models (`memory/3D_MODELING_PROMPT.md`, `memory/FULL_BLENDER_BPY_PROMPT.md`)**:
+   - Use the **full 1-for-1 Blender `bpy` & `bmesh` engine** (`assets/bpy-core.js`, `npm run bpy` = `scripts/bpy-full.mjs`, `blender-studio.html` + `assets/full-blender-workstation.js`) to build ANY model, rig/skin it (`ARMATURE_AUTO` heat weights → `JOINTS_0`/`WEIGHTS_0` + `inverseBindMatrices`), animate it (Pose bones → Actions/Slots/F-Curves/NLA/Shape Keys/IK), deform per-frame (Linear Blend Skinning), and export skinned animated `.gltf` / `.obj` / `.bblend.json` + `BlenderModelAnimator` runtime playback.
+   - Headless pipelines: `npm run bpy -- demo`, `npm run bpy -- build --preset <p>`, `npm run bpy -- rig`, `npm run bpy -- animate`, `npm run bpy -- run <script.mjs>` — or fetch online `.gltf`/`.glb`/`.obj` models via `npm run blender`.
 5. **Deep App/Game Research, AAA Visuals & Unrestricted Safe Creation (`memory/DEEP_RESEARCH_PROMPT.md`)**:
    - Deep-research any requested app or game (`npm run research -- --target "<Name>" --slug <slug>`) and recreate **100% of its functions** with AAA visuals, particles, 3D models, and WebAudio synth effects.
    - Code **whatever the user asks for** without artificial refusals, excluding **ONLY** malicious hacking tools, exploits, malware, or RATs.

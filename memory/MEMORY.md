@@ -13,15 +13,17 @@
 | File Path | Lines | Chunks | Purpose |
 | :--- | :---: | :---: | :--- |
 | `.gitignore` | 0 | 0 | Repository file |
-| `AGENTS.md` | 131 | 13 | Primary instructions, Master Prompt, Chunk Editing protocol & Sub-Agent guide for Arena agents |
+| `AGENTS.md` | 148 | 14 | Primary instructions, Master Prompt, Chunk Editing protocol & Sub-Agent guide for Arena agents |
 | `assets/aaa-4k-engine.js` | 251 | 6 | Repository file |
 | `assets/ai-animation-studio.js` | 602 | 9 | Repository file |
 | `assets/ai-blender-engine.js` | 1189 | 56 | Repository file |
-| `assets/app.js` | 588 | 42 | Frontend application state, catalog filtering, iframe player, file uploader, and prompt generator |
+| `assets/app.js` | 590 | 42 | Frontend application state, catalog filtering, iframe player, file uploader, and prompt generator |
 | `assets/arena-ui-kit.js` | 339 | 4 | Repository file |
+| `assets/bpy-core.js` | 4656 | 173 | Repository file |
+| `assets/full-blender-workstation.js` | 1261 | 62 | Repository file |
 | `assets/styles.css` | 802 | 111 | Dark arcade UI styles, responsive grid, theatre modal, and dialog styles |
-| `blender-studio.html` | 519 | 22 | Repository file |
-| `CLAUDE.md` | 29 | 2 | Agent instructions mirror pointing to AGENTS.md & Master Prompt |
+| `blender-studio.html` | 368 | 28 | Repository file |
+| `CLAUDE.md` | 33 | 3 | Agent instructions mirror pointing to AGENTS.md & Master Prompt |
 | `games/astra-3d-overdrive/cyber-mech.gltf` | 0 | 0 | Game asset/source for astra-3d-overdrive |
 | `games/astra-3d-overdrive/game.json` | 28 | 1 | Game asset/source for astra-3d-overdrive |
 | `games/astra-3d-overdrive/index.html` | 486 | 16 | Game asset/source for astra-3d-overdrive |
@@ -59,14 +61,16 @@
 | `memory/BEAST_MODE_PROMPT.md` | 36 | 4 | Repository file |
 | `memory/COMPLETION_STATUS.json` | 9 | 1 | Repository file |
 | `memory/DEEP_RESEARCH_PROMPT.md` | 36 | 4 | Repository file |
-| `memory/MASTER_PROMPT.md` | 78 | 6 | Master Self-Prompt enforcing continuous execution, chunk-only reading, and sub-agent usage |
+| `memory/FULL_BLENDER_BPY_PROMPT.md` | 117 | 11 | Repository file |
+| `memory/MASTER_PROMPT.md` | 88 | 7 | Master Self-Prompt enforcing continuous execution, chunk-only reading, and sub-agent usage |
 | `memory/PERSONAL_SANDBOX_CLONE_PROMPT.md` | 35 | 4 | Repository file |
 | `memory/subagents.json` | 111 | 1 | Registry of specialist sub-agents available to the main agent |
-| `package.json` | 31 | 1 | NPM scripts for dev server, game sync, chunk memory, and sub-agents |
+| `package.json` | 32 | 1 | NPM scripts for dev server, game sync, chunk memory, and sub-agents |
 | `README.md` | 75 | 9 | Repository overview, CLI documentation, and structure guide |
 | `scripts/ai-animator.mjs` | 116 | 4 | Repository file |
 | `scripts/ai-blender.mjs` | 210 | 6 | Repository file |
 | `scripts/anti-stop-enforcer.mjs` | 95 | 2 | Repository file |
+| `scripts/bpy-full.mjs` | 303 | 11 | Repository file |
 | `scripts/chunk-editor.mjs` | 143 | 3 | Repository file |
 | `scripts/chunk-tool.mjs` | 486 | 11 | File Memory & Semantic Chunk Indexer for surgical line-range reading and chunk editing |
 | `scripts/deep-research.mjs` | 72 | 2 | Repository file |
@@ -99,18 +103,19 @@
 
 ### `AGENTS.md`
 - **`L1-L6`** (`md-h1`): `AGENTS.md — Master Prompt, Chunk Memory & Game Hub Protocol`
-- **`L7-L43`** (`md-h2`): `0. Master Operating Rules (Read First!)`
-- **`L44-L55`** (`md-h2`): `1. Where Games Live (`games/<slug>/`)`
-- **`L56-L57`** (`md-h2`): `2. Quick Workflow to Create & Upload a New Game`
-- **`L58-L59`** (`md-h3`): `Option A: Scaffold with the CLI + Build Your Game`
-- **`L60-L62`** (`md-h1`): `1. Scaffold a new browser game (or --type download / --type hybrid)`
-- **`L63-L64`** (`md-h1`): `2. Write or replace games/my-game/index.html (and any assets or downloadable files)`
-- **`L65-L69`** (`md-h1`): `3. Sync the catalog and validate`
-- **`L70-L81`** (`md-h3`): `Option B: Create `games/<slug>/` Directly`
-- **`L82-L108`** (`md-h2`): `3. `game.json` Manifest Schema`
-- **`L109-L115`** (`md-h3`): `Supported `type` values:`
-- **`L116-L124`** (`md-h2`): `4. Running the Live Preview & Upload Server`
-- **`L125-L131`** (`md-h2`): `5. Best Practices for Games Built by Arena Agents`
+- **`L7-L22`** (`md-h2`): `🚨 DIRECTIVE 0 — BUILD MODE: CODE THE USER'S REQUEST, NEVER NARRATE THE REPO (HIGHEST PRIORITY)`
+- **`L23-L60`** (`md-h2`): `0. Master Operating Rules (Read First!)`
+- **`L61-L72`** (`md-h2`): `1. Where Games Live (`games/<slug>/`)`
+- **`L73-L74`** (`md-h2`): `2. Quick Workflow to Create & Upload a New Game`
+- **`L75-L76`** (`md-h3`): `Option A: Scaffold with the CLI + Build Your Game`
+- **`L77-L79`** (`md-h1`): `1. Scaffold a new browser game (or --type download / --type hybrid)`
+- **`L80-L81`** (`md-h1`): `2. Write or replace games/my-game/index.html (and any assets or downloadable files)`
+- **`L82-L86`** (`md-h1`): `3. Sync the catalog and validate`
+- **`L87-L98`** (`md-h3`): `Option B: Create `games/<slug>/` Directly`
+- **`L99-L125`** (`md-h2`): `3. `game.json` Manifest Schema`
+- **`L126-L132`** (`md-h3`): `Supported `type` values:`
+- **`L133-L141`** (`md-h2`): `4. Running the Live Preview & Upload Server`
+- **`L142-L148`** (`md-h2`): `5. Best Practices for Games Built by Arena Agents`
 
 ### `assets/aaa-4k-engine.js`
 - **`L13-L66`** (`state`): `RESOLUTION_PRESETS`
@@ -229,15 +234,254 @@
 - **`L444-L476`** (`function`): `readFileForUpload`
 - **`L477-L528`** (`listener`): `uploadForm.on(submit)`
 - **`L529-L559`** (`state`): `manifest`
-- **`L560-L571`** (`function`): `updateArenaPrompt`
-- **`L572-L574`** (`listener`): `promptIdeaInput.on(input)`
-- **`L575-L588`** (`listener`): `copyPromptBtn.on(click)`
+- **`L560-L573`** (`function`): `updateArenaPrompt`
+- **`L574-L576`** (`listener`): `promptIdeaInput.on(input)`
+- **`L577-L590`** (`listener`): `copyPromptBtn.on(click)`
 
 ### `assets/arena-ui-kit.js`
 - **`L88-L170`** (`state`): `Easing`
 - **`L171-L174`** (`listener`): `window.on(keydown)`
 - **`L175-L255`** (`listener`): `window.on(keyup)`
 - **`L256-L339`** (`function`): `findGridPathAStar`
+
+### `assets/bpy-core.js`
+- **`L19-L31`** (`state`): `V`
+- **`L32-L87`** (`state`): `M4`
+- **`L88-L92`** (`function`): `hash3`
+- **`L93-L96`** (`function`): `noise3`
+- **`L97-L97`** (`const-fn`): `n`
+- **`L98-L102`** (`const-fn`): `lerp`
+- **`L103-L107`** (`function`): `fbm3`
+- **`L108-L108`** (`function`): `clamp`
+- **`L109-L199`** (`function`): `uid`
+- **`L217-L257`** (`state`): `b`
+- **`L258-L268`** (`state`): `l`
+- **`L269-L272`** (`function`): `sock`
+- **`L273-L273`** (`function`): `make_node`
+- **`L274-L274`** (`state`): `n`
+- **`L275-L275`** (`const-fn`): `I`
+- **`L276-L366`** (`const-fn`): `O`
+- **`L372-L375`** (`function`): `sock_value`
+- **`L376-L383`** (`function`): `eval_socket`
+- **`L384-L384`** (`function`): `eval_node`
+- **`L385-L475`** (`const-fn`): `I`
+- **`L538-L558`** (`function`): `eval_shader_tree`
+- **`L559-L574`** (`state`): `e`
+- **`L575-L622`** (`state`): `f`
+- **`L623-L713`** (`state`): `v`
+- **`L782-L872`** (`const-fn`): `getCut`
+- **`L911-L921`** (`const-fn`): `map`
+- **`L922-L926`** (`function`): `face_center`
+- **`L927-L930`** (`function`): `face_normal`
+- **`L931-L941`** (`function`): `rot_matrix_axis`
+- **`L942-L946`** (`function`): `convexHullPoints`
+- **`L947-L1010`** (`const-fn`): `key`
+- **`L1011-L1022`** (`function`): `primitive_cube`
+- **`L1023-L1047`** (`function`): `primitive_uv_sphere`
+- **`L1048-L1058`** (`function`): `primitive_ico_sphere`
+- **`L1059-L1079`** (`const-fn`): `mid`
+- **`L1080-L1102`** (`function`): `primitive_cylinder`
+- **`L1103-L1110`** (`function`): `primitive_plane`
+- **`L1111-L1132`** (`function`): `primitive_cone`
+- **`L1133-L1157`** (`function`): `primitive_torus`
+- **`L1158-L1173`** (`function`): `primitive_grid`
+- **`L1174-L1261`** (`function`): `primitive_monkey`
+- **`L1262-L1352`** (`function`): `resolve_path`
+- **`L1366-L1418`** (`state`): `pt`
+- **`L1419-L1423`** (`state`): `m`
+- **`L1424-L1514`** (`function`): `interpolate`
+- **`L1540-L1544`** (`function`): `evaluate_object_animation`
+- **`L1545-L1559`** (`state`): `poseState`
+- **`L1560-L1567`** (`function`): `apply_action_frame`
+- **`L1568-L1568`** (`function`): `write_path`
+- **`L1569-L1595`** (`const-fn`): `blend`
+- **`L1596-L1604`** (`function`): `commit_pose_state`
+- **`L1605-L1606`** (`function`): `idCollection`
+- **`L1607-L1623`** (`state`): `col`
+- **`L1624-L1677`** (`state`): `data`
+- **`L1678-L1680`** (`function`): `get_scene`
+- **`L1681-L1705`** (`state`): `context`
+- **`L1706-L1715`** (`function`): `new_object`
+- **`L1716-L1733`** (`function`): `poseEnsureBones`
+- **`L1734-L1752`** (`function`): `update_pose_matrices`
+- **`L1753-L1761`** (`function`): `quatToMatrix`
+- **`L1762-L1822`** (`function`): `eulerToQuat`
+- **`L1823-L1828`** (`function`): `add_modifier`
+- **`L1829-L1844`** (`function`): `apply_modifier_stack`
+- **`L1845-L1886`** (`function`): `apply_one_modifier`
+- **`L1887-L1904`** (`function`): `modArray`
+- **`L1905-L1906`** (`function`): `modMirror`
+- **`L1907-L1922`** (`state`): `src`
+- **`L1923-L1942`** (`function`): `modSolidify`
+- **`L1943-L1953`** (`function`): `vertexNormal`
+- **`L1954-L1958`** (`function`): `modSubsurf`
+- **`L1959-L1962`** (`function`): `subsurfOnce`
+- **`L1963-L1986`** (`const-fn`): `getMid`
+- **`L1987-L1992`** (`function`): `modBevel`
+- **`L1993-L2000`** (`function`): `modTriangulate`
+- **`L2001-L2022`** (`function`): `modDecimate`
+- **`L2023-L2046`** (`function`): `modWireframe`
+- **`L2047-L2057`** (`function`): `modEdgeSplit`
+- **`L2058-L2061`** (`function`): `modBoolean`
+- **`L2062-L2083`** (`const-fn`): `insideOther`
+- **`L2084-L2087`** (`function`): `evaluated_points`
+- **`L2088-L2095`** (`function`): `pointInMesh`
+- **`L2096-L2112`** (`function`): `rayHitsTriangle`
+- **`L2113-L2118`** (`function`): `modRemesh`
+- **`L2119-L2151`** (`const-fn`): `key`
+- **`L2152-L2157`** (`function`): `modScrew`
+- **`L2158-L2180`** (`function`): `modSkin`
+- **`L2181-L2186`** (`function`): `modBuild`
+- **`L2187-L2193`** (`function`): `modMask`
+- **`L2194-L2198`** (`function`): `modGeometryNodes`
+- **`L2199-L2205`** (`function`): `eval_geometry_tree`
+- **`L2206-L2207`** (`function`): `eval_geo_node`
+- **`L2208-L2223`** (`const-fn`): `I`
+- **`L2224-L2233`** (`state`): `mesh`
+- **`L2234-L2256`** (`state`): `mesh`
+- **`L2257-L2267`** (`state`): `out`
+- **`L2268-L2280`** (`state`): `out`
+- **`L2281-L2301`** (`state`): `out`
+- **`L2302-L2320`** (`state`): `out`
+- **`L2321-L2343`** (`state`): `out`
+- **`L2344-L2358`** (`state`): `out`
+- **`L2359-L2368`** (`state`): `out`
+- **`L2369-L2384`** (`state`): `out`
+- **`L2385-L2392`** (`function`): `eval_geo_socket`
+- **`L2393-L2423`** (`function`): `modSimpleDeform`
+- **`L2424-L2433`** (`function`): `modWave`
+- **`L2434-L2445`** (`function`): `modDisplace`
+- **`L2446-L2460`** (`function`): `modSmooth`
+- **`L2461-L2470`** (`function`): `modCast`
+- **`L2471-L2487`** (`function`): `modShrinkwrap`
+- **`L2488-L2492`** (`function`): `modArmature`
+- **`L2493-L2506`** (`function`): `modHook`
+- **`L2507-L2514`** (`function`): `modWarp`
+- **`L2515-L2529`** (`function`): `modCurveDeform`
+- **`L2530-L2544`** (`function`): `modLattice`
+- **`L2545-L2572`** (`function`): `modCloth`
+- **`L2573-L2575`** (`function`): `modSoftBody`
+- **`L2576-L2584`** (`function`): `modOcean`
+- **`L2585-L2593`** (`function`): `modFluid`
+- **`L2594-L2615`** (`function`): `modParticles`
+- **`L2616-L2620`** (`function`): `sculpt_stroke`
+- **`L2621-L2711`** (`const-fn`): `falloff`
+- **`L2754-L2772`** (`function`): `sculpt_dyntopo`
+- **`L2773-L2782`** (`function`): `uv_mark_seam`
+- **`L2783-L2813`** (`function`): `uv_unwrap`
+- **`L2814-L2836`** (`function`): `uv_islands`
+- **`L2837-L2850`** (`state`): `island`
+- **`L2851-L2854`** (`function`): `uv_smart_project`
+- **`L2855-L2871`** (`function`): `uv_cube_project`
+- **`L2872-L2885`** (`function`): `uv_cylinder_project`
+- **`L2886-L2899`** (`function`): `uv_sphere_project`
+- **`L2900-L2935`** (`function`): `uv_pack_islands`
+- **`L2936-L2968`** (`function`): `uv_texel_density`
+- **`L2969-L2985`** (`function`): `build_joints`
+- **`L2986-L3022`** (`function`): `auto_weights`
+- **`L3023-L3068`** (`function`): `skin_deform_mesh`
+- **`L3069-L3079`** (`function`): `bind_armature`
+- **`L3080-L3090`** (`function`): `shape_key_add`
+- **`L3091-L3107`** (`function`): `shape_key_eval`
+- **`L3108-L3173`** (`function`): `constraint_apply`
+- **`L3174-L3176`** (`function`): `find_pose_bone`
+- **`L3177-L3202`** (`function`): `solve_ik`
+- **`L3203-L3213`** (`function`): `quat_mul`
+- **`L3214-L3214`** (`function`): `op_result`
+- **`L3215-L3305`** (`state`): `ops`
+- **`L3970-L4001`** (`function`): `render_scene`
+- **`L4002-L4016`** (`state`): `img`
+- **`L4017-L4018`** (`function`): `raster_tri`
+- **`L4019-L4084`** (`const-fn`): `proj`
+- **`L4085-L4087`** (`function`): `edge`
+- **`L4088-L4093`** (`function`): `collect_export_objects`
+- **`L4094-L4120`** (`function`): `export_obj`
+- **`L4121-L4123`** (`function`): `export_bblend`
+- **`L4124-L4140`** (`state`): `doc`
+- **`L4141-L4194`** (`state`): `rec`
+- **`L4195-L4196`** (`function`): `export_gltf`
+- **`L4197-L4211`** (`state`): `gltf`
+- **`L4212-L4213`** (`const-fn`): `pushBuffer`
+- **`L4214-L4223`** (`state`): `view`
+- **`L4224-L4224`** (`const-fn`): `pushAccessor`
+- **`L4225-L4245`** (`state`): `acc`
+- **`L4246-L4275`** (`state`): `node`
+- **`L4276-L4325`** (`state`): `prim`
+- **`L4326-L4352`** (`state`): `skin`
+- **`L4353-L4358`** (`state`): `anim`
+- **`L4359-L4360`** (`state`): `interpMap`
+- **`L4361-L4367`** (`state`): `sampler`
+- **`L4368-L4404`** (`state`): `pathMap`
+- **`L4405-L4433`** (`function`): `import_gltf`
+- **`L4434-L4441`** (`function`): `decode_data_uri`
+- **`L4442-L4453`** (`function`): `import_obj`
+- **`L4454-L4524`** (`function`): `import_bblend`
+- **`L4525-L4592`** (`state`): `pose`
+- **`L4593-L4656`** (`state`): `bpy`
+
+### `assets/full-blender-workstation.js`
+- **`L12-L12`** (`const-fn`): `$`
+- **`L13-L15`** (`const-fn`): `$$`
+- **`L16-L32`** (`state`): `state`
+- **`L33-L90`** (`function`): `boot`
+- **`L91-L97`** (`function`): `resizeViewport`
+- **`L98-L108`** (`function`): `camMatrix`
+- **`L109-L123`** (`function`): `project`
+- **`L124-L140`** (`function`): `evaluatedMesh`
+- **`L141-L231`** (`function`): `drawViewport`
+- **`L236-L245`** (`function`): `drawLine3d`
+- **`L246-L273`** (`function`): `drawGizmo`
+- **`L274-L280`** (`listener`): `vpCanvas.on(mousedown)`
+- **`L281-L284`** (`listener`): `window.on(mouseup)`
+- **`L285-L303`** (`listener`): `window.on(mousemove)`
+- **`L304-L308`** (`listener`): `vpCanvas.on(wheel)`
+- **`L309-L310`** (`listener`): `vpCanvas.on(contextmenu)`
+- **`L311-L345`** (`function`): `sculptPointer`
+- **`L346-L348`** (`function`): `renderOutliner`
+- **`L349-L371`** (`const-fn`): `icon`
+- **`L372-L387`** (`listener`): `row.on(click)`
+- **`L388-L391`** (`function`): `renderProps`
+- **`L392-L392`** (`const-fn`): `sect`
+- **`L393-L393`** (`const-fn`): `row`
+- **`L394-L394`** (`const-fn`): `num`
+- **`L395-L484`** (`const-fn`): `txt`
+- **`L485-L487`** (`function`): `rgbHex`
+- **`L488-L490`** (`function`): `bindProps`
+- **`L491-L581`** (`const-fn`): `on`
+- **`L588-L595`** (`function`): `hexRgb`
+- **`L596-L600`** (`function`): `resizeAnim`
+- **`L601-L606`** (`function`): `drawAnimEditor`
+- **`L607-L696`** (`const-fn`): `toX`
+- **`L697-L705`** (`listener`): `animCanvas.on(mousedown)`
+- **`L706-L717`** (`function`): `setFrame`
+- **`L718-L739`** (`function`): `currentNodeTree`
+- **`L740-L788`** (`function`): `drawNodeEditor`
+- **`L789-L821`** (`function`): `drawUVEditor`
+- **`L822-L840`** (`function`): `drawRenderPreview`
+- **`L841-L848`** (`function`): `logConsole`
+- **`L849-L856`** (`function`): `runConsole`
+- **`L857-L873`** (`state`): `BMeshApi`
+- **`L874-L886`** (`state`): `workspaceConfig`
+- **`L887-L909`** (`function`): `setWorkspace`
+- **`L910-L914`** (`state`): `modeLabels`
+- **`L915-L926`** (`function`): `setMode`
+- **`L927-L934`** (`listener`): `btn.on(click)`
+- **`L935-L936`** (`listener`): `document.on(click)`
+- **`L937-L940`** (`function`): `pushUndo`
+- **`L941-L944`** (`function`): `exportSession`
+- **`L945-L1035`** (`state`): `commands`
+- **`L1114-L1128`** (`function`): `keyframe`
+- **`L1129-L1149`** (`listener`): `document.on(click)`
+- **`L1150-L1158`** (`function`): `togglePlay`
+- **`L1159-L1170`** (`function`): `playLoop`
+- **`L1171-L1183`** (`function`): `pickFile`
+- **`L1184-L1193`** (`function`): `downloadFile`
+- **`L1194-L1222`** (`listener`): `window.on(keydown)`
+- **`L1223-L1225`** (`function`): `fillSculptTools`
+- **`L1226-L1232`** (`listener`): `sel.on(change)`
+- **`L1233-L1238`** (`function`): `resizeAll`
+- **`L1239-L1250`** (`function`): `refreshAll`
+- **`L1251-L1261`** (`listener`): `window.on(resize)`
 
 ### `assets/styles.css`
 - **`L1-L23`** (`css-rule`): `:root`
@@ -353,32 +597,39 @@
 - **`L796-L802`** (`css-rule`): `.footer-inner`
 
 ### `blender-studio.html`
-- **`L7-L156`** (`html-style`): `<style> block`
-- **`L177-L212`** (`dom-section`): `#presetBtns (div)`
-- **`L192-L227`** (`dom-section`): `#primBtns (div)`
-- **`L208-L243`** (`dom-section`): `#meshStatsHud (div)`
-- **`L217-L252`** (`dom-section`): `#modBtns (div)`
-- **`L258-L516`** (`html-script`): `<script> block`
-- **`L295-L303`** (`function`): `updateHud`
-- **`L304-L308`** (`listener`): `canvas.on(mousedown)`
-- **`L309-L309`** (`listener`): `window.on(mouseup)`
-- **`L310-L316`** (`listener`): `window.on(mousemove)`
-- **`L317-L323`** (`listener`): `canvas.on(wheel)`
-- **`L324-L331`** (`listener`): `btn.on(click)`
-- **`L332-L346`** (`listener`): `btn.on(click)`
-- **`L347-L368`** (`listener`): `btn.on(click)`
-- **`L369-L377`** (`function`): `syncMaterialInputs`
-- **`L378-L388`** (`listener`): `el.on(input)`
-- **`L389-L392`** (`listener`): `toggleSpinBtn.on(click)`
-- **`L393-L397`** (`listener`): `toggleWireBtn.on(click)`
-- **`L398-L414`** (`function`): `downloadText`
-- **`L415-L420`** (`function`): `hexToRgb`
-- **`L421-L435`** (`function`): `project`
-- **`L436-L515`** (`function`): `renderLoop`
+- **`L7-L125`** (`html-style`): `<style> block`
+- **`L128-L163`** (`dom-section`): `#app (div)`
+- **`L130-L165`** (`dom-section`): `#menubar (div)`
+- **`L197-L232`** (`dom-section`): `#workspaces (div)`
+- **`L212-L247`** (`dom-section`): `#main (div)`
+- **`L213-L248`** (`dom-section`): `#outliner-col (div)`
+- **`L215-L250`** (`dom-section`): `#outliner-tree (div)`
+- **`L218-L253`** (`dom-section`): `#viewport-col (div)`
+- **`L220-L255`** (`dom-section`): `#vp-wrap (div)`
+- **`L222-L257`** (`dom-section`): `#vp-overlay (div)`
+- **`L239-L274`** (`dom-section`): `#sculpt-tools (div)`
+- **`L245-L280`** (`dom-section`): `#vp-stats (div)`
+- **`L250-L285`** (`dom-section`): `#uv-wrap (div)`
+- **`L263-L298`** (`dom-section`): `#node-wrap (div)`
+- **`L278-L313`** (`dom-section`): `#render-wrap (div)`
+- **`L280-L315`** (`dom-section`): `#render-actions (div)`
+- **`L287-L322`** (`dom-section`): `#script-wrap (div)`
+- **`L288-L323`** (`dom-section`): `#console-wrap (div)`
+- **`L289-L324`** (`dom-section`): `#console-out (div)`
+- **`L290-L325`** (`dom-section`): `#console-bar (div)`
+- **`L299-L334`** (`dom-section`): `#compositor-wrap (div)`
+- **`L304-L339`** (`dom-section`): `#props-col (div)`
+- **`L305-L340`** (`dom-section`): `#props-tabs (div)`
+- **`L321-L356`** (`dom-section`): `#props-content (div)`
+- **`L326-L361`** (`dom-section`): `#timeline-col (div)`
+- **`L352-L368`** (`dom-section`): `#statusbar (div)`
+- **`L364-L364`** (`html-script`): `<script> block`
+- **`L365-L365`** (`html-script`): `<script> block`
 
 ### `CLAUDE.md`
-- **`L1-L12`** (`md-h1`): `CLAUDE.md — Arena.ai Agent Guide`
-- **`L13-L29`** (`md-h2`): `Quick Commands`
+- **`L1-L2`** (`md-h1`): `CLAUDE.md — Arena.ai Agent Guide`
+- **`L3-L16`** (`md-h2`): `🚨 RULE 0 — BUILD MODE (BEFORE ANYTHING ELSE)`
+- **`L17-L33`** (`md-h2`): `Quick Commands`
 
 ### `games/astra-3d-overdrive/index.html`
 - **`L7-L116`** (`html-style`): `<style> block`
@@ -578,13 +829,27 @@
 - **`L17-L29`** (`md-h2`): `2. Ultra-Nice AAA Visual & Audio Polish Standard`
 - **`L30-L36`** (`md-h2`): `3. Unrestricted Creation Policy (Everything Except Hacks / Malware / RATs)`
 
+### `memory/FULL_BLENDER_BPY_PROMPT.md`
+- **`L1-L6`** (`md-h1`): `🎬 FULL BLENDER `bpy` SYSTEM — AI Build, Rig & Animate Directive (`memory/FULL_BLENDER_BPY_PROMPT.md`)`
+- **`L7-L24`** (`md-h2`): `1. THE THREE ENTRY POINTS`
+- **`L25-L28`** (`md-h2`): `2. `bpy.data` — FULL ID DATABLOCKS`
+- **`L29-L41`** (`md-h2`): `3. `bpy.ops` — FULL OPERATOR SET`
+- **`L42-L45`** (`md-h2`): `4. `bmesh` — TOPOLOGY ENGINE`
+- **`L46-L49`** (`md-h2`): `5. MODIFIER STACK — 28+ TYPES`
+- **`L50-L91`** (`md-h2`): `6. 🌉 SEAMLESS MODEL → RIG → ANIMATE PIPELINE (the whole point)`
+- **`L92-L99`** (`md-h2`): `7. ANIMATION SYSTEM`
+- **`L100-L105`** (`md-h2`): `8. EXPORTS (all self-contained)`
+- **`L106-L109`** (`md-h2`): `9. WORKSTATION (`blender-studio.html`)`
+- **`L110-L117`** (`md-h2`): `10. RULES FOR THE AI`
+
 ### `memory/MASTER_PROMPT.md`
 - **`L1-L7`** (`md-h1`): `⚡ MASTER AGENT SYSTEM PROMPT (`memory/MASTER_PROMPT.md`)`
-- **`L8-L18`** (`md-h2`): `DIRECTIVE 1: NEVER STOP RANDOMLY (CONTINUOUS END-TO-END EXECUTION)`
-- **`L19-L38`** (`md-h2`): `DIRECTIVE 2: SURGICAL CHUNK READING & EDITING (NO FULL-FILE RE-READS)`
-- **`L39-L61`** (`md-h2`): `DIRECTIVE 3: SUB-AGENT ORCHESTRATION (4 MODELING + 8 CODING/RESEARCH SUB-AGENTS)`
-- **`L62-L67`** (`md-h2`): `DIRECTIVE 4: AI-BLENDER 3D MODELING & ONLINE 3D ASSETS (`memory/3D_MODELING_PROMPT.md`)`
-- **`L68-L78`** (`md-h2`): `DIRECTIVE 5: DEEP APP/GAME RESEARCH, PERSONAL SANDBOX FULL CLONES (PS5/OS/APPS) & AAA VISUALS (`memory/PERSONAL_SANDBOX_CLONE_PROMPT.md`)`
+- **`L8-L17`** (`md-h2`): `DIRECTIVE 0: BUILD MODE — CODE FIRST, NEVER NARRATE THE REPO (HIGHEST PRIORITY, OVERRIDES ALL)`
+- **`L18-L28`** (`md-h2`): `DIRECTIVE 1: NEVER STOP RANDOMLY (CONTINUOUS END-TO-END EXECUTION)`
+- **`L29-L48`** (`md-h2`): `DIRECTIVE 2: SURGICAL CHUNK READING & EDITING (NO FULL-FILE RE-READS)`
+- **`L49-L71`** (`md-h2`): `DIRECTIVE 3: SUB-AGENT ORCHESTRATION (4 MODELING + 8 CODING/RESEARCH SUB-AGENTS)`
+- **`L72-L77`** (`md-h2`): `DIRECTIVE 4: AI-BLENDER 3D MODELING & ONLINE 3D ASSETS (`memory/3D_MODELING_PROMPT.md`)`
+- **`L78-L88`** (`md-h2`): `DIRECTIVE 5: DEEP APP/GAME RESEARCH, PERSONAL SANDBOX FULL CLONES (PS5/OS/APPS) & AAA VISUALS (`memory/PERSONAL_SANDBOX_CLONE_PROMPT.md`)`
 
 ### `memory/PERSONAL_SANDBOX_CLONE_PROMPT.md`
 - **`L1-L6`** (`md-h1`): `🎮 PERSONAL SANDBOX FULL-CLONE & CONSOLE/OS/APP RECREATION DIRECTIVE (`memory/PERSONAL_SANDBOX_CLONE_PROMPT.md`)`
@@ -620,6 +885,19 @@
 ### `scripts/anti-stop-enforcer.mjs`
 - **`L23-L64`** (`function`): `runAntiStopEnforcement`
 - **`L65-L95`** (`state`): `statusReport`
+
+### `scripts/bpy-full.mjs`
+- **`L39-L53`** (`state`): `PRESETS`
+- **`L54-L91`** (`function`): `buildInterceptorShip`
+- **`L92-L109`** (`function`): `buildHeroCharacter`
+- **`L110-L130`** (`function`): `buildMech`
+- **`L131-L136`** (`function`): `autoRigChain`
+- **`L137-L166`** (`function`): `rigCurrentModel`
+- **`L167-L187`** (`function`): `bakeWalkCycle`
+- **`L188-L198`** (`function`): `printHelp`
+- **`L199-L201`** (`function`): `main`
+- **`L202-L259`** (`const-fn`): `flag`
+- **`L260-L303`** (`state`): `writer`
 
 ### `scripts/chunk-editor.mjs`
 - **`L16-L54`** (`function`): `locateChunk`

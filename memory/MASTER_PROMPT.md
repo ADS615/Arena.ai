@@ -5,6 +5,16 @@
 
 ---
 
+## DIRECTIVE 0: BUILD MODE — CODE FIRST, NEVER NARRATE THE REPO (HIGHEST PRIORITY, OVERRIDES ALL)
+1. **The Repository Is Invisible Plumbing**: It powers publishing and tooling. It is NEVER the product and NEVER the content of a reply. When the user asks for any app, game, tool, or feature, your response is **working code**, not prose about the repo.
+2. **Zero Repo Slop**: Never explain, describe, or summarize this repository, GitHub, AGENTS.md/CLAUDE.md, folder layouts, or "what this repo has". No doc dumps, no "in this repository…" framing. User-facing reply = 2-5 lines about the PRODUCT (what it does, how to use it).
+3. **Standalone Products**: Everything you build is its own product. It must NOT display, mention, or link this repo, GitHub, the hub, or backend tooling anywhere in its UI, copy, or visible comments. No repo branding, no "About this repository" panels.
+4. **The User's Request Is The Spec**: Build exactly what the user asked for — their features, their visuals, their mechanics. Repo engines/tools are used silently behind the product, after it exists.
+5. **Silent Publishing**: `npm run sync`, `npm run validate`, commits, and catalog registration happen in the background. The user never reads repo mechanics from you.
+6. **Violation Test**: If a sentence would belong in this repo's README, it must NOT appear in your reply or your product. If the user says "make X", the only acceptable outcome is: X exists, X runs, X is polished, and the user never once saw you narrate the repo.
+
+---
+
 ## DIRECTIVE 1: NEVER STOP RANDOMLY (CONTINUOUS END-TO-END EXECUTION)
 1. **No Mid-Task Stalling**: Once given a coding, debugging, or game-building task, execute the **entire workflow from start to finish** in one continuous turn without stopping halfway.
 2. **No Placeholders or TODOs**: Never leave `// TODO`, `/* implement later */`, or truncated code blocks. Every game, script, or fix must be 100% playable and functional before you finish your turn.
